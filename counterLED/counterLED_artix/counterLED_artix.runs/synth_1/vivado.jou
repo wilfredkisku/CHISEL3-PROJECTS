@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 14 02:23:35 2023
+# Process ID: 20148
+# Current directory: /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/counterLED_artix/counterLED_artix.runs/synth_1
+# Command line: vivado -log counter_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source counter_top.tcl
+# Log file: /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/counterLED_artix/counterLED_artix.runs/synth_1/counter_top.vds
+# Journal file: /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/counterLED_artix/counterLED_artix.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source counter_top.tcl -notrace

@@ -13,3 +13,18 @@ start_gui
 create_project counterLED_artix /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/counterLED_artix -part xc7a35tftg256-1
 add_files -norecurse /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/counter_top.v
 update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse /home/wilfred/Desktop/github/chisel3-test-projects/counterLED/EDGE_Artix7_Master.xdc
+launch_simulation
+source counter_top.tcl
+add_force {/counter_top/reset} -radix hex {0 0ns}
+add_force {/counter_top/clock} -radix bin {1 0ns} {0 10000ps} -repeat_every 20000ps
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+run 20 us
+add_force {/counter_top/reset} -radix bin {1 0ns}
+run 20 us
+launch_runs synth_1
+wait_on_run synth_1
