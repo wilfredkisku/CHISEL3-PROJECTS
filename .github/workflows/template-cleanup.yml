@@ -48,8 +48,8 @@ jobs:
           git add .
           git commit -m "Template cleanup"
 
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      #- name: Push changes
+      #  uses: ad-m/github-push-action@v0.6.0
+      #  with:
+      #    branch: main
+      #    github_token: ${{ secrets.GITHUB_TOKEN }}
