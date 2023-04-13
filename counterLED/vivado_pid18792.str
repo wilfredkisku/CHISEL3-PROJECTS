@@ -787,3 +787,7 @@ dismissDialog("Starting Design Runs"); // bB (cr)
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // TclEventType: SIMULATION_UPDATE_OBJECT_TREE
 // TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// aj (cr): Synthesis Completed: addNotify
