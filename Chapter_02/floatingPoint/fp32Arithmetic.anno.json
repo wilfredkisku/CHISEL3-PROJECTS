@@ -1,0 +1,31 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_sign",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_mantissa",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_exp",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+    ]
+  }
+]
