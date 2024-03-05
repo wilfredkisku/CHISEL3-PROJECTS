@@ -9,23 +9,44 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~fp32Arithmetic|fp32Arithmetic>io_sign",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_signB",
     "sources":[
-      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberB"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~fp32Arithmetic|fp32Arithmetic>io_mantissa",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_signA",
     "sources":[
-      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberA"
     ]
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~fp32Arithmetic|fp32Arithmetic>io_exp",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_expA",
     "sources":[
-      "~fp32Arithmetic|fp32Arithmetic>io_fpNumber"
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberA"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_mantissaB",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberB"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_expB",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberB"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~fp32Arithmetic|fp32Arithmetic>io_mantissaA",
+    "sources":[
+      "~fp32Arithmetic|fp32Arithmetic>io_fpNumberA"
     ]
   }
 ]
