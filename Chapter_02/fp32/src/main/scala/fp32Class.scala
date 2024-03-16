@@ -21,12 +21,13 @@ val io = IO(new Bundle{
 
   val sum = Wire(UInt(32.W))
 
+
   sum := fpnumAman +& fpnumBman
   io.fpSum := sum
 
 }
 
-object xorClassMain extends App {
+object fp32ClassMain extends App {
   println("Generate the Verilog file!")
   (new chisel3.stage.ChiselStage).emitVerilog(new fp32Class())
 }
