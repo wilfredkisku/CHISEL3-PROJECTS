@@ -11,7 +11,7 @@ circuit fp32Class :
     node fpnumBexp = bits(io.fpnumB, 30, 23) @[fp32Class.scala 19:28]
     node fpnumBman = bits(io.fpnumB, 22, 0) @[fp32Class.scala 20:28]
     wire sum : UInt<32> @[fp32Class.scala 22:17]
-    node _sum_T = add(fpnumAman, fpnumBman) @[fp32Class.scala 24:20]
-    sum <= _sum_T @[fp32Class.scala 24:7]
-    io.fpSum <= sum @[fp32Class.scala 25:12]
+    node _sum_T = add(fpnumAman, fpnumBman) @[fp32Class.scala 25:20]
+    sum <= _sum_T @[fp32Class.scala 25:7]
+    io.fpSum <= sum @[fp32Class.scala 26:12]
 

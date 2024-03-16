@@ -7,6 +7,6 @@ module fp32Class(
 );
   wire [22:0] fpnumAman = io_fpnumA[22:0]; // @[fp32Class.scala 15:28]
   wire [22:0] fpnumBman = io_fpnumB[22:0]; // @[fp32Class.scala 20:28]
-  wire [23:0] _sum_T = fpnumAman + fpnumBman; // @[fp32Class.scala 24:20]
-  assign io_fpSum = {{8'd0}, _sum_T}; // @[fp32Class.scala 22:17 24:7]
+  wire [23:0] _sum_T = fpnumAman + fpnumBman; // @[fp32Class.scala 25:20]
+  assign io_fpSum = {{8'd0}, _sum_T}; // @[fp32Class.scala 22:17 25:7]
 endmodule
