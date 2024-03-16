@@ -22,8 +22,8 @@ val io = IO(new Bundle{
   val sum = Wire(UInt(32.W))
 
 
-  sum := fpnumAman +& fpnumBman
-  io.fpSum := sum
+  //sum := fpnumAman +& fpnumBman
+  //io.fpSum := sum
 
 }
 

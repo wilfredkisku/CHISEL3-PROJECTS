@@ -10,10 +10,10 @@ class NormalizeClass extends Module {
 
   //val normalized = Wire(UInt(23.W))
   val number = Wire(UInt(log2Ceil(23).W))
-  number := (23.U - 1.U) - PriorityEncoder(Reverse(io.mantissa))
+  number := PriorityEncoder(Reverse(io.mantissa)) + 1.U
 
   io.shift := number
-  io.normMantissa := io.mantissa << number + 1.U
+  io.normMantissa := io.mantissa << number
 
 }
 
