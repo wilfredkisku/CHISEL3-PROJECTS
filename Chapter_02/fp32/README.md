@@ -3,6 +3,7 @@
 
 | Left-Aligned  | Center Aligned  | Right Aligned | Left Aligned |
 | :------------:|:---------------:|:-----:|:-----:|
-| col 3 is      | some wordy text | $1600 | What |
-| col 2 is      | centered        |   $12 | is |
-| zebra stripes | are neat        |    $1 | This |
+| 0 |	X	| 00000000 | 00000000000000000000000
+| ∞ | 0 | 11111111 | 00000000000000000000000
+| −∞| 1 | 11111111 | 00000000000000000000000
+| NaN | X | 11111111 | Non-zero
