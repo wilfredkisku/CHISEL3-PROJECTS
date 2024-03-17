@@ -10,6 +10,7 @@
 
 | Format | Total  Bits	| Sign  Bits	| Exponent  Bits	| Fraction  Bits	| Bias |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| Half | 16 | 1 | 5 | 10 | 15 | 
 | Single	| 32	| 1	| 8	| 23	| 127 |
 | Double	| 64	| 1	| 11	| 52	| 1023 | 
 | Quad	| 128	| 1	| 15	| 112	| 16363 |
