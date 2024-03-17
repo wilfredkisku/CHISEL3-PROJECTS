@@ -1,7 +1,7 @@
 ![](./images/fp32Addtion.jpg)
 
 
-| Left-Aligned  | Center Aligned  | Right Aligned | Left Aligned |
+| Number  | Sign  | Exponent | Fraction |
 | :------------:|:---------------:|:-----:|:-----:|
 | 0 |	X	| 00000000 | 00000000000000000000000
 | ∞ | 0 | 11111111 | 00000000000000000000000
