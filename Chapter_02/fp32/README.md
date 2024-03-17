@@ -1,1 +1,1 @@
-![](../fp32/images/fp32Addition.jpg)
+![](./images/fp32Addition.jpg)
