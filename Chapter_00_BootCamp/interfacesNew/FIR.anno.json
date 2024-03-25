@@ -1,0 +1,17 @@
+[
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FIR|FIR>io_out",
+    "sources":[
+      "~FIR|FIR>io_in"
+    ]
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  }
+]
