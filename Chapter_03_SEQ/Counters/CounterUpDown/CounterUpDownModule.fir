@@ -14,7 +14,7 @@ circuit CounterUpDownModule :
     node _nextValDown_T = gt(count, UInt<1>("h0")) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:31]
     node _nextValDown_T_1 = sub(count, UInt<1>("h1")) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:44]
     node _nextValDown_T_2 = tail(_nextValDown_T_1, 1) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:44]
-    node nextValDown = mux(_nextValDown_T, _nextValDown_T_2, UInt<2>("h3")) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:24]
+    node nextValDown = mux(_nextValDown_T, _nextValDown_T_2, UInt<3>("h7")) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:24]
     when io.upDown : @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 25:18]
       node _count_T = mux(io.en, nextValUp, count) @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 26:15]
       count <= _count_T @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 26:9]

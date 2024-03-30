@@ -11,7 +11,7 @@ class CounterUpDownModule(maxVal : Int) extends Module{
 
   val count = RegInit(0.U(log2Ceil(maxVal + 1).W))
   val nextValUp = Mux(count < maxVal.U, count + 1.U, 0.U)
-  val nextValDown = Mux(count > 0.U, count - 1.U, log2Ceil(maxVal + 1).U)
+  val nextValDown = Mux(count > 0.U, count - 1.U, maxVal.U)
 
 //  when (io.en) {
 //    when (count < maxVal.U) {

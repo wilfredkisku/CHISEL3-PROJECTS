@@ -27,7 +27,7 @@ module CounterUpDownModule(
       if (count > 3'h0) begin // @[IdeaProjects/CounterRegUpDown/src/main/scala/CounterUpDownModule.scala 14:24]
         count <= _nextValDown_T_2;
       end else begin
-        count <= 3'h3;
+        count <= 3'h7;
       end
     end
   end
