@@ -1,0 +1,36 @@
+[
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~QueueModule|Queue",
+    "duplicate":"~QueueModule|QueueModule/qa_q:Queue",
+    "index":0.0
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~QueueModule|Queue_1",
+    "duplicate":"~QueueModule|QueueModule/qb_q:Queue",
+    "index":0.5
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~QueueModule|QueueModule>io_z_bits",
+    "sources":[
+      "~QueueModule|QueueModule>io_z_ready"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~QueueModule|QueueModule>io_z_valid",
+    "sources":[
+      "~QueueModule|QueueModule>io_z_ready"
+    ]
+  }
+]
