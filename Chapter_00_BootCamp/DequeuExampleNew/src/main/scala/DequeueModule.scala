@@ -13,6 +13,7 @@ class QueueModule extends Module {
   io.z.valid := 0.U(1.W)
 
   // Buffer the inputs with queues
+  //default entries is set to 2 --> Queue(input, entries)
   val qa = Queue(io.a) // io.a is the input to the FIFO
   // qa is DecoupledIO output from FIFO
   val qb = Queue(io.b)
