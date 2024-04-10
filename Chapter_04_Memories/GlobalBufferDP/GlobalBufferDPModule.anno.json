@@ -1,0 +1,26 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortB_dataOutB",
+    "sources":[
+      "~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortB_enableB",
+      "~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortB_writeB"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortA_dataOutA",
+    "sources":[
+      "~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortA_enableA",
+      "~GlobalBufferDPModule|GlobalBufferDPModule>io_rdWrPortA_writeA"
+    ]
+  }
+]
