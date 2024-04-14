@@ -1,0 +1,23 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.annotations.LoadMemoryAnnotation",
+    "target":"InitializedMemory.InitializedMemory.memory",
+    "fileName":"/home/wilfred/IdeaProjects/RISC/loadHEX.txt",
+    "hexOrBinary":"h",
+    "originalMemoryNameOpt":"memory"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxInlineAnno",
+    "target":"InitializedMemory.InitializedMemory",
+    "name":"InitializedMemory.InitializedMemory.memory.v",
+    "text":"module BindsTo_0_InitializedMemory(\n  input        clock,\n  input        reset,\n  input        io_writeEnable,\n  input  [7:0] io_writeAddr,\n  input  [7:0] io_writeData,\n  input  [7:0] io_readAddr,\n  input        io_readEnable,\n  output [7:0] io_readData\n);\n\n  \ninitial begin\n  $readmemh(\"/home/wilfred/IdeaProjects/RISC/loadHEX.txt\", InitializedMemory.memory);\nend\n                      endmodule\n\nbind InitializedMemory BindsTo_0_InitializedMemory BindsTo_0_InitializedMemory_Inst(.*);"
+  }
+]
