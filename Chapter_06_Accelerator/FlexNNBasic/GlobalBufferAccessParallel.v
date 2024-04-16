@@ -11,7 +11,10 @@ module GlobalBufferAccessParallel(
   output [7:0] io_readData_6,
   output [7:0] io_readData_7,
   output [7:0] io_readData_8,
-  input  [1:0] io_bankSel
+  input  [1:0] io_bankSel,
+  input        io_writeEnable,
+  input  [9:0] io_writeAddr,
+  input  [7:0] io_writeData
 );
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
   reg [31:0] _RAND_1;
@@ -57,440 +60,493 @@ module GlobalBufferAccessParallel(
   reg [31:0] _RAND_20;
   reg [31:0] _RAND_30;
 `endif // RANDOMIZE_MEM_INIT
-  reg [7:0] banks_0 [0:575]; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_0_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_0_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_0_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_1_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_1_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_1_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_2_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_2_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_2_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_3_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_3_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_3_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_4_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_4_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_4_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_5_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_5_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_5_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_6_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_6_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_6_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_7_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_7_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_7_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_0_io_readData_8_MPORT_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_0_io_readData_8_MPORT_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_0_io_readData_8_MPORT_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  reg [7:0] banks_1 [0:575]; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_0_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_0_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_0_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_1_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_1_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_1_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_2_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_2_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_2_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_3_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_3_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_3_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_4_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_4_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_4_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_5_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_5_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_5_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_6_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_6_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_6_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_7_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_7_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_7_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_1_io_readData_8_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_1_io_readData_8_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_1_io_readData_8_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  reg [7:0] banks_2 [0:575]; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_0_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_0_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_0_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_1_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_1_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_1_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_2_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_2_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_2_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_3_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_3_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_3_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_4_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_4_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_4_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_5_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_5_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_5_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_6_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_6_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_6_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_7_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_7_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_7_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_2_io_readData_8_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_2_io_readData_8_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_2_io_readData_8_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  reg [7:0] banks_3 [0:575]; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_0_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_0_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_0_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_1_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_1_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_1_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_2_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_2_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_2_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_3_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_3_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_4_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_4_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_4_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_5_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_5_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_5_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_6_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_6_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_6_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_7_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_7_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_7_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  banks_3_io_readData_8_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [9:0] banks_3_io_readData_8_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire [7:0] banks_3_io_readData_8_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 13:32]
-  wire  _T = io_bankSel == 2'h0; // @[GlobalBufferAccessParallel.scala 18:23]
-  wire [10:0] _io_readData_0_T = {{1'd0}, io_readAddr}; // @[GlobalBufferAccessParallel.scala 19:48]
-  wire  _T_1 = io_bankSel == 2'h1; // @[GlobalBufferAccessParallel.scala 20:29]
-  wire  _T_2 = io_bankSel == 2'h2; // @[GlobalBufferAccessParallel.scala 22:29]
-  wire [7:0] _GEN_3 = io_bankSel == 2'h2 ? banks_2_io_readData_0_MPORT_2_data : banks_3_io_readData_0_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire  _GEN_6 = io_bankSel == 2'h2 ? 1'h0 : 1'h1; // @[GlobalBufferAccessParallel.scala 13:32 22:38 25:35]
-  wire [7:0] _GEN_10 = io_bankSel == 2'h1 ? banks_1_io_readData_0_MPORT_1_data : _GEN_3; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire  _GEN_13 = io_bankSel == 2'h1 ? 1'h0 : _T_2; // @[GlobalBufferAccessParallel.scala 13:32 20:38]
-  wire  _GEN_16 = io_bankSel == 2'h1 ? 1'h0 : _GEN_6; // @[GlobalBufferAccessParallel.scala 13:32 20:38]
-  wire [7:0] _GEN_33 = io_bankSel == 2'h2 ? banks_2_io_readData_1_MPORT_2_data : banks_3_io_readData_1_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_40 = io_bankSel == 2'h1 ? banks_1_io_readData_1_MPORT_1_data : _GEN_33; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_63 = io_bankSel == 2'h2 ? banks_2_io_readData_2_MPORT_2_data : banks_3_io_readData_2_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_70 = io_bankSel == 2'h1 ? banks_1_io_readData_2_MPORT_1_data : _GEN_63; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_93 = io_bankSel == 2'h2 ? banks_2_io_readData_3_MPORT_2_data : banks_3_io_readData_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_100 = io_bankSel == 2'h1 ? banks_1_io_readData_3_MPORT_1_data : _GEN_93; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_123 = io_bankSel == 2'h2 ? banks_2_io_readData_4_MPORT_2_data : banks_3_io_readData_4_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_130 = io_bankSel == 2'h1 ? banks_1_io_readData_4_MPORT_1_data : _GEN_123; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_153 = io_bankSel == 2'h2 ? banks_2_io_readData_5_MPORT_2_data : banks_3_io_readData_5_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_160 = io_bankSel == 2'h1 ? banks_1_io_readData_5_MPORT_1_data : _GEN_153; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_183 = io_bankSel == 2'h2 ? banks_2_io_readData_6_MPORT_2_data : banks_3_io_readData_6_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_190 = io_bankSel == 2'h1 ? banks_1_io_readData_6_MPORT_1_data : _GEN_183; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_213 = io_bankSel == 2'h2 ? banks_2_io_readData_7_MPORT_2_data : banks_3_io_readData_7_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_220 = io_bankSel == 2'h1 ? banks_1_io_readData_7_MPORT_1_data : _GEN_213; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
-  wire [7:0] _GEN_243 = io_bankSel == 2'h2 ? banks_2_io_readData_8_MPORT_2_data : banks_3_io_readData_8_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 22:38 23:24 25:24]
-  wire [7:0] _GEN_250 = io_bankSel == 2'h1 ? banks_1_io_readData_8_MPORT_1_data : _GEN_243; // @[GlobalBufferAccessParallel.scala 20:38 21:24]
+  reg [7:0] banks_0 [0:575]; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_0_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_0_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_0_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_1_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_1_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_1_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_2_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_2_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_2_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_3_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_3_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_3_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_4_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_4_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_4_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_5_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_5_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_5_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_6_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_6_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_6_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_7_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_7_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_7_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_io_readData_8_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_io_readData_8_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_io_readData_8_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_0_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_0_MPORT_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_MPORT_mask; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_0_MPORT_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  reg [7:0] banks_1 [0:575]; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_0_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_0_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_0_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_1_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_1_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_1_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_2_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_2_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_2_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_3_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_3_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_3_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_4_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_4_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_4_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_5_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_5_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_5_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_6_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_6_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_6_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_7_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_7_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_7_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_io_readData_8_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_io_readData_8_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_io_readData_8_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_1_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_1_MPORT_1_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_MPORT_1_mask; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_1_MPORT_1_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  reg [7:0] banks_2 [0:575]; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_0_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_0_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_0_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_1_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_1_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_1_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_2_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_2_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_2_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_3_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_3_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_3_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_4_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_4_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_4_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_5_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_5_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_5_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_6_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_6_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_6_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_7_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_7_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_7_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_io_readData_8_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_io_readData_8_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_io_readData_8_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_2_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_2_MPORT_2_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_MPORT_2_mask; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_2_MPORT_2_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  reg [7:0] banks_3 [0:575]; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_0_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_0_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_0_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_1_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_1_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_1_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_2_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_2_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_2_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_3_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_3_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_4_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_4_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_4_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_5_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_5_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_5_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_6_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_6_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_6_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_7_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_7_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_7_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_io_readData_8_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_io_readData_8_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_io_readData_8_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [7:0] banks_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire [9:0] banks_3_MPORT_3_addr; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_MPORT_3_mask; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  banks_3_MPORT_3_en; // @[GlobalBufferAccessParallel.scala 18:32]
+  wire  _T = io_bankSel == 2'h0; // @[GlobalBufferAccessParallel.scala 23:23]
+  wire [10:0] _io_readData_0_T = {{1'd0}, io_readAddr}; // @[GlobalBufferAccessParallel.scala 24:48]
+  wire  _T_1 = io_bankSel == 2'h1; // @[GlobalBufferAccessParallel.scala 25:29]
+  wire  _T_2 = io_bankSel == 2'h2; // @[GlobalBufferAccessParallel.scala 27:29]
+  wire [7:0] _GEN_3 = io_bankSel == 2'h2 ? banks_2_io_readData_0_MPORT_2_data : banks_3_io_readData_0_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire  _GEN_6 = io_bankSel == 2'h2 ? 1'h0 : 1'h1; // @[GlobalBufferAccessParallel.scala 18:32 27:38 30:35]
+  wire [7:0] _GEN_10 = io_bankSel == 2'h1 ? banks_1_io_readData_0_MPORT_1_data : _GEN_3; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire  _GEN_13 = io_bankSel == 2'h1 ? 1'h0 : _T_2; // @[GlobalBufferAccessParallel.scala 18:32 25:38]
+  wire  _GEN_16 = io_bankSel == 2'h1 ? 1'h0 : _GEN_6; // @[GlobalBufferAccessParallel.scala 18:32 25:38]
+  wire [7:0] _GEN_33 = io_bankSel == 2'h2 ? banks_2_io_readData_1_MPORT_2_data : banks_3_io_readData_1_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_40 = io_bankSel == 2'h1 ? banks_1_io_readData_1_MPORT_1_data : _GEN_33; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_63 = io_bankSel == 2'h2 ? banks_2_io_readData_2_MPORT_2_data : banks_3_io_readData_2_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_70 = io_bankSel == 2'h1 ? banks_1_io_readData_2_MPORT_1_data : _GEN_63; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_93 = io_bankSel == 2'h2 ? banks_2_io_readData_3_MPORT_2_data : banks_3_io_readData_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_100 = io_bankSel == 2'h1 ? banks_1_io_readData_3_MPORT_1_data : _GEN_93; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_123 = io_bankSel == 2'h2 ? banks_2_io_readData_4_MPORT_2_data : banks_3_io_readData_4_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_130 = io_bankSel == 2'h1 ? banks_1_io_readData_4_MPORT_1_data : _GEN_123; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_153 = io_bankSel == 2'h2 ? banks_2_io_readData_5_MPORT_2_data : banks_3_io_readData_5_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_160 = io_bankSel == 2'h1 ? banks_1_io_readData_5_MPORT_1_data : _GEN_153; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_183 = io_bankSel == 2'h2 ? banks_2_io_readData_6_MPORT_2_data : banks_3_io_readData_6_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_190 = io_bankSel == 2'h1 ? banks_1_io_readData_6_MPORT_1_data : _GEN_183; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_213 = io_bankSel == 2'h2 ? banks_2_io_readData_7_MPORT_2_data : banks_3_io_readData_7_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_220 = io_bankSel == 2'h1 ? banks_1_io_readData_7_MPORT_1_data : _GEN_213; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire [7:0] _GEN_243 = io_bankSel == 2'h2 ? banks_2_io_readData_8_MPORT_2_data : banks_3_io_readData_8_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 27:38 28:24 30:24]
+  wire [7:0] _GEN_250 = io_bankSel == 2'h1 ? banks_1_io_readData_8_MPORT_1_data : _GEN_243; // @[GlobalBufferAccessParallel.scala 25:38 26:24]
+  wire  _T_27 = 2'h0 == io_bankSel; // @[GlobalBufferAccessParallel.scala 38:26]
+  wire  _GEN_282 = 2'h2 == io_bankSel ? 1'h0 : 2'h3 == io_bankSel; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
+  wire  _GEN_292 = 2'h1 == io_bankSel ? 1'h0 : 2'h2 == io_bankSel; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
+  wire  _GEN_297 = 2'h1 == io_bankSel ? 1'h0 : _GEN_282; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
+  wire  _GEN_307 = 2'h0 == io_bankSel ? 1'h0 : 2'h1 == io_bankSel; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
+  wire  _GEN_312 = 2'h0 == io_bankSel ? 1'h0 : _GEN_292; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
+  wire  _GEN_317 = 2'h0 == io_bankSel ? 1'h0 : _GEN_297; // @[GlobalBufferAccessParallel.scala 38:26 18:32]
   assign banks_0_io_readData_0_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_0_MPORT_addr = _io_readData_0_T[9:0];
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_0_MPORT_data = banks_0[banks_0_io_readData_0_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_0_MPORT_data = banks_0[banks_0_io_readData_0_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_0_MPORT_data = banks_0_io_readData_0_MPORT_addr >= 10'h240 ? _RAND_1[7:0] :
-    banks_0[banks_0_io_readData_0_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_0_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_1_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_1_MPORT_addr = io_readAddr + 10'h1;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_1_MPORT_data = banks_0[banks_0_io_readData_1_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_1_MPORT_data = banks_0[banks_0_io_readData_1_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_1_MPORT_data = banks_0_io_readData_1_MPORT_addr >= 10'h240 ? _RAND_2[7:0] :
-    banks_0[banks_0_io_readData_1_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_1_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_2_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_2_MPORT_addr = io_readAddr + 10'h2;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_2_MPORT_data = banks_0[banks_0_io_readData_2_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_2_MPORT_data = banks_0[banks_0_io_readData_2_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_2_MPORT_data = banks_0_io_readData_2_MPORT_addr >= 10'h240 ? _RAND_3[7:0] :
-    banks_0[banks_0_io_readData_2_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_2_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_3_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_3_MPORT_addr = io_readAddr + 10'h3;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_3_MPORT_data = banks_0[banks_0_io_readData_3_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_3_MPORT_data = banks_0[banks_0_io_readData_3_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_3_MPORT_data = banks_0_io_readData_3_MPORT_addr >= 10'h240 ? _RAND_4[7:0] :
-    banks_0[banks_0_io_readData_3_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_3_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_4_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_4_MPORT_addr = io_readAddr + 10'h4;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_4_MPORT_data = banks_0[banks_0_io_readData_4_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_4_MPORT_data = banks_0[banks_0_io_readData_4_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_4_MPORT_data = banks_0_io_readData_4_MPORT_addr >= 10'h240 ? _RAND_5[7:0] :
-    banks_0[banks_0_io_readData_4_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_4_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_5_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_5_MPORT_addr = io_readAddr + 10'h5;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_5_MPORT_data = banks_0[banks_0_io_readData_5_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_5_MPORT_data = banks_0[banks_0_io_readData_5_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_5_MPORT_data = banks_0_io_readData_5_MPORT_addr >= 10'h240 ? _RAND_6[7:0] :
-    banks_0[banks_0_io_readData_5_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_5_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_6_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_6_MPORT_addr = io_readAddr + 10'h6;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_6_MPORT_data = banks_0[banks_0_io_readData_6_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_6_MPORT_data = banks_0[banks_0_io_readData_6_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_6_MPORT_data = banks_0_io_readData_6_MPORT_addr >= 10'h240 ? _RAND_7[7:0] :
-    banks_0[banks_0_io_readData_6_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_6_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_7_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_7_MPORT_addr = io_readAddr + 10'h7;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_7_MPORT_data = banks_0[banks_0_io_readData_7_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_7_MPORT_data = banks_0[banks_0_io_readData_7_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_7_MPORT_data = banks_0_io_readData_7_MPORT_addr >= 10'h240 ? _RAND_8[7:0] :
-    banks_0[banks_0_io_readData_7_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_7_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_0_io_readData_8_MPORT_en = io_bankSel == 2'h0;
   assign banks_0_io_readData_8_MPORT_addr = io_readAddr + 10'h8;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_0_io_readData_8_MPORT_data = banks_0[banks_0_io_readData_8_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_0_io_readData_8_MPORT_data = banks_0[banks_0_io_readData_8_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_0_io_readData_8_MPORT_data = banks_0_io_readData_8_MPORT_addr >= 10'h240 ? _RAND_9[7:0] :
-    banks_0[banks_0_io_readData_8_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_0[banks_0_io_readData_8_MPORT_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
+  assign banks_0_MPORT_data = io_writeData;
+  assign banks_0_MPORT_addr = io_writeAddr;
+  assign banks_0_MPORT_mask = 1'h1;
+  assign banks_0_MPORT_en = io_writeEnable & _T_27;
   assign banks_1_io_readData_0_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_0_MPORT_1_addr = _io_readData_0_T[9:0];
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_0_MPORT_1_data = banks_1[banks_1_io_readData_0_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_0_MPORT_1_data = banks_1[banks_1_io_readData_0_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_0_MPORT_1_data = banks_1_io_readData_0_MPORT_1_addr >= 10'h240 ? _RAND_11[7:0] :
-    banks_1[banks_1_io_readData_0_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_0_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_1_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_1_MPORT_1_addr = io_readAddr + 10'h1;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_1_MPORT_1_data = banks_1[banks_1_io_readData_1_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_1_MPORT_1_data = banks_1[banks_1_io_readData_1_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_1_MPORT_1_data = banks_1_io_readData_1_MPORT_1_addr >= 10'h240 ? _RAND_12[7:0] :
-    banks_1[banks_1_io_readData_1_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_1_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_2_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_2_MPORT_1_addr = io_readAddr + 10'h2;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_2_MPORT_1_data = banks_1[banks_1_io_readData_2_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_2_MPORT_1_data = banks_1[banks_1_io_readData_2_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_2_MPORT_1_data = banks_1_io_readData_2_MPORT_1_addr >= 10'h240 ? _RAND_13[7:0] :
-    banks_1[banks_1_io_readData_2_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_2_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_3_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_3_MPORT_1_addr = io_readAddr + 10'h3;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_3_MPORT_1_data = banks_1[banks_1_io_readData_3_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_3_MPORT_1_data = banks_1[banks_1_io_readData_3_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_3_MPORT_1_data = banks_1_io_readData_3_MPORT_1_addr >= 10'h240 ? _RAND_14[7:0] :
-    banks_1[banks_1_io_readData_3_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_3_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_4_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_4_MPORT_1_addr = io_readAddr + 10'h4;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_4_MPORT_1_data = banks_1[banks_1_io_readData_4_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_4_MPORT_1_data = banks_1[banks_1_io_readData_4_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_4_MPORT_1_data = banks_1_io_readData_4_MPORT_1_addr >= 10'h240 ? _RAND_15[7:0] :
-    banks_1[banks_1_io_readData_4_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_4_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_5_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_5_MPORT_1_addr = io_readAddr + 10'h5;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_5_MPORT_1_data = banks_1[banks_1_io_readData_5_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_5_MPORT_1_data = banks_1[banks_1_io_readData_5_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_5_MPORT_1_data = banks_1_io_readData_5_MPORT_1_addr >= 10'h240 ? _RAND_16[7:0] :
-    banks_1[banks_1_io_readData_5_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_5_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_6_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_6_MPORT_1_addr = io_readAddr + 10'h6;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_6_MPORT_1_data = banks_1[banks_1_io_readData_6_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_6_MPORT_1_data = banks_1[banks_1_io_readData_6_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_6_MPORT_1_data = banks_1_io_readData_6_MPORT_1_addr >= 10'h240 ? _RAND_17[7:0] :
-    banks_1[banks_1_io_readData_6_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_6_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_7_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_7_MPORT_1_addr = io_readAddr + 10'h7;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_7_MPORT_1_data = banks_1[banks_1_io_readData_7_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_7_MPORT_1_data = banks_1[banks_1_io_readData_7_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_7_MPORT_1_data = banks_1_io_readData_7_MPORT_1_addr >= 10'h240 ? _RAND_18[7:0] :
-    banks_1[banks_1_io_readData_7_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_7_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_1_io_readData_8_MPORT_1_en = _T ? 1'h0 : _T_1;
   assign banks_1_io_readData_8_MPORT_1_addr = io_readAddr + 10'h8;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_1_io_readData_8_MPORT_1_data = banks_1[banks_1_io_readData_8_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_1_io_readData_8_MPORT_1_data = banks_1[banks_1_io_readData_8_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_1_io_readData_8_MPORT_1_data = banks_1_io_readData_8_MPORT_1_addr >= 10'h240 ? _RAND_19[7:0] :
-    banks_1[banks_1_io_readData_8_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_1[banks_1_io_readData_8_MPORT_1_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
+  assign banks_1_MPORT_1_data = io_writeData;
+  assign banks_1_MPORT_1_addr = io_writeAddr;
+  assign banks_1_MPORT_1_mask = 1'h1;
+  assign banks_1_MPORT_1_en = io_writeEnable & _GEN_307;
   assign banks_2_io_readData_0_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_0_MPORT_2_addr = _io_readData_0_T[9:0];
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_0_MPORT_2_data = banks_2[banks_2_io_readData_0_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_0_MPORT_2_data = banks_2[banks_2_io_readData_0_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_0_MPORT_2_data = banks_2_io_readData_0_MPORT_2_addr >= 10'h240 ? _RAND_21[7:0] :
-    banks_2[banks_2_io_readData_0_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_0_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_1_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_1_MPORT_2_addr = io_readAddr + 10'h1;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_1_MPORT_2_data = banks_2[banks_2_io_readData_1_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_1_MPORT_2_data = banks_2[banks_2_io_readData_1_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_1_MPORT_2_data = banks_2_io_readData_1_MPORT_2_addr >= 10'h240 ? _RAND_22[7:0] :
-    banks_2[banks_2_io_readData_1_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_1_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_2_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_2_MPORT_2_addr = io_readAddr + 10'h2;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_2_MPORT_2_data = banks_2[banks_2_io_readData_2_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_2_MPORT_2_data = banks_2[banks_2_io_readData_2_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_2_MPORT_2_data = banks_2_io_readData_2_MPORT_2_addr >= 10'h240 ? _RAND_23[7:0] :
-    banks_2[banks_2_io_readData_2_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_2_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_3_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_3_MPORT_2_addr = io_readAddr + 10'h3;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_3_MPORT_2_data = banks_2[banks_2_io_readData_3_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_3_MPORT_2_data = banks_2[banks_2_io_readData_3_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_3_MPORT_2_data = banks_2_io_readData_3_MPORT_2_addr >= 10'h240 ? _RAND_24[7:0] :
-    banks_2[banks_2_io_readData_3_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_3_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_4_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_4_MPORT_2_addr = io_readAddr + 10'h4;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_4_MPORT_2_data = banks_2[banks_2_io_readData_4_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_4_MPORT_2_data = banks_2[banks_2_io_readData_4_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_4_MPORT_2_data = banks_2_io_readData_4_MPORT_2_addr >= 10'h240 ? _RAND_25[7:0] :
-    banks_2[banks_2_io_readData_4_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_4_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_5_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_5_MPORT_2_addr = io_readAddr + 10'h5;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_5_MPORT_2_data = banks_2[banks_2_io_readData_5_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_5_MPORT_2_data = banks_2[banks_2_io_readData_5_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_5_MPORT_2_data = banks_2_io_readData_5_MPORT_2_addr >= 10'h240 ? _RAND_26[7:0] :
-    banks_2[banks_2_io_readData_5_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_5_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_6_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_6_MPORT_2_addr = io_readAddr + 10'h6;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_6_MPORT_2_data = banks_2[banks_2_io_readData_6_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_6_MPORT_2_data = banks_2[banks_2_io_readData_6_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_6_MPORT_2_data = banks_2_io_readData_6_MPORT_2_addr >= 10'h240 ? _RAND_27[7:0] :
-    banks_2[banks_2_io_readData_6_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_6_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_7_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_7_MPORT_2_addr = io_readAddr + 10'h7;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_7_MPORT_2_data = banks_2[banks_2_io_readData_7_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_7_MPORT_2_data = banks_2[banks_2_io_readData_7_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_7_MPORT_2_data = banks_2_io_readData_7_MPORT_2_addr >= 10'h240 ? _RAND_28[7:0] :
-    banks_2[banks_2_io_readData_7_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_7_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_2_io_readData_8_MPORT_2_en = _T ? 1'h0 : _GEN_13;
   assign banks_2_io_readData_8_MPORT_2_addr = io_readAddr + 10'h8;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_2_io_readData_8_MPORT_2_data = banks_2[banks_2_io_readData_8_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_2_io_readData_8_MPORT_2_data = banks_2[banks_2_io_readData_8_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_2_io_readData_8_MPORT_2_data = banks_2_io_readData_8_MPORT_2_addr >= 10'h240 ? _RAND_29[7:0] :
-    banks_2[banks_2_io_readData_8_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_2[banks_2_io_readData_8_MPORT_2_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
+  assign banks_2_MPORT_2_data = io_writeData;
+  assign banks_2_MPORT_2_addr = io_writeAddr;
+  assign banks_2_MPORT_2_mask = 1'h1;
+  assign banks_2_MPORT_2_en = io_writeEnable & _GEN_312;
   assign banks_3_io_readData_0_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_0_MPORT_3_addr = _io_readData_0_T[9:0];
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_0_MPORT_3_data = banks_3[banks_3_io_readData_0_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_0_MPORT_3_data = banks_3[banks_3_io_readData_0_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_0_MPORT_3_data = banks_3_io_readData_0_MPORT_3_addr >= 10'h240 ? _RAND_31[7:0] :
-    banks_3[banks_3_io_readData_0_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_0_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_1_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_1_MPORT_3_addr = io_readAddr + 10'h1;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_1_MPORT_3_data = banks_3[banks_3_io_readData_1_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_1_MPORT_3_data = banks_3[banks_3_io_readData_1_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_1_MPORT_3_data = banks_3_io_readData_1_MPORT_3_addr >= 10'h240 ? _RAND_32[7:0] :
-    banks_3[banks_3_io_readData_1_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_1_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_2_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_2_MPORT_3_addr = io_readAddr + 10'h2;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_2_MPORT_3_data = banks_3[banks_3_io_readData_2_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_2_MPORT_3_data = banks_3[banks_3_io_readData_2_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_2_MPORT_3_data = banks_3_io_readData_2_MPORT_3_addr >= 10'h240 ? _RAND_33[7:0] :
-    banks_3[banks_3_io_readData_2_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_2_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_3_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_3_MPORT_3_addr = io_readAddr + 10'h3;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_3_MPORT_3_data = banks_3[banks_3_io_readData_3_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_3_MPORT_3_data = banks_3[banks_3_io_readData_3_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_3_MPORT_3_data = banks_3_io_readData_3_MPORT_3_addr >= 10'h240 ? _RAND_34[7:0] :
-    banks_3[banks_3_io_readData_3_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_3_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_4_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_4_MPORT_3_addr = io_readAddr + 10'h4;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_4_MPORT_3_data = banks_3[banks_3_io_readData_4_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_4_MPORT_3_data = banks_3[banks_3_io_readData_4_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_4_MPORT_3_data = banks_3_io_readData_4_MPORT_3_addr >= 10'h240 ? _RAND_35[7:0] :
-    banks_3[banks_3_io_readData_4_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_4_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_5_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_5_MPORT_3_addr = io_readAddr + 10'h5;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_5_MPORT_3_data = banks_3[banks_3_io_readData_5_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_5_MPORT_3_data = banks_3[banks_3_io_readData_5_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_5_MPORT_3_data = banks_3_io_readData_5_MPORT_3_addr >= 10'h240 ? _RAND_36[7:0] :
-    banks_3[banks_3_io_readData_5_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_5_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_6_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_6_MPORT_3_addr = io_readAddr + 10'h6;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_6_MPORT_3_data = banks_3[banks_3_io_readData_6_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_6_MPORT_3_data = banks_3[banks_3_io_readData_6_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_6_MPORT_3_data = banks_3_io_readData_6_MPORT_3_addr >= 10'h240 ? _RAND_37[7:0] :
-    banks_3[banks_3_io_readData_6_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_6_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_7_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_7_MPORT_3_addr = io_readAddr + 10'h7;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_7_MPORT_3_data = banks_3[banks_3_io_readData_7_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_7_MPORT_3_data = banks_3[banks_3_io_readData_7_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_7_MPORT_3_data = banks_3_io_readData_7_MPORT_3_addr >= 10'h240 ? _RAND_38[7:0] :
-    banks_3[banks_3_io_readData_7_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_7_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
   assign banks_3_io_readData_8_MPORT_3_en = _T ? 1'h0 : _GEN_16;
   assign banks_3_io_readData_8_MPORT_3_addr = io_readAddr + 10'h8;
   `ifndef RANDOMIZE_GARBAGE_ASSIGN
-  assign banks_3_io_readData_8_MPORT_3_data = banks_3[banks_3_io_readData_8_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+  assign banks_3_io_readData_8_MPORT_3_data = banks_3[banks_3_io_readData_8_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `else
   assign banks_3_io_readData_8_MPORT_3_data = banks_3_io_readData_8_MPORT_3_addr >= 10'h240 ? _RAND_39[7:0] :
-    banks_3[banks_3_io_readData_8_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 13:32]
+    banks_3[banks_3_io_readData_8_MPORT_3_addr]; // @[GlobalBufferAccessParallel.scala 18:32]
   `endif // RANDOMIZE_GARBAGE_ASSIGN
-  assign io_readData_0 = io_bankSel == 2'h0 ? banks_0_io_readData_0_MPORT_data : _GEN_10; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_1 = io_bankSel == 2'h0 ? banks_0_io_readData_1_MPORT_data : _GEN_40; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_2 = io_bankSel == 2'h0 ? banks_0_io_readData_2_MPORT_data : _GEN_70; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_3 = io_bankSel == 2'h0 ? banks_0_io_readData_3_MPORT_data : _GEN_100; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_4 = io_bankSel == 2'h0 ? banks_0_io_readData_4_MPORT_data : _GEN_130; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_5 = io_bankSel == 2'h0 ? banks_0_io_readData_5_MPORT_data : _GEN_160; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_6 = io_bankSel == 2'h0 ? banks_0_io_readData_6_MPORT_data : _GEN_190; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_7 = io_bankSel == 2'h0 ? banks_0_io_readData_7_MPORT_data : _GEN_220; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
-  assign io_readData_8 = io_bankSel == 2'h0 ? banks_0_io_readData_8_MPORT_data : _GEN_250; // @[GlobalBufferAccessParallel.scala 18:32 19:24]
+  assign banks_3_MPORT_3_data = io_writeData;
+  assign banks_3_MPORT_3_addr = io_writeAddr;
+  assign banks_3_MPORT_3_mask = 1'h1;
+  assign banks_3_MPORT_3_en = io_writeEnable & _GEN_317;
+  assign io_readData_0 = io_bankSel == 2'h0 ? banks_0_io_readData_0_MPORT_data : _GEN_10; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_1 = io_bankSel == 2'h0 ? banks_0_io_readData_1_MPORT_data : _GEN_40; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_2 = io_bankSel == 2'h0 ? banks_0_io_readData_2_MPORT_data : _GEN_70; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_3 = io_bankSel == 2'h0 ? banks_0_io_readData_3_MPORT_data : _GEN_100; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_4 = io_bankSel == 2'h0 ? banks_0_io_readData_4_MPORT_data : _GEN_130; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_5 = io_bankSel == 2'h0 ? banks_0_io_readData_5_MPORT_data : _GEN_160; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_6 = io_bankSel == 2'h0 ? banks_0_io_readData_6_MPORT_data : _GEN_190; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_7 = io_bankSel == 2'h0 ? banks_0_io_readData_7_MPORT_data : _GEN_220; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  assign io_readData_8 = io_bankSel == 2'h0 ? banks_0_io_readData_8_MPORT_data : _GEN_250; // @[GlobalBufferAccessParallel.scala 23:32 24:24]
+  always @(posedge clock) begin
+    if (banks_0_MPORT_en & banks_0_MPORT_mask) begin
+      banks_0[banks_0_MPORT_addr] <= banks_0_MPORT_data; // @[GlobalBufferAccessParallel.scala 18:32]
+    end
+    if (banks_1_MPORT_1_en & banks_1_MPORT_1_mask) begin
+      banks_1[banks_1_MPORT_1_addr] <= banks_1_MPORT_1_data; // @[GlobalBufferAccessParallel.scala 18:32]
+    end
+    if (banks_2_MPORT_2_en & banks_2_MPORT_2_mask) begin
+      banks_2[banks_2_MPORT_2_addr] <= banks_2_MPORT_2_data; // @[GlobalBufferAccessParallel.scala 18:32]
+    end
+    if (banks_3_MPORT_3_en & banks_3_MPORT_3_mask) begin
+      banks_3[banks_3_MPORT_3_addr] <= banks_3_MPORT_3_data; // @[GlobalBufferAccessParallel.scala 18:32]
+    end
+  end
 // Register and memory initialization
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
