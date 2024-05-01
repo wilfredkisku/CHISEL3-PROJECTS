@@ -1,0 +1,3 @@
+class FP16Multiply {
+
+}
