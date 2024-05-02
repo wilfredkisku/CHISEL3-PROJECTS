@@ -41,7 +41,7 @@ class FP16Add extends Module {
   val infFlagA = expA === "b11111".U && sigA === 0.U
   val infFlagB = expB === "b11111".U && sigB === 0.U
 
-  val shift = UInt(11.W)
+  val norm = UInt(11.W)
 
   when(zeroFlagA && zeroFlagB) {
     // HANDLE BOTH ZEROS
@@ -68,7 +68,8 @@ class FP16Add extends Module {
     // CHECK FOR SUBNORMAL NUMBERS
       when(expA > expB){
         // LOGIC WHEN EXPA > EXPB
-        //shift := (Cat(1.U, sigB) >> (expA - expB))(10,1)
+        // norm := (Cat(1.U, sigB) >> (expA - expB))
+        io.result := 0.U
       }.elsewhen(expA === expB){
           //
           when(sigA > sigB){
@@ -76,11 +77,13 @@ class FP16Add extends Module {
           }
           .elsewhen (sigB > sigA){
             io.result := Mux(signB === 0.U, Mux(signA === 0.U, Cat(0.U,expB,sigB + sigA), Cat(0.U, expB, sigB - sigA)), Mux(signA === 0.U, Cat(1.U,expB,sigB - sigA), Cat(1.U, expB, sigB + sigA)))
-          }.otherwise{
+          }
+            .otherwise{
            io.result := 0.U
           }
       }.otherwise{
         // LOGIC WHEN EXPB > EXPA
+        io.result := 0.U
       }
     }
 }
