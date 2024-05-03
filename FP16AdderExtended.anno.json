@@ -1,0 +1,18 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FP16AdderExtended|FP16AdderExtended>io_result",
+    "sources":[
+      "~FP16AdderExtended|FP16AdderExtended>io_b",
+      "~FP16AdderExtended|FP16AdderExtended>io_a"
+    ]
+  }
+]
