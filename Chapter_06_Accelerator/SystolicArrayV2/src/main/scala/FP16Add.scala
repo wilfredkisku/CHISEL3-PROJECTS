@@ -68,7 +68,7 @@ class FP16Add extends Module {
     // CHECK FOR SUBNORMAL NUMBERS
       when(expA > expB){
         // LOGIC WHEN EXPA > EXPB
-        norm := ((Cat(1.U, sigB)) >> (expA - expB))(10,1)
+        norm := ((Cat(1.U, sigB)) >> (expA - expB))(9,0)
         io.result := Mux(signA === 0.U, Mux(signB === 0.U, Cat(0.U,expA,sigA + norm), Cat(0.U, expA, sigA - norm)), Mux(signB === 0.U, Cat(1.U,expA,sigA - norm), Cat(1.U, expA, sigA + norm)))
       }.elsewhen(expA === expB){
           //
@@ -83,7 +83,7 @@ class FP16Add extends Module {
           }
       }.otherwise{
         // LOGIC WHEN EXPB > EXPA
-        norm := ((Cat(1.U, sigA)) >> (expB - expA))(10,1)
+        norm := ((Cat(1.U, sigA)) >> (expB - expA))(9,0)
         io.result := Mux(signB === 0.U, Mux(signA === 0.U, Cat(0.U,expB,sigB + norm), Cat(0.U, expB, sigB - norm)), Mux(signA === 0.U, Cat(1.U,expB,sigB - norm), Cat(1.U, expB, sigB + norm)))
       }
     }
