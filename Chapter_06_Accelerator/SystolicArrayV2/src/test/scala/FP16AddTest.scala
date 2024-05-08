@@ -91,8 +91,8 @@ class FP16AddTest extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       c.io.result.expect(expectedResult5)
 
       // Example: Adding -0.0 with -0.0077
-      // -0.0077 in 16-bit float (sign=1, exponent=15 (0b00000), significand=0) -> 0b1001111111100010
-      // -0.0 in 16-bit float (sign=0, exponent=16 (0b00000), significand=0) -> 0b1000000000000000
+      // -inf in 16-bit float (sign=1, exponent=16 (0b11111), significand=0) -> b1111110000000000
+      // +inf in 16-bit float (sign=0, exponent=16 (0b11111), significand=0) -> b0111110000000000
       val inputA6 = "b1111110000000000".U
       val inputB6 = "b0111110000000000".U
       val expectedResult6 = "b0111111111111111".U
