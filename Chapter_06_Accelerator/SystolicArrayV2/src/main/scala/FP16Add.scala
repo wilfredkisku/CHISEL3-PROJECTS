@@ -101,15 +101,22 @@ class FP16Add extends Module {
           // step-2 operate as numA gt numB
           //diff := expA - expB
           // step-3 numbers can become NaN, Zero, +Inf, -Inf
-          diff := sigB >> (expA-expB)
-          io.result := Mux(signA === 0.U, Mux(signB === 0.U, Cat(1.U, )))
-          
 
+              when(signA === 0.U){
+                    io.result := Mux(signB === 0.U, Cat(0.U, expA, Cat(1.U, sigA) + Cat(0.U, sigB >> (expA-expB))), Cat(0.U, expA, Cat(1.U, sigA) - Cat(1.U, sigB >> (expA-expB))))
+              }.otherwise{
+                io.result := Mux(signB === 0.U, Cat(1.U, expA, Cat(1.U, sigA) - Cat(0.U, sigB >> (expA-expB))), Cat(1.U, expA, Cat(1.U, sigA) + Cat(1.U, sigB >> (expA-expB))))
+              }
 
         }.otherwise{
-          io.result := 0.U
+
+          when(signB === 0.U){
+            io.result := Mux(signA === 0.U, Cat(0.U, expB, Cat(1.U, sigB) + Cat(0.U, sigA >> (expB-expA))), Cat(0.U, expB, Cat(1.U, sigB) - Cat(1.U, sigA >> (expB-expA))))
+          }.otherwise{
+            io.result := Mux(signA === 0.U, Cat(1.U, expB, Cat(1.U, sigB) - Cat(0.U, sigA >> (expB-expA))), Cat(1.U, expB, Cat(1.U, sigB) + Cat(1.U, sigA >> (expB-expA))))
           }
 
+        }
     }
       .elsewhen(subNormA && subNormB){
         io.result := 0.U
