@@ -47,9 +47,10 @@ class FP16Add extends Module {
   val subNormA = expA === 0.U && sigA =/= 0.U
   val subNormB = expB === 0.U && sigB =/= 0.U
 
-  //val norm = Wire(UInt(10.W))
+  val diff = Wire(UInt(5.W))
   val overflow = Wire(UInt(12.W))
   overflow := 0.U
+  diff := 0.U
   //norm := 0.U
   when(zeroFlagA && zeroFlagB) {
     // HANDLE BOTH ZEROS
@@ -95,11 +96,19 @@ class FP16Add extends Module {
             io.result := Mux((Cat(1.U, sigA) +& Cat(1.U, sigB))(11) === 1.U, Cat(signA, expA + 1.U, (Cat(1.U, sigA) +& Cat(1.U, sigB))(10, 1)), Cat(signA, expA, (Cat(1.U, sigA) +& Cat(1.U, sigB))(9,0)))
           }
         }.elsewhen(expA > expB) {
-            io.result := 0.U
-          }.otherwise{
+          //logic for exponentA is gt than exponentB
+          // step-1 normalize expB -> right shift (diff := expA - expB)
+          // step-2 operate as numA gt numB
+          //diff := expA - expB
+          // step-3 numbers can become NaN, Zero, +Inf, -Inf
+          diff := sigB >> (expA-expB)
+          io.result := Mux(signA === 0.U, Mux(signB === 0.U, Cat(1.U, )))
+          
+
+
+        }.otherwise{
           io.result := 0.U
           }
-
 
     }
       .elsewhen(subNormA && subNormB){
