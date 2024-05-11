@@ -119,7 +119,25 @@ class FP16Add extends Module {
         }
     }
       .elsewhen(subNormA && subNormB){
-        io.result := 0.U
+
+        when(sigA < sigB){
+          when(signB === 1.U){
+            io.result := Mux(signA === 1.U, Cat(1.U, expB, Cat(0.U, sigB) + Cat(0.U, sigA)), Cat(1.U, expB, Cat(0.U, sigB) - Cat(0.U, sigA)))
+          }
+            .otherwise{
+              io.result := Mux(signA === 1.U, Cat(0.U, expB, Cat(0.U, sigB) - Cat(0.U, sigA)), Cat(0.U, expB, Cat(0.U, sigB) + Cat(0.U, sigA)))
+            }
+        }.otherwise{
+
+          when(signA === 1.U){
+            io.result := Mux(signB === 1.U, Cat(1.U, expA, Cat(0.U, sigA) + Cat(0.U, sigB)), Cat(1.U, expA, Cat(0.U, sigA) - Cat(0.U, sigB)))
+          }
+            .otherwise{
+              io.result := Mux(signB === 1.U, Cat(0.U, expA, Cat(0.U, sigA) - Cat(0.U, sigB)), Cat(0.U, expA, Cat(0.U, sigA) + Cat(0.U, sigB)))
+            }
+
+        }
+
       }.otherwise{
         io.result := 0.U
       }
