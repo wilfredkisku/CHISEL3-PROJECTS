@@ -1,0 +1,36 @@
+[
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~FIFO8BIT_TOP|FIFO8Bit",
+    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo1:FIFO8Bit",
+    "index":0.0
+  },
+  {
+    "class":"firrtl.transforms.DedupedResult",
+    "original":"~FIFO8BIT_TOP|FIFO8Bit_1",
+    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo2:FIFO8Bit",
+    "index":0.5
+  },
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"generated"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FIFO8BIT_TOP|FIFO8BIT_TOP>io_data_out_1",
+    "sources":[
+      "~FIFO8BIT_TOP|FIFO8BIT_TOP>io_rd_en"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FIFO8BIT_TOP|FIFO8BIT_TOP>io_data_out_2",
+    "sources":[
+      "~FIFO8BIT_TOP|FIFO8BIT_TOP>io_rd_en"
+    ]
+  }
+]
