@@ -15,8 +15,8 @@ CHISEL3 Projects
 # Chapter 5
 ## DSP Blocks
 
-# Chapter 4
+# Chapter 6
 ## Accelerators
 
-# Chapter 4
+# Chapter 7
 ## RISC V Deisgn
