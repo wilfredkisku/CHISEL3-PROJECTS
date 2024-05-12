@@ -11,3 +11,12 @@ CHISEL3 Projects
 
 # Chapter 4
 ## Memory Blocks used in an SoC
+
+# Chapter 5
+## DSP Blocks
+
+# Chapter 4
+## Accelerators
+
+# Chapter 4
+## RISC V Deisgn
