@@ -9,6 +9,13 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~SPI_MASTER|SPI_MASTER>io_sclk",
+    "sources":[
+      "~SPI_MASTER|SPI_MASTER>clock"
+    ]
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
     "sink":"~SPI_MASTER|SPI_MASTER>io_cs",
     "sources":[
       "~SPI_MASTER|SPI_MASTER>io_start"

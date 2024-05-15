@@ -1,0 +1,18 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"generated_ARITH"
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~SIGNED_ADD|SIGNED_ADD>io_output",
+    "sources":[
+      "~SIGNED_ADD|SIGNED_ADD>io_inputA",
+      "~SIGNED_ADD|SIGNED_ADD>io_inputB"
+    ]
+  }
+]

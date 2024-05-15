@@ -20,7 +20,8 @@ class SPI_MASTER extends Module {
 
   io.cs := true.B
   io.mosi := dataReg(7)
-  io.sclk := sclkReg
+  //io.sclk := sclkReg
+  io.sclk := clock.asBool()(false.B)
 
   switch(state) {
     is(sIdle) {
@@ -45,7 +46,6 @@ class SPI_MASTER extends Module {
     }
   }
 }
-
 
 object SPI_MASTER_TOP extends App {
   (new chisel3.stage.ChiselStage).emitVerilog(new SPI_MASTER(), Array("--target-dir", "generated_SPI"))

@@ -18,52 +18,52 @@ module SPI_MASTER(
   reg [2:0] bitCounter; // @[SPI_MASTER.scala 17:27]
   reg [7:0] dataReg; // @[SPI_MASTER.scala 18:20]
   reg  sclkReg; // @[SPI_MASTER.scala 19:24]
-  wire  _GEN_1 = io_start | state; // @[SPI_MASTER.scala 27:22 29:15 16:22]
-  wire  _GEN_2 = io_start ? 1'h0 : 1'h1; // @[SPI_MASTER.scala 27:22 30:15 21:9]
+  wire  _GEN_1 = io_start | state; // @[SPI_MASTER.scala 28:22 30:15 16:22]
+  wire  _GEN_2 = io_start ? 1'h0 : 1'h1; // @[SPI_MASTER.scala 28:22 31:15 21:9]
   wire [7:0] _dataReg_T_1 = {dataReg[6:0],io_miso}; // @[Cat.scala 33:92]
-  wire [2:0] _bitCounter_T_1 = bitCounter + 3'h1; // @[SPI_MASTER.scala 42:36]
-  wire [2:0] _GEN_5 = sclkReg ? _bitCounter_T_1 : bitCounter; // @[SPI_MASTER.scala 40:23 42:22 17:27]
+  wire [2:0] _bitCounter_T_1 = bitCounter + 3'h1; // @[SPI_MASTER.scala 43:36]
+  wire [2:0] _GEN_5 = sclkReg ? _bitCounter_T_1 : bitCounter; // @[SPI_MASTER.scala 41:23 43:22 17:27]
   assign io_mosi = dataReg[7]; // @[SPI_MASTER.scala 22:21]
-  assign io_sclk = sclkReg; // @[SPI_MASTER.scala 23:11]
-  assign io_cs = ~state ? _GEN_2 : 1'h1; // @[SPI_MASTER.scala 25:17]
+  assign io_sclk = clock; // @[SPI_MASTER.scala 24:26]
+  assign io_cs = ~state ? _GEN_2 : 1'h1; // @[SPI_MASTER.scala 26:17]
   always @(posedge clock) begin
     if (reset) begin // @[SPI_MASTER.scala 16:22]
       state <= 1'h0; // @[SPI_MASTER.scala 16:22]
-    end else if (~state) begin // @[SPI_MASTER.scala 25:17]
+    end else if (~state) begin // @[SPI_MASTER.scala 26:17]
       state <= _GEN_1;
-    end else if (state) begin // @[SPI_MASTER.scala 25:17]
-      if (bitCounter == 3'h7) begin // @[SPI_MASTER.scala 35:32]
-        state <= 1'h0; // @[SPI_MASTER.scala 36:15]
+    end else if (state) begin // @[SPI_MASTER.scala 26:17]
+      if (bitCounter == 3'h7) begin // @[SPI_MASTER.scala 36:32]
+        state <= 1'h0; // @[SPI_MASTER.scala 37:15]
       end
     end
     if (reset) begin // @[SPI_MASTER.scala 17:27]
       bitCounter <= 3'h0; // @[SPI_MASTER.scala 17:27]
-    end else if (~state) begin // @[SPI_MASTER.scala 25:17]
-      if (io_start) begin // @[SPI_MASTER.scala 27:22]
-        bitCounter <= 3'h0; // @[SPI_MASTER.scala 31:20]
+    end else if (~state) begin // @[SPI_MASTER.scala 26:17]
+      if (io_start) begin // @[SPI_MASTER.scala 28:22]
+        bitCounter <= 3'h0; // @[SPI_MASTER.scala 32:20]
       end
-    end else if (state) begin // @[SPI_MASTER.scala 25:17]
-      if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 35:32]
+    end else if (state) begin // @[SPI_MASTER.scala 26:17]
+      if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 36:32]
         bitCounter <= _GEN_5;
       end
     end
-    if (~state) begin // @[SPI_MASTER.scala 25:17]
-      if (io_start) begin // @[SPI_MASTER.scala 27:22]
-        dataReg <= io_masterData; // @[SPI_MASTER.scala 28:17]
+    if (~state) begin // @[SPI_MASTER.scala 26:17]
+      if (io_start) begin // @[SPI_MASTER.scala 28:22]
+        dataReg <= io_masterData; // @[SPI_MASTER.scala 29:17]
       end
-    end else if (state) begin // @[SPI_MASTER.scala 25:17]
-      if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 35:32]
-        if (sclkReg) begin // @[SPI_MASTER.scala 40:23]
-          dataReg <= _dataReg_T_1; // @[SPI_MASTER.scala 41:19]
+    end else if (state) begin // @[SPI_MASTER.scala 26:17]
+      if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 36:32]
+        if (sclkReg) begin // @[SPI_MASTER.scala 41:23]
+          dataReg <= _dataReg_T_1; // @[SPI_MASTER.scala 42:19]
         end
       end
     end
     if (reset) begin // @[SPI_MASTER.scala 19:24]
       sclkReg <= 1'h0; // @[SPI_MASTER.scala 19:24]
-    end else if (!(~state)) begin // @[SPI_MASTER.scala 25:17]
-      if (state) begin // @[SPI_MASTER.scala 25:17]
-        if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 35:32]
-          sclkReg <= ~sclkReg; // @[SPI_MASTER.scala 39:17]
+    end else if (!(~state)) begin // @[SPI_MASTER.scala 26:17]
+      if (state) begin // @[SPI_MASTER.scala 26:17]
+        if (!(bitCounter == 3'h7)) begin // @[SPI_MASTER.scala 36:32]
+          sclkReg <= ~sclkReg; // @[SPI_MASTER.scala 40:17]
         end
       end
     end
