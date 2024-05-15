@@ -1,5 +1,5 @@
 circuit FIFO8BIT_TOP :
-  module FIFO8Bit :
+  module FIFO8BIT :
     input clock : Clock
     input reset : Reset
     output io : { flip wr_en : UInt<1>, flip rd_en : UInt<1>, flip data_in : UInt<8>, data_out : UInt<8>, full : UInt<1>, empty : UInt<1>, valid : UInt<1>}
@@ -45,7 +45,7 @@ circuit FIFO8BIT_TOP :
       count <= _count_T_3 @[FIFO8BIT.scala 34:11]
 
 
-  module FIFO8Bit_1 :
+  module FIFO8BIT_1 :
     input clock : Clock
     input reset : Reset
     output io : { flip wr_en : UInt<1>, flip rd_en : UInt<1>, flip data_in : UInt<8>, data_out : UInt<8>, full : UInt<1>, empty : UInt<1>, valid : UInt<1>}
@@ -96,7 +96,7 @@ circuit FIFO8BIT_TOP :
     input reset : UInt<1>
     output io : { flip wr_en : UInt<2>, flip rd_en : UInt<2>, flip data_in_1 : UInt<8>, flip data_in_2 : UInt<8>, data_out_1 : UInt<8>, data_out_2 : UInt<8>, full : UInt<1>[2], empty : UInt<1>[2]}
 
-    inst fifo1 of FIFO8Bit @[FIFO8BIT_TOP.scala 18:21]
+    inst fifo1 of FIFO8BIT @[FIFO8BIT_TOP.scala 18:21]
     fifo1.clock <= clock
     fifo1.reset <= reset
     node _fifo1_io_wr_en_T = bits(io.wr_en, 0, 0) @[FIFO8BIT_TOP.scala 19:29]
@@ -107,7 +107,7 @@ circuit FIFO8BIT_TOP :
     io.data_out_1 <= fifo1.io.data_out @[FIFO8BIT_TOP.scala 22:17]
     io.full[0] <= fifo1.io.full @[FIFO8BIT_TOP.scala 23:14]
     io.empty[0] <= fifo1.io.empty @[FIFO8BIT_TOP.scala 24:15]
-    inst fifo2 of FIFO8Bit_1 @[FIFO8BIT_TOP.scala 27:21]
+    inst fifo2 of FIFO8BIT_1 @[FIFO8BIT_TOP.scala 27:21]
     fifo2.clock <= clock
     fifo2.reset <= reset
     node _fifo2_io_wr_en_T = bits(io.wr_en, 1, 1) @[FIFO8BIT_TOP.scala 28:29]

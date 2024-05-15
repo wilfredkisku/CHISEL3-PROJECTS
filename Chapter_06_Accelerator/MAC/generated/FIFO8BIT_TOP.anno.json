@@ -1,14 +1,14 @@
 [
   {
     "class":"firrtl.transforms.DedupedResult",
-    "original":"~FIFO8BIT_TOP|FIFO8Bit",
-    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo1:FIFO8Bit",
+    "original":"~FIFO8BIT_TOP|FIFO8BIT",
+    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo1:FIFO8BIT",
     "index":0.0
   },
   {
     "class":"firrtl.transforms.DedupedResult",
-    "original":"~FIFO8BIT_TOP|FIFO8Bit_1",
-    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo2:FIFO8Bit",
+    "original":"~FIFO8BIT_TOP|FIFO8BIT_1",
+    "duplicate":"~FIFO8BIT_TOP|FIFO8BIT_TOP/fifo2:FIFO8BIT",
     "index":0.5
   },
   {

@@ -1,18 +1,17 @@
 import chisel3._
-import chisel3.util._
 
-class FIFO8BIT extends Module {
+class FIFO16BIT extends Module {
   val io = IO(new Bundle {
     val wr_en = Input(Bool())
     val rd_en = Input(Bool())
-    val data_in = Input(UInt(8.W))
-    val data_out = Output(UInt(8.W))
+    val data_in = Input(UInt(16.W))
+    val data_out = Output(UInt(16.W))
     val full = Output(Bool())
     val empty = Output(Bool())
     val valid = Output(Bool())
   })
 
-  val fifo = Reg(Vec(3, UInt(8.W)))
+  val fifo = Reg(Vec(3, UInt(16.W)))
   val count = RegInit(0.U(2.W))
   val read_ptr = RegInit(0.U(2.W))
   val write_ptr = RegInit(0.U(2.W))
@@ -35,6 +34,6 @@ class FIFO8BIT extends Module {
   }
 }
 
-object FIFO8BIT extends App {
-  (new chisel3.stage.ChiselStage).emitVerilog(new FIFO8BIT())
+object FIFO16BIT_TOP extends App {
+  (new chisel3.stage.ChiselStage).emitVerilog(new FIFO16BIT())
 }

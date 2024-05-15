@@ -6,7 +6,8 @@ module FIFO8BIT(
   input  [7:0] io_data_in,
   output [7:0] io_data_out,
   output       io_full,
-  output       io_empty
+  output       io_empty,
+  output       io_valid
 );
 `ifdef RANDOMIZE_REG_INIT
   reg [31:0] _RAND_0;
@@ -32,6 +33,7 @@ module FIFO8BIT(
   assign io_data_out = io_rd_en & _io_valid_T ? _GEN_10 : 8'h0; // @[FIFO8BIT.scala 23:15 31:31 32:17]
   assign io_full = count == 2'h3; // @[FIFO8BIT.scala 21:21]
   assign io_empty = count == 2'h0; // @[FIFO8BIT.scala 20:22]
+  assign io_valid = ~io_empty; // @[FIFO8BIT.scala 22:15]
   always @(posedge clock) begin
     if (io_wr_en & ~io_full) begin // @[FIFO8BIT.scala 25:30]
       if (2'h0 == write_ptr) begin // @[FIFO8BIT.scala 26:21]
@@ -129,71 +131,4 @@ end // initial
 `FIRRTL_AFTER_INITIAL
 `endif
 `endif // SYNTHESIS
-endmodule
-module FIFO8BIT_TOP(
-  input        clock,
-  input        reset,
-  input  [1:0] io_wr_en,
-  input  [1:0] io_rd_en,
-  input  [7:0] io_data_in_1,
-  input  [7:0] io_data_in_2,
-  output [7:0] io_data_out_1,
-  output [7:0] io_data_out_2,
-  output       io_full_0,
-  output       io_full_1,
-  output       io_empty_0,
-  output       io_empty_1
-);
-  wire  fifo1_clock; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo1_reset; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo1_io_wr_en; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo1_io_rd_en; // @[FIFO8BIT_TOP.scala 18:21]
-  wire [7:0] fifo1_io_data_in; // @[FIFO8BIT_TOP.scala 18:21]
-  wire [7:0] fifo1_io_data_out; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo1_io_full; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo1_io_empty; // @[FIFO8BIT_TOP.scala 18:21]
-  wire  fifo2_clock; // @[FIFO8BIT_TOP.scala 27:21]
-  wire  fifo2_reset; // @[FIFO8BIT_TOP.scala 27:21]
-  wire  fifo2_io_wr_en; // @[FIFO8BIT_TOP.scala 27:21]
-  wire  fifo2_io_rd_en; // @[FIFO8BIT_TOP.scala 27:21]
-  wire [7:0] fifo2_io_data_in; // @[FIFO8BIT_TOP.scala 27:21]
-  wire [7:0] fifo2_io_data_out; // @[FIFO8BIT_TOP.scala 27:21]
-  wire  fifo2_io_full; // @[FIFO8BIT_TOP.scala 27:21]
-  wire  fifo2_io_empty; // @[FIFO8BIT_TOP.scala 27:21]
-  FIFO8BIT fifo1 ( // @[FIFO8BIT_TOP.scala 18:21]
-    .clock(fifo1_clock),
-    .reset(fifo1_reset),
-    .io_wr_en(fifo1_io_wr_en),
-    .io_rd_en(fifo1_io_rd_en),
-    .io_data_in(fifo1_io_data_in),
-    .io_data_out(fifo1_io_data_out),
-    .io_full(fifo1_io_full),
-    .io_empty(fifo1_io_empty)
-  );
-  FIFO8BIT fifo2 ( // @[FIFO8BIT_TOP.scala 27:21]
-    .clock(fifo2_clock),
-    .reset(fifo2_reset),
-    .io_wr_en(fifo2_io_wr_en),
-    .io_rd_en(fifo2_io_rd_en),
-    .io_data_in(fifo2_io_data_in),
-    .io_data_out(fifo2_io_data_out),
-    .io_full(fifo2_io_full),
-    .io_empty(fifo2_io_empty)
-  );
-  assign io_data_out_1 = fifo1_io_data_out; // @[FIFO8BIT_TOP.scala 22:17]
-  assign io_data_out_2 = fifo2_io_data_out; // @[FIFO8BIT_TOP.scala 31:17]
-  assign io_full_0 = fifo1_io_full; // @[FIFO8BIT_TOP.scala 23:14]
-  assign io_full_1 = fifo2_io_full; // @[FIFO8BIT_TOP.scala 32:14]
-  assign io_empty_0 = fifo1_io_empty; // @[FIFO8BIT_TOP.scala 24:15]
-  assign io_empty_1 = fifo2_io_empty; // @[FIFO8BIT_TOP.scala 33:15]
-  assign fifo1_clock = clock;
-  assign fifo1_reset = reset;
-  assign fifo1_io_wr_en = io_wr_en[0]; // @[FIFO8BIT_TOP.scala 19:29]
-  assign fifo1_io_rd_en = io_rd_en[0]; // @[FIFO8BIT_TOP.scala 20:29]
-  assign fifo1_io_data_in = io_data_in_1; // @[FIFO8BIT_TOP.scala 21:20]
-  assign fifo2_clock = clock;
-  assign fifo2_reset = reset;
-  assign fifo2_io_wr_en = io_wr_en[1]; // @[FIFO8BIT_TOP.scala 28:29]
-  assign fifo2_io_rd_en = io_rd_en[1]; // @[FIFO8BIT_TOP.scala 29:29]
-  assign fifo2_io_data_in = io_data_in_2; // @[FIFO8BIT_TOP.scala 30:20]
 endmodule

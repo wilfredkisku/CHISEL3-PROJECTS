@@ -15,7 +15,7 @@ class FIFO8BIT_TOP extends Module {
   })
 
   // Instantiate the first FIFO
-  val fifo1 = Module(new FIFO8Bit())
+  val fifo1 = Module(new FIFO8BIT())
   fifo1.io.wr_en := io.wr_en(0)
   fifo1.io.rd_en := io.rd_en(0)
   fifo1.io.data_in := io.data_in_1
@@ -24,7 +24,7 @@ class FIFO8BIT_TOP extends Module {
   io.empty(0) := fifo1.io.empty
 
   // Instantiate the second FIFO
-  val fifo2 = Module(new FIFO8Bit())
+  val fifo2 = Module(new FIFO8BIT())
   fifo2.io.wr_en := io.wr_en(1)
   fifo2.io.rd_en := io.rd_en(1)
   fifo2.io.data_in := io.data_in_2
