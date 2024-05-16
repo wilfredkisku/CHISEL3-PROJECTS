@@ -72,7 +72,7 @@ class FP16Add extends Module {
         // If signs are different in subtraction, this would need more logic
         io.result := Mux(infFlagA, io.a, io.b)
       }
-    }.elsewhen (((sigA === "b11111".U) && (expA === "b1111111111".U)) || ((sigB === "b11111".U) && (expB === "b1111111111".U))){
+    }.elsewhen (((expA === "b11111".U) && (sigA =/= 0.U)) || ((expB === "b11111".U) && (sigB =/= 0.U))){
       io.result := "b0111111111111111".U // NaN representation (sign does not matter)
     }.otherwise{
     // ACTUAL ADDITION OF FP16 NUMBERS
