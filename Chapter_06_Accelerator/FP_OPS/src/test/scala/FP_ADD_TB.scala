@@ -61,27 +61,38 @@ class FP_ADD_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       c.clock.step(1)
       c.io.output.expect(expectedResult_2)
 
-//      // Example: Adding 0.0 with 0.0
-//      val inputB_3 = "b00000000".U
-//      val inputA_3 = "b11111111".U
-//      // Expected result: 0.0 -> 0b00000000
-//      val expectedResult_3 = "b11111111".U
-//
-//      c.io.inputA.poke(inputA_3)
-//      c.io.inputB.poke(inputB_3)
-//      c.clock.step(1)
-//      c.io.output.expect(expectedResult_3)
-//
-//      // Example: Adding 0.0 with 0.0
-//      val inputB_4 = "b00000000".U
-//      val inputA_4 = "b11111111".U
-//      // Expected result: 0.0 -> 0b00000000
-//      val expectedResult_4 = "b11111111".U
-//
-//      c.io.inputA.poke(inputA_4)
-//      c.io.inputB.poke(inputB_4)
-//      c.clock.step(1)
-//      c.io.output.expect(expectedResult_4)
+      // Example: Adding 0.0 with 0.0
+      val inputB_3 = "b11111011".U
+      val inputA_3 = "b11111011".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_3 = "b11111111".U
+
+      c.io.inputA.poke(inputA_3)
+      c.io.inputB.poke(inputB_3)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_3)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_4 = "b11111011".U
+      val inputA_4 = "b11111001".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_4 = "b11111110".U
+
+      c.io.inputA.poke(inputA_4)
+      c.io.inputB.poke(inputB_4)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_4)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_5 = "b00111001".U
+      val inputA_5 = "b00111001".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_5 = "b00111101".U
+
+      c.io.inputA.poke(inputA_5)
+      c.io.inputB.poke(inputB_5)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_5)
     }
   }
 
