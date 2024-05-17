@@ -75,11 +75,11 @@ val io = IO(new Bundle{
       }.elsewhen(sigB > sigA){
         ovrChk_a_n := Cat(0.U, sigB) +& Cat(0.U, sigA)
         ovrChk_s_n := Cat(0.U, sigB) - Cat(0.U, sigA)
-        io.output := 0.U
+        io.output := Mux(signB === 0.U, Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)), Cat(expB + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)))), Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)), Cat(expB + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)))))
       }.otherwise{
         ovrChk_a_n := Cat(0.U, sigB) +& Cat(0.U, sigA)
-        ovrChk_s_n := Cat(0.U, sigB) - Cat(0.U, sigA)
-        io.output := 0.U
+        //ovrChk_s_n := Cat(0.U, sigB) - Cat(0.U, sigA)
+        io.output := Mux(signB =/= signA, 0.U, Cat(signA, expA + ovrChk_a_n(2), ovrChk_a_n(1,0)))
       }
       //io.output := 0.U
 

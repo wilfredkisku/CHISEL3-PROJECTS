@@ -96,4 +96,30 @@ class FP_ADD_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
     }
   }
 
+  it should "add two 8-bit fp subnormal number" in {
+    test(new FP8_ADD) { c =>
+      // Example: Adding 0.0 with 0.0
+      val inputB_1 = "b00000001".U
+      val inputA_1 = "b10000001".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_1 = "b00000000".U
+
+      c.io.inputA.poke(inputA_1)
+      c.io.inputB.poke(inputB_1)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_1)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_2 = "b10000011".U
+      val inputA_2 = "b10000011".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_2 = "b10000110".U
+
+      c.io.inputA.poke(inputA_2)
+      c.io.inputB.poke(inputB_2)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_2)
+    }
+  }
+
 }
