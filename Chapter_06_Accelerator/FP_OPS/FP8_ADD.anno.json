@@ -11,8 +11,8 @@
     "class":"firrtl.transforms.CombinationalPath",
     "sink":"~FP8_ADD|FP8_ADD>io_output",
     "sources":[
-      "~FP8_ADD|FP8_ADD>io_inputA",
-      "~FP8_ADD|FP8_ADD>io_inputB"
+      "~FP8_ADD|FP8_ADD>io_inputB",
+      "~FP8_ADD|FP8_ADD>io_inputA"
     ]
   }
 ]

@@ -47,6 +47,8 @@ val io = IO(new Bundle{
   when (zeroFlagA && zeroFlagB){
     //check for both numbers to be zero --> result to be zero
     io.output := "b00000000".U
+  }.elsewhen(zeroFlagA || zeroFlagB){
+    io.output := Mux(zeroFlagA, io.inputB, io.inputA)
   }.elsewhen(infFlagA || infFlagB){
     //check for any number to be infinite
     when (infFlagA && infFlagB && (signA =/= signB)){
@@ -80,15 +82,26 @@ val io = IO(new Bundle{
         ovrChk_a := Cat(1.U, sigA) +& (Cat(1.U, sigB) >> (expA - expB)).asUInt
         ovrChk_s := Cat(1.U, sigA) - (Cat(1.U, sigB) >> (expA - expB)).asUInt
         io.output := Mux(signA === 0.U, Cat(signA, expA, Mux(signB === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))), Cat(signA, expA, Mux(signB === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))))
-      }.otherwise{
+      }.elsewhen(expB > expA){
         //difChk := expA - expB
         ovrChk_a := Cat(1.U, sigB) +& (Cat(1.U, sigA) >> (expB - expA)).asUInt
         ovrChk_s := Cat(1.U, sigB) - (Cat(1.U, sigA) >> (expB - expA)).asUInt
-        io.output := Mux(signB === 0.U, Cat(signB, expB, Mux(signA === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))), Cat(signB, expB, Mux(signA === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))))
-      }
+        io.output := Mux(signB === 0.U, Cat(signB, expB, Mux(signA === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))), Cat(signB, expB, Mux(signA === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))))
+      }.otherwise{
+        ovrChk_a := Cat(1.U, sigB) +& (Cat(1.U, sigA) >> (expB - expA)).asUInt
+        ovrChk_s := Cat(1.U, sigB) - (Cat(1.U, sigA) >> (expB - expA)).asUInt
+        //io.output := Mux(signB === 0.U, Cat(signB, expB, Mux(signA === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))), Cat(signB, expB, Mux(signA === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))))
+        when(sigA > sigB){
+          io.output := 0.U
+        }.elsewhen(sigB > sigA){
+          io.output := 0.U
+        }.otherwise{
+          io.output := Mux(signA =/= signB, 0.U, Cat(signA, expA + ovrChk_a(3), (ovrChk_a >> ovrChk_a(3))(1,0)))
+        }
 
+      }
       //io.output := 0.U
-      
+
     }.otherwise{
 
 
