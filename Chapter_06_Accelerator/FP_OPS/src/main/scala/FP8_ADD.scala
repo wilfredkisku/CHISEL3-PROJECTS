@@ -1,4 +1,5 @@
 import chisel3._
+import chisel3.util._
 
 class FP8_ADD extends Module{
 val io = IO(new Bundle{
@@ -35,6 +36,14 @@ val io = IO(new Bundle{
   val subFlagA = expA === "b00000".U && sigA =/= "b00".U
   val subFlagB = expB === "b00000".U && sigB =/= "b00".U
 
+  //check conditions
+  val ovrChk_a = Wire(UInt(4.W))
+  val ovrChk_s = Wire(UInt(4.W))
+  val difChk = Wire(UInt(5.W))
+  ovrChk_a := "b0000".U
+  ovrChk_s := "b0000".U
+  difChk := "b00000".U
+
   when (zeroFlagA && zeroFlagB){
     //check for both numbers to be zero --> result to be zero
     io.output := "b00000000".U
@@ -50,14 +59,43 @@ val io = IO(new Bundle{
   }.otherwise{
   //final condition for addition
     when(subFlagA && subFlagB){
-    //both the numbers are subnormal
+
+
+      //both the numbers are subnormal
       io.output := 0.U
+
+
+
     }.elsewhen(!subFlagA && !subFlagB){
-    //both the numbers are normal
-      io.output := 0.U
+
+      //independent of the future calculations
+      //ovrChk(3) --> if overflow then set else unset
+      //ovrChk(2) --> set as normal number
+      //ovrChk(1,0) --> field for significand of the result
+      //ovrChk := Cat(1.U,sigA) +& Cat(1.U, sigB)
+
+      //both the numbers are normal
+      when(expA > expB){
+        //difChk := expA - expB
+        ovrChk_a := Cat(1.U, sigA) +& (Cat(1.U, sigB) >> (expA - expB)).asUInt
+        ovrChk_s := Cat(1.U, sigA) - (Cat(1.U, sigB) >> (expA - expB)).asUInt
+        io.output := Mux(signA === 0.U, Cat(signA, expA, Mux(signB === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))), Cat(signA, expA, Mux(signB === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))))
+      }.otherwise{
+        //difChk := expA - expB
+        ovrChk_a := Cat(1.U, sigB) +& (Cat(1.U, sigA) >> (expB - expA)).asUInt
+        ovrChk_s := Cat(1.U, sigB) - (Cat(1.U, sigA) >> (expB - expA)).asUInt
+        io.output := Mux(signB === 0.U, Cat(signB, expB, Mux(signA === 0.U, ovrChk_a(1,0), ovrChk_s(1,0))), Cat(signB, expB, Mux(signA === 0.U, ovrChk_s(1,0), ovrChk_a(1,0))))
+      }
+
+      //io.output := 0.U
+      
     }.otherwise{
-    //any one of the numbers can be subnormal
+
+
+      //any one of the numbers can be subnormal
       io.output := 0.U
+
+
     }
     //io.output := 0.U
   }
