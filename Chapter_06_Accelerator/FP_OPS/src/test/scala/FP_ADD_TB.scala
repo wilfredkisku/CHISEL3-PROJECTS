@@ -119,7 +119,65 @@ class FP_ADD_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       c.io.inputB.poke(inputB_2)
       c.clock.step(1)
       c.io.output.expect(expectedResult_2)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_3 = "b10000011".U
+      val inputA_3 = "b10000001".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_3 = "b10000100".U
+
+      c.io.inputA.poke(inputA_3)
+      c.io.inputB.poke(inputB_3)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_3)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_4 = "b10000011".U
+      val inputA_4 = "b00000001".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_4 = "b10000010".U
+
+      c.io.inputA.poke(inputA_4)
+      c.io.inputB.poke(inputB_4)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_4)
     }
   }
 
+  it should "add two 8-bit fp numbers either subnormal or normal" in {
+    test(new FP8_ADD) { c =>
+      // Example: Adding 0.0 with 0.0
+      val inputB_1 = "b00000101".U
+      val inputA_1 = "b10000011".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_1 = "b00000100".U
+
+      c.io.inputA.poke(inputA_1)
+      c.io.inputB.poke(inputB_1)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_1)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_2 = "b00000101".U
+      val inputA_2 = "b10000011".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_2 = "b00000100".U
+
+      c.io.inputA.poke(inputA_2)
+      c.io.inputB.poke(inputB_2)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_2)
+
+      // Example: Adding 0.0 with 0.0
+      val inputB_3 = "b10000101".U
+      val inputA_3 = "b00000011".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult_3 = "b10000100".U
+
+      c.io.inputA.poke(inputA_3)
+      c.io.inputB.poke(inputB_3)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult_3)
+    }
+  }
 }

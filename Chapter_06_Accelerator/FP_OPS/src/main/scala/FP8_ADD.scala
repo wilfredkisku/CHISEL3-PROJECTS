@@ -71,11 +71,11 @@ val io = IO(new Bundle{
       when(sigA > sigB){
         ovrChk_a_n := Cat(0.U, sigA) +& Cat(0.U, sigB)
         ovrChk_s_n := Cat(0.U, sigA) - Cat(0.U, sigB)
-        io.output := Mux(signA === 0.U, Cat(signA, Mux(signB === 0.U, Cat(expA + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)), Cat(expA + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)))), Cat(signA, Mux(signB === 0.U, Cat(expA + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)), Cat(expA + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)))))
+        io.output := Mux(signA === 0.U, Cat(signA, Mux(signB === 0.U, Cat(expA + ovrChk_a_n(2), ovrChk_a_n(1,0)), Cat(expA + ovrChk_s_n(2), ovrChk_s_n(1,0)))), Cat(signA, Mux(signB === 0.U, Cat(expA + ovrChk_s_n(2), ovrChk_s_n(1,0)), Cat(expA + ovrChk_a_n(2), ovrChk_a_n(1,0)))))
       }.elsewhen(sigB > sigA){
         ovrChk_a_n := Cat(0.U, sigB) +& Cat(0.U, sigA)
         ovrChk_s_n := Cat(0.U, sigB) - Cat(0.U, sigA)
-        io.output := Mux(signB === 0.U, Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)), Cat(expB + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)))), Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_s_n(2), (ovrChk_s_n >> ovrChk_s_n(2))(1,0)), Cat(expB + ovrChk_a_n(2), (ovrChk_a_n >> ovrChk_a_n(2))(1,0)))))
+        io.output := Mux(signB === 0.U, Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_a_n(2), ovrChk_a_n(1,0)), Cat(expB + ovrChk_s_n(2), ovrChk_s_n(1,0)))), Cat(signB, Mux(signA === 0.U, Cat(expB + ovrChk_s_n(2), ovrChk_s_n(1,0)), Cat(expB + ovrChk_a_n(2), ovrChk_a_n(1,0)))))
       }.otherwise{
         ovrChk_a_n := Cat(0.U, sigB) +& Cat(0.U, sigA)
         //ovrChk_s_n := Cat(0.U, sigB) - Cat(0.U, sigA)
@@ -122,9 +122,17 @@ val io = IO(new Bundle{
 
     }.otherwise{
 
-
       //any one of the numbers can be subnormal
-      io.output := 0.U
+      when(subFlagB){
+        ovrChk_a := Cat(1.U, sigA) +& (Cat(0.U, sigB) >> (expA - expB)).asUInt
+        ovrChk_s := Cat(1.U, sigA) - (Cat(0.U, sigB) >> (expA - expB)).asUInt
+        io.output := Mux(signA === 0.U, Cat(signA, Mux(signB === 0.U,Cat(expA + ovrChk_a(3), (ovrChk_a >> ovrChk_a(3))(1,0)),Cat(expA + ovrChk_s(3), (ovrChk_s >> ovrChk_s(3))(1,0)))), Cat(signA, Mux(signB === 0.U,Cat(expA + ovrChk_s(3), (ovrChk_s >> ovrChk_s(3))(1,0)),Cat(expA + ovrChk_a(3), (ovrChk_a >> ovrChk_a(3))(1,0)))))
+      }.otherwise{
+        ovrChk_a := Cat(1.U, sigB) +& (Cat(0.U, sigA) >> (expB - expA)).asUInt
+        ovrChk_s := Cat(1.U, sigB) - (Cat(0.U, sigA) >> (expB - expA)).asUInt
+        io.output := Mux(signB === 0.U, Cat(signB, Mux(signA === 0.U,Cat(expB + ovrChk_a(3), (ovrChk_a >> ovrChk_a(3))(1,0)),Cat(expB + ovrChk_s(3), (ovrChk_s >> ovrChk_s(3))(1,0)))), Cat(signB, Mux(signA === 0.U,Cat(expB + ovrChk_s(3), (ovrChk_s >> ovrChk_s(3))(1,0)),Cat(expB + ovrChk_a(3), (ovrChk_a >> ovrChk_a(3))(1,0)))))
+      }
+      //io.output := 0.U
 
 
     }
