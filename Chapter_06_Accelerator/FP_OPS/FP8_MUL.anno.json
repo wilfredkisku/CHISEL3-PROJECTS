@@ -1,0 +1,18 @@
+[
+  {
+    "class":"firrtl.EmitCircuitAnnotation",
+    "emitter":"firrtl.VerilogEmitter"
+  },
+  {
+    "class":"firrtl.transforms.BlackBoxTargetDirAnno",
+    "targetDir":"."
+  },
+  {
+    "class":"firrtl.transforms.CombinationalPath",
+    "sink":"~FP8_MUL|FP8_MUL>io_output",
+    "sources":[
+      "~FP8_MUL|FP8_MUL>io_inputA",
+      "~FP8_MUL|FP8_MUL>io_inputB"
+    ]
+  }
+]
