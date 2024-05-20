@@ -38,7 +38,9 @@ class FP8_MUL extends Module{
 
     //val ovrChk_8 = Wire(UInt(8.W))
     val ovrChk_6 = Wire(UInt(6.W))
+    val sigMul_6 = Wire(UInt(6.W))
     ovrChk_6 := "b000000".U
+    sigMul_6 := "b000000".U
 
   when (zeroFlagA && zeroFlagB){
     //check for both numbers to be zero --> result to be zero
@@ -55,17 +57,16 @@ class FP8_MUL extends Module{
   }.elsewhen(nanFlagA || nanFlagB){
     io.output := "b01111111".U
   }.otherwise {
-    ovrChk_6 := Cat(!subFlagA, sigA) * Cat(!subFlagB, sigB)
-    when((expA+expB + ovrChk_6(5)).asSInt > ("b11110".U).asSInt){
-      //ovrChk_6 := Cat(0.U, sigA) * Cat(0.U, sigB)
-      //both the numbers are subnormal
-      //io.output := Mux(signA === 0.U, Mux(signB === 0.U, Cat(0.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2)), Cat(1.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2))), Mux(signB === 0.U, Cat(1.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2)), Cat(0.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2))))
+    //evaluate the exponent
+    ovrChk_6 := expA +& expB
+    sigMul_6 := Cat(!subFlagA,sigA) * Cat(!subFlagB,sigB)
+    when(ovrChk_6 > 45.U){
       io.output := Cat(signA ^ signB, "b1111100".U)
-    }.elsewhen((expA+expB+ovrChk_6(5)).asSInt < (00000).S) {
+    }.elsewhen(ovrChk_6 < 15.U){
       io.output := "b00000000".U
-      //io.output := Mux(signA === 0.U, Mux(signB === 0.U, Cat(0.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2)), Cat(1.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2))), Mux(signB === 0.U, Cat(1.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2)), Cat(0.U, expA + expB + "b1111".U , (ovrChk_6 >> ovrChk_6(5))(3,2))))
-      }.otherwise{
-      io.output := "b10101010".U
+    }.otherwise{
+      //Multiplication logic
+      io.output := Cat(signA ^ signB, ovrChk_6(4,0) + 1.U + sigMul_6(5), (sigMul_6 >> sigMul_6(5))(3,2))
     }
   }
 }
