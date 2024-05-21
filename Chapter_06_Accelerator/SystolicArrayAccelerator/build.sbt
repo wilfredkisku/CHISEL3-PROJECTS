@@ -4,7 +4,7 @@ ThisBuild / scalaVersion := "2.12.13"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "SystolicArrayAccelerator"
+    name := "FloatingPoint"
   )
 
 scalacOptions ++= Seq(
