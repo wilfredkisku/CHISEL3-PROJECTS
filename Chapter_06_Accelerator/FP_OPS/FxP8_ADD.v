@@ -1,9 +1,10 @@
 module FxP8_ADD(
   input        clock,
   input        reset,
-  input  [7:0] io_in1,
-  input  [7:0] io_in2,
-  output [7:0] io_out
+  input  [7:0] io_inputA,
+  input  [7:0] io_inputB,
+  output [8:0] io_output
 );
-  assign io_out = $signed(io_in1) + $signed(io_in2); // @[FIXED8_ADD.scala 14:20]
+  wire [7:0] _io_output_T_2 = $signed(io_inputA) + $signed(io_inputB); // @[FIXED8_ADD.scala 14:26]
+  assign io_output = {{1{_io_output_T_2[7]}},_io_output_T_2}; // @[FIXED8_ADD.scala 14:13]
 endmodule

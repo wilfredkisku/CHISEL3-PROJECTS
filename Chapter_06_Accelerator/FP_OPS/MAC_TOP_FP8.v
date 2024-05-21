@@ -1,6 +1,4 @@
 module FP8_MUL(
-  input        clock,
-  input        reset,
   input  [7:0] io_inputA,
   input  [7:0] io_inputB,
   output [7:0] io_output
@@ -56,4 +54,93 @@ module FP8_MUL(
   wire [7:0] _GEN_6 = infFlagA | infFlagB ? _GEN_0 : _GEN_3; // @[FP8_MUL.scala 50:35]
   wire [7:0] _GEN_9 = zeroFlagA | zeroFlagB ? 8'h0 : _GEN_6; // @[FP8_MUL.scala 48:37 49:15]
   assign io_output = zeroFlagA & zeroFlagB ? 8'h0 : _GEN_9; // @[FP8_MUL.scala 45:32 47:15]
+endmodule
+module MAC_TOP_FP8(
+  input        clock,
+  input        reset,
+  input  [7:0] io_wgt,
+  input  [7:0] io_ifm,
+  output [7:0] io_result,
+  output       io_valid
+);
+`ifdef RANDOMIZE_REG_INIT
+  reg [31:0] _RAND_0;
+  reg [31:0] _RAND_1;
+`endif // RANDOMIZE_REG_INIT
+  wire [7:0] multiplier_io_inputA; // @[MAC_TOP.scala 13:26]
+  wire [7:0] multiplier_io_inputB; // @[MAC_TOP.scala 13:26]
+  wire [7:0] multiplier_io_output; // @[MAC_TOP.scala 13:26]
+  reg [1:0] counter; // @[MAC_TOP.scala 28:24]
+  wire  _counter_T = counter == 2'h3; // @[MAC_TOP.scala 29:26]
+  wire [1:0] _counter_T_2 = counter + 2'h1; // @[MAC_TOP.scala 29:48]
+  reg [7:0] regOutput; // @[MAC_TOP.scala 33:26]
+  wire [15:0] _regOutput_T = regOutput * multiplier_io_output; // @[MAC_TOP.scala 36:28]
+  wire [15:0] _GEN_0 = _counter_T ? _regOutput_T : {{8'd0}, regOutput}; // @[MAC_TOP.scala 35:24 36:15 33:26]
+  wire [15:0] _GEN_2 = reset ? 16'h0 : _GEN_0; // @[MAC_TOP.scala 33:{26,26}]
+  FP8_MUL multiplier ( // @[MAC_TOP.scala 13:26]
+    .io_inputA(multiplier_io_inputA),
+    .io_inputB(multiplier_io_inputB),
+    .io_output(multiplier_io_output)
+  );
+  assign io_result = _counter_T ? multiplier_io_output : regOutput; // @[MAC_TOP.scala 22:13 35:24 38:15]
+  assign io_valid = counter == 2'h3; // @[MAC_TOP.scala 30:23]
+  assign multiplier_io_inputA = io_wgt; // @[MAC_TOP.scala 19:24]
+  assign multiplier_io_inputB = io_ifm; // @[MAC_TOP.scala 20:24]
+  always @(posedge clock) begin
+    if (reset) begin // @[MAC_TOP.scala 28:24]
+      counter <= 2'h0; // @[MAC_TOP.scala 28:24]
+    end else if (counter == 2'h3) begin // @[MAC_TOP.scala 29:17]
+      counter <= 2'h0;
+    end else begin
+      counter <= _counter_T_2;
+    end
+    regOutput <= _GEN_2[7:0]; // @[MAC_TOP.scala 33:{26,26}]
+  end
+// Register and memory initialization
+`ifdef RANDOMIZE_GARBAGE_ASSIGN
+`define RANDOMIZE
+`endif
+`ifdef RANDOMIZE_INVALID_ASSIGN
+`define RANDOMIZE
+`endif
+`ifdef RANDOMIZE_REG_INIT
+`define RANDOMIZE
+`endif
+`ifdef RANDOMIZE_MEM_INIT
+`define RANDOMIZE
+`endif
+`ifndef RANDOM
+`define RANDOM $random
+`endif
+`ifdef RANDOMIZE_MEM_INIT
+  integer initvar;
+`endif
+`ifndef SYNTHESIS
+`ifdef FIRRTL_BEFORE_INITIAL
+`FIRRTL_BEFORE_INITIAL
+`endif
+initial begin
+  `ifdef RANDOMIZE
+    `ifdef INIT_RANDOM
+      `INIT_RANDOM
+    `endif
+    `ifndef VERILATOR
+      `ifdef RANDOMIZE_DELAY
+        #`RANDOMIZE_DELAY begin end
+      `else
+        #0.002 begin end
+      `endif
+    `endif
+`ifdef RANDOMIZE_REG_INIT
+  _RAND_0 = {1{`RANDOM}};
+  counter = _RAND_0[1:0];
+  _RAND_1 = {1{`RANDOM}};
+  regOutput = _RAND_1[7:0];
+`endif // RANDOMIZE_REG_INIT
+  `endif // RANDOMIZE
+end // initial
+`ifdef FIRRTL_AFTER_INITIAL
+`FIRRTL_AFTER_INITIAL
+`endif
+`endif // SYNTHESIS
 endmodule

@@ -7,7 +7,7 @@ class FxP8_ADD extends Module {
   val io = IO(new Bundle {
     val inputA = Input(FixedPoint(8.W, 6.BP))  // 16 bits wide, 8 bits after the binary point
     val inputB = Input(FixedPoint(8.W, 6.BP))  // Same for the second input
-    val output = Output(FixedPoint(8.W, 6.BP)) // 17 bits wide to accommodate potential overflow
+    val output = Output(FixedPoint(9.W, 6.BP)) // 17 bits wide to accommodate potential overflow
   })
 
   // Perform the addition

@@ -66,7 +66,7 @@ class FP8_MUL extends Module{
       io.output := "b00000000".U
     }.otherwise{
       //Multiplication logic
-      io.output := Cat(signA ^ signB, ovrChk_6(4,0) + 1.U + sigMul_6(5), (sigMul_6 >> sigMul_6(5))(3,2))
+      io.output := Cat(signA ^ signB, ((ovrChk_6 - 15.U)(4,0) + sigMul_6(5)), (sigMul_6 >> sigMul_6(5))(3,2))
     }
   }
 }

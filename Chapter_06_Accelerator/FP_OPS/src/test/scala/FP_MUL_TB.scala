@@ -42,7 +42,7 @@ class FP_MUL_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       val inputA = "b01010010".U
       val inputB = "b10010111".U
       // Expected result: 0.0 -> 0b00000000
-      val expectedResult = "b10101000".U
+      val expectedResult = "b10101101".U
 
       c.io.inputA.poke(inputA)
       c.io.inputB.poke(inputB)
@@ -50,20 +50,21 @@ class FP_MUL_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       c.io.output.expect(expectedResult)
     }
   }
-//  it should "correctly result as the number if any 8-bit floating-point number is zero" in {
-//    test(new FP8_ADD) { c =>
-//      // Example: Adding 0.0 with 0.0
-//      val inputB = "b00000000".U
-//      val inputA = "b11111111".U
-//      // Expected result: 0.0 -> 0b00000000
-//      val expectedResult = "b11111111".U
-//
-//      c.io.inputA.poke(inputA)
-//      c.io.inputB.poke(inputB)
-//      c.clock.step(1)
-//      c.io.output.expect(expectedResult)
-//    }
-//  }
+
+  it should "correctly multiply 8-bit floating-point number another" in {
+    test(new FP8_MUL) { c =>
+      // Example: Adding 0.0 with 0.0
+      val inputA = "b10101110".U
+      val inputB = "b10011101".U
+      // Expected result: 0.0 -> 0b00000000
+      val expectedResult = "b00001111".U
+
+      c.io.inputA.poke(inputA)
+      c.io.inputB.poke(inputB)
+      c.clock.step(1)
+      c.io.output.expect(expectedResult)
+    }
+  }
 //
 //  it should "add two 8-bit fp normal number" in {
 //    test(new FP8_ADD) { c =>

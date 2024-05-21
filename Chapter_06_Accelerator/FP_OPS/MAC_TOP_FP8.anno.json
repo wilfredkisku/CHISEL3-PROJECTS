@@ -9,10 +9,10 @@
   },
   {
     "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~FxP8_ADD|FxP8_ADD>io_output",
+    "sink":"~MAC_TOP_FP8|MAC_TOP_FP8>io_result",
     "sources":[
-      "~FxP8_ADD|FxP8_ADD>io_inputA",
-      "~FxP8_ADD|FxP8_ADD>io_inputB"
+      "~MAC_TOP_FP8|MAC_TOP_FP8>io_wgt",
+      "~MAC_TOP_FP8|MAC_TOP_FP8>io_ifm"
     ]
   }
 ]
