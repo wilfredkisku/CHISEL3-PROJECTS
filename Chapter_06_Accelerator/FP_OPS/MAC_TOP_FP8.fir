@@ -599,31 +599,25 @@ circuit MAC_TOP_FP8 :
     inst adder of FP8_ADD @[MAC_TOP.scala 14:21]
     adder.clock <= clock
     adder.reset <= reset
-    adder.io.inputA <= io.wgt @[MAC_TOP.scala 16:19]
-    adder.io.inputB <= io.ifm @[MAC_TOP.scala 17:19]
-    multiplier.io.inputA <= io.wgt @[MAC_TOP.scala 19:24]
-    multiplier.io.inputB <= io.ifm @[MAC_TOP.scala 20:24]
-    io.result <= multiplier.io.output @[MAC_TOP.scala 22:13]
-    reg inputABuff : UInt<8>, clock with :
-      reset => (reset, UInt<8>("h0")) @[MAC_TOP.scala 24:27]
-    reg inputBBuff : UInt<8>, clock with :
-      reset => (reset, UInt<8>("h0")) @[MAC_TOP.scala 25:27]
-    reg counter : UInt<2>, clock with :
-      reset => (reset, UInt<2>("h0")) @[MAC_TOP.scala 28:24]
-    node _counter_T = eq(counter, UInt<2>("h3")) @[MAC_TOP.scala 29:26]
-    node _counter_T_1 = add(counter, UInt<1>("h1")) @[MAC_TOP.scala 29:48]
-    node _counter_T_2 = tail(_counter_T_1, 1) @[MAC_TOP.scala 29:48]
-    node _counter_T_3 = mux(_counter_T, UInt<1>("h0"), _counter_T_2) @[MAC_TOP.scala 29:17]
-    counter <= _counter_T_3 @[MAC_TOP.scala 29:11]
-    node _io_valid_T = eq(counter, UInt<2>("h3")) @[MAC_TOP.scala 30:23]
-    io.valid <= _io_valid_T @[MAC_TOP.scala 30:12]
-    reg regOutput : UInt<8>, clock with :
-      reset => (reset, UInt<8>("h0")) @[MAC_TOP.scala 33:26]
-    node _T = eq(counter, UInt<2>("h3")) @[MAC_TOP.scala 35:16]
-    when _T : @[MAC_TOP.scala 35:24]
-      node _regOutput_T = mul(regOutput, multiplier.io.output) @[MAC_TOP.scala 36:28]
-      regOutput <= _regOutput_T @[MAC_TOP.scala 36:15]
-    else :
-      io.result <= regOutput @[MAC_TOP.scala 38:15]
-
+    multiplier.io.inputA <= io.wgt @[MAC_TOP.scala 51:26]
+    multiplier.io.inputB <= io.ifm @[MAC_TOP.scala 52:26]
+    reg resBuff : UInt<8>, clock with :
+      reset => (reset, UInt<8>("h0")) @[MAC_TOP.scala 56:24]
+    reg count : UInt<2>, clock with :
+      reset => (reset, UInt<2>("h0")) @[MAC_TOP.scala 57:22]
+    node _nextval_T = lt(count, UInt<2>("h3")) @[MAC_TOP.scala 58:27]
+    node nextval = mux(_nextval_T, adder.io.output, UInt<1>("h0")) @[MAC_TOP.scala 58:20]
+    node _resBuff_T = lt(count, UInt<2>("h3")) @[MAC_TOP.scala 59:24]
+    node _resBuff_T_1 = mux(_resBuff_T, nextval, multiplier.io.output) @[MAC_TOP.scala 59:17]
+    resBuff <= _resBuff_T_1 @[MAC_TOP.scala 59:11]
+    adder.io.inputA <= multiplier.io.output @[MAC_TOP.scala 61:19]
+    adder.io.inputB <= resBuff @[MAC_TOP.scala 62:19]
+    node _count_T = eq(count, UInt<2>("h3")) @[MAC_TOP.scala 64:22]
+    node _count_T_1 = add(count, UInt<1>("h1")) @[MAC_TOP.scala 64:42]
+    node _count_T_2 = tail(_count_T_1, 1) @[MAC_TOP.scala 64:42]
+    node _count_T_3 = mux(_count_T, UInt<1>("h0"), _count_T_2) @[MAC_TOP.scala 64:15]
+    count <= _count_T_3 @[MAC_TOP.scala 64:9]
+    node _io_valid_T = eq(count, UInt<2>("h3")) @[MAC_TOP.scala 65:21]
+    io.valid <= _io_valid_T @[MAC_TOP.scala 65:12]
+    io.result <= resBuff @[MAC_TOP.scala 66:13]
 

@@ -6,13 +6,5 @@
   {
     "class":"firrtl.transforms.BlackBoxTargetDirAnno",
     "targetDir":"."
-  },
-  {
-    "class":"firrtl.transforms.CombinationalPath",
-    "sink":"~MAC_TOP_FP8|MAC_TOP_FP8>io_result",
-    "sources":[
-      "~MAC_TOP_FP8|MAC_TOP_FP8>io_wgt",
-      "~MAC_TOP_FP8|MAC_TOP_FP8>io_ifm"
-    ]
   }
 ]

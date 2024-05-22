@@ -17,12 +17,16 @@ class MAC_TOP_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
       // Step through 3 clock cycles
       (0 until 3).foreach { _ =>
         c.io.valid.expect(false.B) // Valid should still be false
+        println(c.io.result.peek().toString())
+        //c.io.wgt.poke("b01000000".U)
+        //c.io.ifm.poke("b01000000".U)
         c.clock.step(1)
       }
 
       // On the 4th clock cycle, valid should be true
+
+      c.io.result.expect("b01001010".U)
       c.io.valid.expect(true.B)
-      c.io.result.expect("b01000000".U)
       c.clock.step(1)
 
 
