@@ -254,7 +254,7 @@ module MAC_TOP_FP8(
         resBuff <= 8'h0;
       end
     end else begin
-      resBuff <= multiplier_io_output;
+      resBuff <= 8'h0;
     end
     if (reset) begin // @[MAC_TOP.scala 57:22]
       count <= 2'h0; // @[MAC_TOP.scala 57:22]

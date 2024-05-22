@@ -608,7 +608,7 @@ circuit MAC_TOP_FP8 :
     node _nextval_T = lt(count, UInt<2>("h3")) @[MAC_TOP.scala 58:27]
     node nextval = mux(_nextval_T, adder.io.output, UInt<1>("h0")) @[MAC_TOP.scala 58:20]
     node _resBuff_T = lt(count, UInt<2>("h3")) @[MAC_TOP.scala 59:24]
-    node _resBuff_T_1 = mux(_resBuff_T, nextval, multiplier.io.output) @[MAC_TOP.scala 59:17]
+    node _resBuff_T_1 = mux(_resBuff_T, nextval, UInt<1>("h0")) @[MAC_TOP.scala 59:17]
     resBuff <= _resBuff_T_1 @[MAC_TOP.scala 59:11]
     adder.io.inputA <= multiplier.io.output @[MAC_TOP.scala 61:19]
     adder.io.inputB <= resBuff @[MAC_TOP.scala 62:19]

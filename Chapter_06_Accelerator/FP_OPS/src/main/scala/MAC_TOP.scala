@@ -56,7 +56,7 @@ class MAC_TOP_FP8 extends Module{
   val resBuff = RegInit(0.U(8.W))
   val count = RegInit(0.U(2.W))
   val nextval = Mux(count < 3.U, adder.io.output, 0.U)
-  resBuff := Mux(count < 3.U, nextval ,multiplier.io.output)
+  resBuff := Mux(count < 3.U, nextval ,0.U)
 
   adder.io.inputA := multiplier.io.output
   adder.io.inputB := resBuff

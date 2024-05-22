@@ -10,8 +10,11 @@ class MAC_TOP_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
   it should "correctly multiply 8-bit floating-point number another" in {
     test(new MAC_TOP_FP8) { c =>
       // Initially, the valid signal should be false
-      c.io.wgt.poke("b01000000".U)
-      c.io.ifm.poke("b01000000".U)
+      //c.io.wgt.poke("b01000000".U)
+      //c.io.ifm.poke("b01000000".U)
+
+      c.io.wgt.poke("b00110100".U)
+      c.io.ifm.poke("b00111000".U)
       c.io.valid.expect(false.B)
       //c.io.result.expect("b00111100".U)
       // Step through 3 clock cycles
@@ -21,11 +24,13 @@ class MAC_TOP_TB extends AnyFlatSpec with ChiselScalatestTester with Matchers {
         //c.io.wgt.poke("b01000000".U)
         //c.io.ifm.poke("b01000000".U)
         c.clock.step(1)
+        //c.io.wgt.poke("b01000000".U)
+        //c.io.ifm.poke("b00111100".U)
       }
 
       // On the 4th clock cycle, valid should be true
 
-      c.io.result.expect("b01001010".U)
+      c.io.result.expect("b00110110".U)
       c.io.valid.expect(true.B)
       c.clock.step(1)
 
