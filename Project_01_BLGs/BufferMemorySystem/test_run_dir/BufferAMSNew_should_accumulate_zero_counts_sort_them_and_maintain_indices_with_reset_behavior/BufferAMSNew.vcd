@@ -1,0 +1,9979 @@
+$date
+2024-09-24T08:59+0000
+$end
+$version
+0.2
+$end
+$comment
+
+$end
+$timescale 1ns  $end
+$scope module BufferAMSNew $end
+ $var wire 8 ! io_adcValues_116 $end
+ $var wire 8 " frameBuffer_0_80 $end
+ $var wire 8 # io_adcValues_6 $end
+ $var wire 8 $ frameBuffer_10_10 $end
+ $var wire 8 % frameBuffer_4_74 $end
+ $var wire 8 & frameBuffer_0_89 $end
+ $var wire 8 ' frameBuffer_14_31 $end
+ $var wire 8 ( frameBuffer_10_46 $end
+ $var wire 8 ) frameBuffer_2_53 $end
+ $var wire 8 * frameBuffer_6_53 $end
+ $var wire 8 + frameBuffer_12_10 $end
+ $var wire 8 , frameBuffer_9_22 $end
+ $var wire 8 - frameBuffer_13_35 $end
+ $var wire 8 . frameBuffer_13_56 $end
+ $var wire 8 / frameBuffer_2_68 $end
+ $var wire 8 0 frameBuffer_12_19 $end
+ $var wire 8 1 frameBuffer_8_32 $end
+ $var wire 8 2 frameBuffer_1_43 $end
+ $var wire 8 3 frameBuffer_0_47 $end
+ $var wire 8 4 frameBuffer_3_22 $end
+ $var wire 8 5 frameBuffer_15_4 $end
+ $var wire 8 6 frameBuffer_13_83 $end
+ $var wire 8 7 frameBuffer_7_16 $end
+ $var wire 8 8 frameBuffer_13_127 $end
+ $var wire 8 9 frameBuffer_9_90 $end
+ $var wire 8 : frameBuffer_15_62 $end
+ $var wire 8 ; frameBuffer_9_99 $end
+ $var wire 8 < io_frameOut_14 $end
+ $var wire 8 = frameBuffer_11_62 $end
+ $var wire 8 > frameBuffer_0_74 $end
+ $var wire 8 ? frameBuffer_10_31 $end
+ $var wire 8 @ frameBuffer_3_90 $end
+ $var wire 8 A frameBuffer_4_89 $end
+ $var wire 8 B frameBuffer_11_77 $end
+ $var wire 8 C frameBuffer_14_101 $end
+ $var wire 8 D frameBuffer_2_119 $end
+ $var wire 8 E frameBuffer_7_84 $end
+ $var wire 8 F frameBuffer_13_41 $end
+ $var wire 8 G frameBuffer_6_122 $end
+ $var wire 8 H frameBuffer_14_87 $end
+ $var wire 8 I frameBuffer_3_99 $end
+ $var wire 8 J frameBuffer_6_74 $end
+ $var wire 8 K frameBuffer_6_68 $end
+ $var wire 8 L io_frameOut_41 $end
+ $var wire 8 M frameBuffer_9_84 $end
+ $var wire 8 N frameBuffer_1_37 $end
+ $var wire 8 O frameBuffer_4_53 $end
+ $var wire 8 P frameBuffer_4_47 $end
+ $var wire 8 Q frameBuffer_0_68 $end
+ $var wire 8 R frameBuffer_14_10 $end
+ $var wire 8 S frameBuffer_3_16 $end
+ $var wire 8 T frameBuffer_10_19 $end
+ $var wire 8 U frameBuffer_7_126 $end
+ $var wire 8 V frameBuffer_6_32 $end
+ $var wire 8 W frameBuffer_14_19 $end
+ $var wire 8 X zeroAccumulators_1 $end
+ $var wire 8 Y io_adcValues_98 $end
+ $var wire 8 Z io_frameOut_35 $end
+ $var wire 8 [ frameBuffer_3_120 $end
+ $var wire 8 \ frameBuffer_4_80 $end
+ $var wire 8 ] io_frameOut_29 $end
+ $var wire 8 ^ frameBuffer_3_114 $end
+ $var wire 8 _ frameBuffer_11_83 $end
+ $var wire 8 ` frameBuffer_0_95 $end
+ $var wire 8 a frameBuffer_5_16 $end
+ $var wire 8 b io_adcValues_122 $end
+ $var wire 8 c frameBuffer_2_110 $end
+ $var wire 8 d frameBuffer_2_104 $end
+ $var wire 8 e frameBuffer_7_90 $end
+ $var wire 8 f frameBuffer_15_77 $end
+ $var wire 8 g frameBuffer_7_99 $end
+ $var wire 8 h frameBuffer_13_106 $end
+ $var wire 8 i io_adcValues_21 $end
+ $var wire 8 j io_adcValues_15 $end
+ $var wire 8 k io_frameOut_118 $end
+ $var wire 8 l frameBuffer_9_78 $end
+ $var wire 8 m frameBuffer_12_25 $end
+ $var wire 8 n frameBuffer_0_53 $end
+ $var wire 8 o frameBuffer_1_99 $end
+ $var wire 8 p frameBuffer_15_35 $end
+ $var wire 8 q frameBuffer_4_68 $end
+ $var wire 8 r frameBuffer_7_22 $end
+ $var wire 8 s frameBuffer_11_56 $end
+ $var wire 8 t frameBuffer_7_111 $end
+ $var wire 8 u frameBuffer_8_68 $end
+ $var wire 8 v frameBuffer_14_25 $end
+ $var wire 8 w io_adcValues_83 $end
+ $var wire 8 x frameBuffer_6_47 $end
+ $var wire 8 y io_zeroSums_3 $end
+ $var wire 8 z io_frameOut_20 $end
+ $var wire 8 { frameBuffer_14_5 $end
+ $var wire 8 | frameBuffer_1_22 $end
+ $var wire 8 } frameBuffer_1_16 $end
+ $var wire 8 ~ frameBuffer_5_37 $end
+ $var wire 8 "! frameBuffer_4_32 $end
+ $var wire 8 "" frameBuffer_2_125 $end
+ $var wire 8 "# frameBuffer_14_93 $end
+ $var wire 8 "$ frameBuffer_1_115 $end
+ $var wire 8 "% frameBuffer_8_26 $end
+ $var wire 8 "& frameBuffer_7_105 $end
+ $var wire 8 "' io_frameOut_103 $end
+ $var wire 8 "( frameBuffer_2_80 $end
+ $var wire 8 ") frameBuffer_2_74 $end
+ $var wire 8 "* frameBuffer_13_112 $end
+ $var wire 8 "+ frameBuffer_12_31 $end
+ $var wire 8 ", frameBuffer_12_102 $end
+ $var wire 8 "- frameBuffer_13_77 $end
+ $var wire 8 ". frameBuffer_2_89 $end
+ $var wire 8 "/ frameBuffer_11_41 $end
+ $var wire 8 "0 frameBuffer_5_99 $end
+ $var wire 8 "1 frameBuffer_8_74 $end
+ $var wire 8 "2 frameBuffer_8_53 $end
+ $var wire 8 "3 frameBuffer_3_108 $end
+ $var wire 8 "4 frameBuffer_15_56 $end
+ $var wire 8 "5 frameBuffer_6_116 $end
+ $var wire 8 "6 frameBuffer_3_37 $end
+ $var wire 8 "7 frameBuffer_10_25 $end
+ $var wire 8 "8 frameBuffer_2_47 $end
+ $var wire 8 "9 frameBuffer_5_22 $end
+ $var wire 8 ": frameBuffer_15_83 $end
+ $var wire 8 "; frameBuffer_9_16 $end
+ $var wire 8 "< frameBuffer_8_100 $end
+ $var wire 8 "= frameBuffer_8_115 $end
+ $var wire 8 "> frameBuffer_8_47 $end
+ $var wire 8 "? frameBuffer_8_109 $end
+ $var wire 8 "@ frameBuffer_1_121 $end
+ $var wire 8 "A frameBuffer_11_98 $end
+ $var wire 8 "B io_frameOut_124 $end
+ $var wire 8 "C frameBuffer_6_80 $end
+ $var wire 8 "D frameBuffer_10_93 $end
+ $var wire 8 "E frameBuffer_13_62 $end
+ $var wire 8 "F frameBuffer_2_95 $end
+ $var wire 8 "G frameBuffer_1_90 $end
+ $var wire 8 "H frameBuffer_6_89 $end
+ $var wire 8 "I frameBuffer_5_90 $end
+ $var wire 8 "J frameBuffer_12_123 $end
+ $var wire 8 "K frameBuffer_4_103 $end
+ $var wire 8 "L frameBuffer_5_84 $end
+ $var wire 8 "M frameBuffer_12_117 $end
+ $var wire 8 "N frameBuffer_12_93 $end
+ $var wire 8 "O frameBuffer_15_41 $end
+ $var wire 8 "P frameBuffer_12_111 $end
+ $var wire 8 "Q frameBuffer_12_81 $end
+ $var wire 8 "R io_frameOut_17 $end
+ $var wire 8 "S frameBuffer_11_122 $end
+ $var wire 8 "T frameBuffer_1_87 $end
+ $var wire 8 "U frameBuffer_3_102 $end
+ $var wire 8 "V frameBuffer_15_50 $end
+ $var wire 8 "W frameBuffer_4_62 $end
+ $var wire 8 "X frameBuffer_11_65 $end
+ $var wire 8 "Y io_adcValues_104 $end
+ $var wire 8 "Z frameBuffer_15_65 $end
+ $var wire 8 "[ frameBuffer_15_59 $end
+ $var wire 8 "\ frameBuffer_7_87 $end
+ $var wire 8 "] frameBuffer_2_41 $end
+ $var wire 8 "^ io_frameOut_106 $end
+ $var wire 8 "_ frameBuffer_6_62 $end
+ $var wire 8 "` frameBuffer_13_44 $end
+ $var wire 8 "a frameBuffer_2_77 $end
+ $var wire 17 "b zeroCount $end
+ $var wire 8 "c frameBuffer_1_72 $end
+ $var wire 8 "d io_frameOut_85 $end
+ $var wire 8 "e frameBuffer_13_9 $end
+ $var wire 8 "f frameBuffer_4_20 $end
+ $var wire 8 "g frameBuffer_5_66 $end
+ $var wire 8 "h frameBuffer_11_23 $end
+ $var wire 8 "i frameBuffer_8_41 $end
+ $var wire 8 "j frameBuffer_8_35 $end
+ $var wire 8 "k frameBuffer_15_23 $end
+ $var wire 8 "l frameBuffer_15_17 $end
+ $var wire 8 "m frameBuffer_11_38 $end
+ $var wire 8 "n frameBuffer_3_10 $end
+ $var wire 8 "o io_adcValues_71 $end
+ $var wire 8 "p io_adcValues_92 $end
+ $var wire 8 "q frameBuffer_10_13 $end
+ $var wire 8 "r frameBuffer_0_114 $end
+ $var wire 8 "s frameBuffer_2_35 $end
+ $var wire 8 "t frameBuffer_14_8 $end
+ $var wire 8 "u frameBuffer_5_93 $end
+ $var wire 8 "v frameBuffer_12_126 $end
+ $var wire 4 "w io_indicesOut_5 $end
+ $var wire 8 "x frameBuffer_12_96 $end
+ $var wire 8 "y frameBuffer_6_29 $end
+ $var wire 8 "z frameBuffer_11_116 $end
+ $var wire 8 "{ frameBuffer_5_19 $end
+ $var wire 8 "| io_adcValues_125 $end
+ $var wire 8 "} frameBuffer_4_14 $end
+ $var wire 8 "~ frameBuffer_14_75 $end
+ $var wire 8 #! frameBuffer_2_62 $end
+ $var wire 8 #" frameBuffer_13_100 $end
+ $var wire 8 ## frameBuffer_13_0 $end
+ $var wire 8 #$ frameBuffer_5_121 $end
+ $var wire 8 #% frameBuffer_13_65 $end
+ $var wire 8 #& frameBuffer_13_59 $end
+ $var wire 8 #' frameBuffer_13_109 $end
+ $var wire 8 #( frameBuffer_9_72 $end
+ $var wire 8 #) frameBuffer_4_41 $end
+ $var wire 8 #* frameBuffer_5_87 $end
+ $var wire 8 #+ frameBuffer_8_56 $end
+ $var wire 8 #, frameBuffer_15_38 $end
+ $var wire 8 #- frameBuffer_0_41 $end
+ $var wire 8 #. frameBuffer_7_114 $end
+ $var wire 8 #/ frameBuffer_0_120 $end
+ $var wire 8 #0 frameBuffer_0_56 $end
+ $var wire 8 #1 frameBuffer_2_20 $end
+ $var wire 8 #2 frameBuffer_6_41 $end
+ $var wire 8 #3 frameBuffer_6_20 $end
+ $var wire 8 #4 frameBuffer_13_23 $end
+ $var wire 8 #5 frameBuffer_13_17 $end
+ $var wire 8 #6 frameBuffer_2_29 $end
+ $var wire 8 #7 frameBuffer_11_2 $end
+ $var wire 8 #8 frameBuffer_11_71 $end
+ $var wire 8 #9 frameBuffer_8_29 $end
+ $var wire 8 #: frameBuffer_2_113 $end
+ $var wire 8 #; frameBuffer_1_19 $end
+ $var wire 8 #< frameBuffer_3_93 $end
+ $var wire 8 #= frameBuffer_1_103 $end
+ $var wire 8 #> frameBuffer_10_75 $end
+ $var wire 8 #? frameBuffer_13_50 $end
+ $var wire 8 #@ frameBuffer_4_29 $end
+ $var wire 8 #A frameBuffer_13_115 $end
+ $var wire 8 #B frameBuffer_5_72 $end
+ $var wire 8 #C frameBuffer_12_105 $end
+ $var wire 8 #D frameBuffer_12_75 $end
+ $var wire 8 #E frameBuffer_9_93 $end
+ $var wire 8 #F frameBuffer_9_87 $end
+ $var wire 8 #G frameBuffer_0_62 $end
+ $var wire 8 #H frameBuffer_4_56 $end
+ $var wire 8 #I frameBuffer_0_77 $end
+ $var wire 8 #J frameBuffer_14_13 $end
+ $var wire 8 #K frameBuffer_7_72 $end
+ $var wire 8 #L frameBuffer_6_110 $end
+ $var wire 8 #M frameBuffer_10_28 $end
+ $var wire 8 #N frameBuffer_3_87 $end
+ $var wire 8 #O frameBuffer_6_35 $end
+ $var wire 8 #P frameBuffer_13_38 $end
+ $var wire 8 #Q frameBuffer_6_119 $end
+ $var wire 8 #R frameBuffer_8_14 $end
+ $var wire 8 #S frameBuffer_1_25 $end
+ $var wire 8 #T frameBuffer_10_81 $end
+ $var wire 8 #U frameBuffer_10_127 $end
+ $var wire 8 #V frameBuffer_0_35 $end
+ $var wire 8 #W frameBuffer_14_81 $end
+ $var wire 8 #X frameBuffer_0_29 $end
+ $var wire 8 #Y frameBuffer_1_124 $end
+ $var wire 8 #Z frameBuffer_1_118 $end
+ $var wire 8 #[ frameBuffer_10_96 $end
+ $var wire 4 #\ indexAccumulators_1 $end
+ $var wire 8 #] io_adcValues_65 $end
+ $var wire 8 #^ frameBuffer_1_93 $end
+ $var wire 8 #_ frameBuffer_11_101 $end
+ $var wire 8 #` frameBuffer_11_50 $end
+ $var wire 8 #a io_adcValues_110 $end
+ $var wire 8 #b frameBuffer_11_44 $end
+ $var wire 8 #c frameBuffer_15_44 $end
+ $var wire 8 #d frameBuffer_7_120 $end
+ $var wire 8 #e frameBuffer_3_72 $end
+ $var wire 8 #f frameBuffer_11_59 $end
+ $var wire 8 #g io_adcValues_119 $end
+ $var wire 8 #h frameBuffer_2_107 $end
+ $var wire 8 #i frameBuffer_7_93 $end
+ $var wire 8 #j frameBuffer_7_66 $end
+ $var wire 8 #k frameBuffer_6_125 $end
+ $var wire 8 #l frameBuffer_6_104 $end
+ $var wire 8 #m frameBuffer_14_69 $end
+ $var wire 8 #n frameBuffer_6_56 $end
+ $var wire 8 #o frameBuffer_5_115 $end
+ $var wire 8 #p io_frameOut_23 $end
+ $var wire 8 #q frameBuffer_1_10 $end
+ $var wire 8 #r frameBuffer_9_66 $end
+ $var wire 8 #s frameBuffer_2_56 $end
+ $var wire 8 #t frameBuffer_5_10 $end
+ $var wire 8 #u frameBuffer_12_13 $end
+ $var wire 8 #v frameBuffer_8_20 $end
+ $var wire 8 #w frameBuffer_10_3 $end
+ $var wire 8 #x frameBuffer_4_35 $end
+ $var wire 8 #y frameBuffer_7_10 $end
+ $var wire 8 #z frameBuffer_14_96 $end
+ $var wire 8 #{ frameBuffer_7_108 $end
+ $var wire 8 #| io_frameOut_112 $end
+ $var wire 8 #} frameBuffer_6_14 $end
+ $var wire 8 #~ io_frameOut_91 $end
+ $var wire 8 $! io_adcValues_86 $end
+ $var wire 8 $" frameBuffer_15_7 $end
+ $var wire 8 $# frameBuffer_12_1 $end
+ $var wire 8 $$ frameBuffer_3_19 $end
+ $var wire 4 $% indexAccumulators_4 $end
+ $var wire 8 $& frameBuffer_6_107 $end
+ $var wire 8 $' frameBuffer_3_1 $end
+ $var wire 8 $( frameBuffer_6_38 $end
+ $var wire 8 $) frameBuffer_9_121 $end
+ $var wire 8 $* frameBuffer_15_94 $end
+ $var wire 8 $+ frameBuffer_9_48 $end
+ $var wire 8 $, frameBuffer_1_96 $end
+ $var wire 8 $- frameBuffer_11_53 $end
+ $var wire 8 $. io_adcValues_113 $end
+ $var wire 8 $/ frameBuffer_2_101 $end
+ $var wire 8 $0 frameBuffer_12_99 $end
+ $var wire 8 $1 frameBuffer_3_81 $end
+ $var wire 8 $2 frameBuffer_3_75 $end
+ $var wire 8 $3 frameBuffer_10_57 $end
+ $var wire 8 $4 frameBuffer_7_96 $end
+ $var wire 8 $5 frameBuffer_13_32 $end
+ $var wire 8 $6 frameBuffer_6_91 $end
+ $var wire 8 $7 frameBuffer_14_78 $end
+ $var wire 8 $8 frameBuffer_5_124 $end
+ $var wire 8 $9 frameBuffer_4_0 $end
+ $var wire 8 $: frameBuffer_9_75 $end
+ $var wire 8 $; frameBuffer_4_9 $end
+ $var wire 8 $< frameBuffer_1_60 $end
+ $var wire 8 $= io_frameOut_94 $end
+ $var wire 8 $> io_frameOut_5 $end
+ $var wire 8 $? frameBuffer_11_11 $end
+ $var wire 8 $@ frameBuffer_0_44 $end
+ $var wire 8 $A frameBuffer_12_57 $end
+ $var wire 8 $B frameBuffer_1_69 $end
+ $var wire 8 $C frameBuffer_15_32 $end
+ $var wire 8 $D frameBuffer_4_44 $end
+ $var wire 8 $E frameBuffer_4_38 $end
+ $var wire 8 $F frameBuffer_11_47 $end
+ $var wire 8 $G frameBuffer_7_102 $end
+ $var wire 8 $H frameBuffer_15_101 $end
+ $var wire 8 $I frameBuffer_0_59 $end
+ $var wire 8 $J frameBuffer_7_54 $end
+ $var wire 8 $K frameBuffer_3_69 $end
+ $var wire 8 $L io_adcValues_80 $end
+ $var wire 8 $M io_adcValues_74 $end
+ $var wire 8 $N frameBuffer_0_123 $end
+ $var wire 8 $O io_frameOut_11 $end
+ $var wire 8 $P frameBuffer_5_8 $end
+ $var wire 8 $Q io_adcValues_89 $end
+ $var wire 8 $R frameBuffer_2_23 $end
+ $var wire 8 $S frameBuffer_9_115 $end
+ $var wire 8 $T frameBuffer_11_125 $end
+ $var wire 17 $U zeroCount_6 $end
+ $var wire 8 $V frameBuffer_11_5 $end
+ $var wire 8 $W frameBuffer_11_119 $end
+ $var wire 8 $X frameBuffer_10_115 $end
+ $var wire 8 $Y frameBuffer_7_81 $end
+ $var wire 8 $Z frameBuffer_10_109 $end
+ $var wire 8 $[ frameBuffer_0_17 $end
+ $var wire 8 $\ frameBuffer_14_63 $end
+ $var wire 8 $] frameBuffer_3_96 $end
+ $var wire 8 $^ frameBuffer_8_17 $end
+ $var wire 8 $_ frameBuffer_1_106 $end
+ $var wire 8 $` frameBuffer_10_78 $end
+ $var wire 8 $a frameBuffer_14_99 $end
+ $var wire 8 $b frameBuffer_2_50 $end
+ $var wire 8 $c io_adcValues_47 $end
+ $var wire 8 $d frameBuffer_5_60 $end
+ $var wire 8 $e frameBuffer_1_81 $end
+ $var wire 8 $f frameBuffer_1_75 $end
+ $var wire 8 $g io_frameOut_88 $end
+ $var wire 8 $h frameBuffer_5_75 $end
+ $var wire 8 $i frameBuffer_11_32 $end
+ $var wire 8 $j frameBuffer_12_108 $end
+ $var wire 8 $k frameBuffer_12_78 $end
+ $var wire 8 $l frameBuffer_15_26 $end
+ $var wire 8 $m frameBuffer_15_122 $end
+ $var wire 8 $n frameBuffer_3_54 $end
+ $var wire 8 $o io_adcValues_107 $end
+ $var wire 8 $p frameBuffer_15_116 $end
+ $var wire 8 $q frameBuffer_7_48 $end
+ $var wire 8 $r frameBuffer_14_57 $end
+ $var wire 8 $s io_adcValues_95 $end
+ $var wire 8 $t frameBuffer_11_110 $end
+ $var wire 8 $u frameBuffer_2_44 $end
+ $var wire 8 $v frameBuffer_2_38 $end
+ $var wire 8 $w frameBuffer_10_121 $end
+ $var wire 8 $x frameBuffer_15_11 $end
+ $var wire 8 $y frameBuffer_4_23 $end
+ $var wire 8 $z frameBuffer_4_17 $end
+ $var wire 8 ${ frameBuffer_14_84 $end
+ $var wire 8 $| frameBuffer_8_38 $end
+ $var wire 8 $} frameBuffer_7_6 $end
+ $var wire 8 $~ io_adcValues_53 $end
+ $var wire 8 %! frameBuffer_10_84 $end
+ $var wire 8 %" frameBuffer_0_102 $end
+ $var wire 8 %# io_adcValues_68 $end
+ $var wire 8 %$ frameBuffer_5_81 $end
+ $var wire 8 %% frameBuffer_12_114 $end
+ $var wire 8 %& frameBuffer_12_63 $end
+ $var wire 8 %' frameBuffer_9_81 $end
+ $var wire 8 %( frameBuffer_11_104 $end
+ $var wire 8 %) frameBuffer_5_96 $end
+ $var wire 8 %* frameBuffer_7_60 $end
+ $var wire 8 %+ frameBuffer_15_47 $end
+ $var wire 8 %, frameBuffer_0_50 $end
+ $var wire 8 %- frameBuffer_8_5 $end
+ $var wire 8 %. frameBuffer_7_69 $end
+ $var wire 8 %/ frameBuffer_14_127 $end
+ $var wire 8 %0 frameBuffer_14_2 $end
+ $var wire 8 %1 frameBuffer_12_90 $end
+ $var wire 8 %2 frameBuffer_6_44 $end
+ $var wire 8 %3 frameBuffer_13_26 $end
+ $var wire 8 %4 frameBuffer_2_59 $end
+ $var wire 8 %5 frameBuffer_1_54 $end
+ $var wire 8 %6 io_frameOut_67 $end
+ $var wire 8 %7 frameBuffer_5_54 $end
+ $var wire 8 %8 frameBuffer_5_118 $end
+ $var wire 8 %9 frameBuffer_5_48 $end
+ $var wire 8 %: frameBuffer_8_23 $end
+ $var wire 8 %; frameBuffer_9_69 $end
+ $var wire 8 %< frameBuffer_1_3 $end
+ $var wire 8 %= frameBuffer_14_90 $end
+ $var wire 8 %> frameBuffer_15_1 $end
+ $var wire 8 %? frameBuffer_1_112 $end
+ $var wire 8 %@ frameBuffer_10_99 $end
+ $var wire 8 %A frameBuffer_4_120 $end
+ $var wire 8 %B frameBuffer_2_17 $end
+ $var wire 8 %C frameBuffer_12_84 $end
+ $var wire 8 %D frameBuffer_6_17 $end
+ $var wire 8 %E frameBuffer_8_91 $end
+ $var wire 8 %F frameBuffer_12_4 $end
+ $var wire 8 %G frameBuffer_3_60 $end
+ $var wire 8 %H frameBuffer_10_63 $end
+ $var wire 8 %I frameBuffer_13_11 $end
+ $var wire 8 %J frameBuffer_7_75 $end
+ $var wire 8 %K frameBuffer_6_113 $end
+ $var wire 8 %L frameBuffer_5_103 $end
+ $var wire 8 %M frameBuffer_13_47 $end
+ $var wire 8 %N frameBuffer_9_60 $end
+ $var wire 8 %O frameBuffer_9_54 $end
+ $var wire 8 %P frameBuffer_4_114 $end
+ $var wire 8 %Q frameBuffer_2_2 $end
+ $var wire 8 %R frameBuffer_5_69 $end
+ $var wire 8 %S frameBuffer_13_3 $end
+ $var wire 8 %T io_frameOut_73 $end
+ $var wire 8 %U frameBuffer_9_4 $end
+ $var wire 8 %V frameBuffer_0_23 $end
+ $var wire 8 %W frameBuffer_10_90 $end
+ $var wire 8 %X frameBuffer_10_6 $end
+ $var wire 8 %Y frameBuffer_11_26 $end
+ $var wire 8 %Z frameBuffer_6_7 $end
+ $var wire 8 %[ frameBuffer_0_38 $end
+ $var wire 8 %\ frameBuffer_1_127 $end
+ $var wire 8 %] frameBuffer_0_117 $end
+ $var wire 8 %^ frameBuffer_6_23 $end
+ $var wire 8 %_ frameBuffer_14_39 $end
+ $var wire 8 %` frameBuffer_0_126 $end
+ $var wire 8 %a frameBuffer_6_11 $end
+ $var wire 8 %b frameBuffer_10_39 $end
+ $var wire 8 %c frameBuffer_2_26 $end
+ $var wire 8 %d frameBuffer_12_87 $end
+ $var wire 8 %e frameBuffer_9_36 $end
+ $var wire 8 %f frameBuffer_9_118 $end
+ $var wire 8 %g frameBuffer_1_100 $end
+ $var wire 8 %h io_adcValues_41 $end
+ $var wire 8 %i frameBuffer_3_84 $end
+ $var wire 8 %j frameBuffer_10_72 $end
+ $var wire 8 %k frameBuffer_10_66 $end
+ $var wire 8 %l io_frameOut_123 $end
+ $var wire 8 %m frameBuffer_1_109 $end
+ $var wire 8 %n frameBuffer_13_82 $end
+ $var wire 8 %o frameBuffer_2_94 $end
+ $var wire 8 %p frameBuffer_5_63 $end
+ $var wire 8 %q frameBuffer_12_51 $end
+ $var wire 8 %r frameBuffer_12_45 $end
+ $var wire 8 %s frameBuffer_4_123 $end
+ $var wire 8 %t frameBuffer_15_20 $end
+ $var wire 8 %u frameBuffer_9_63 $end
+ $var wire 8 %v frameBuffer_4_117 $end
+ $var wire 8 %w io_frameOut_82 $end
+ $var wire 8 %x frameBuffer_3_113 $end
+ $var wire 8 %y frameBuffer_0_32 $end
+ $var wire 8 %z io_frameOut_8 $end
+ $var wire 8 %{ frameBuffer_8_88 $end
+ $var wire 8 %| frameBuffer_1_78 $end
+ $var wire 8 %} io_adcValues_5 $end
+ $var wire 8 %~ frameBuffer_11_35 $end
+ $var wire 8 &! frameBuffer_0_111 $end
+ $var wire 8 &" frameBuffer_2_11 $end
+ $var wire 8 &# frameBuffer_3_57 $end
+ $var wire 8 &$ frameBuffer_6_26 $end
+ $var wire 8 &% frameBuffer_13_14 $end
+ $var wire 8 && frameBuffer_9_21 $end
+ $var wire 8 &' frameBuffer_3_4 $end
+ $var wire 8 &( frameBuffer_5_36 $end
+ $var wire 8 &) frameBuffer_9_124 $end
+ $var wire 4 &* io_indicesOut_2 $end
+ $var wire 8 &+ frameBuffer_2_5 $end
+ $var wire 8 &, frameBuffer_8_114 $end
+ $var wire 8 &- frameBuffer_4_11 $end
+ $var wire 8 &. frameBuffer_10_124 $end
+ $var wire 8 &/ frameBuffer_0_26 $end
+ $var wire 8 &0 frameBuffer_14_72 $end
+ $var wire 8 &1 frameBuffer_10_87 $end
+ $var wire 8 &2 frameBuffer_6_94 $end
+ $var wire 8 &3 frameBuffer_5_127 $end
+ $var wire 8 &4 frameBuffer_4_3 $end
+ $var wire 8 &5 io_adcValues_56 $end
+ $var wire 8 &6 io_frameOut_97 $end
+ $var wire 8 &7 frameBuffer_11_20 $end
+ $var wire 8 &8 frameBuffer_0_94 $end
+ $var wire 8 &9 frameBuffer_14_30 $end
+ $var wire 8 &: frameBuffer_3_42 $end
+ $var wire 8 &; frameBuffer_3_63 $end
+ $var wire 8 &< frameBuffer_10_51 $end
+ $var wire 8 &= frameBuffer_10_45 $end
+ $var wire 8 &> frameBuffer_4_88 $end
+ $var wire 8 &? frameBuffer_7_63 $end
+ $var wire 8 &@ frameBuffer_6_101 $end
+ $var wire 8 &A frameBuffer_7_57 $end
+ $var wire 8 &B frameBuffer_14_115 $end
+ $var wire 8 &C frameBuffer_14_45 $end
+ $var wire 8 &D frameBuffer_14_66 $end
+ $var wire 8 &E frameBuffer_3_78 $end
+ $var wire 8 &F frameBuffer_13_29 $end
+ $var wire 8 &G frameBuffer_6_88 $end
+ $var wire 8 &H frameBuffer_9_42 $end
+ $var wire 8 &I io_frameOut_61 $end
+ $var wire 8 &J io_frameOut_55 $end
+ $var wire 8 &K frameBuffer_5_42 $end
+ $var wire 8 &L frameBuffer_0_11 $end
+ $var wire 8 &M frameBuffer_11_8 $end
+ $var wire 8 &N frameBuffer_1_57 $end
+ $var wire 8 &O frameBuffer_10_118 $end
+ $var wire 8 &P frameBuffer_11_14 $end
+ $var wire 8 &Q frameBuffer_7_21 $end
+ $var wire 8 &R frameBuffer_3_36 $end
+ $var wire 8 &S frameBuffer_13_97 $end
+ $var wire 8 &T io_adcValues_77 $end
+ $var wire 8 &U frameBuffer_9_103 $end
+ $var wire 8 &V frameBuffer_12_72 $end
+ $var wire 8 &W frameBuffer_1_84 $end
+ $var wire 8 &X frameBuffer_12_7 $end
+ $var wire 8 &Y io_adcValues_101 $end
+ $var wire 8 &Z frameBuffer_15_110 $end
+ $var wire 8 &[ frameBuffer_10_103 $end
+ $var wire 8 &\ frameBuffer_4_94 $end
+ $var wire 8 &] frameBuffer_14_100 $end
+ $var wire 8 &^ frameBuffer_8_94 $end
+ $var wire 8 &_ frameBuffer_14_51 $end
+ $var wire 8 &` frameBuffer_15_125 $end
+ $var wire 8 &a frameBuffer_15_97 $end
+ $var wire 8 &b frameBuffer_7_78 $end
+ $var wire 8 &c frameBuffer_6_73 $end
+ $var wire 8 &d frameBuffer_5_2 $end
+ $var wire 8 &e frameBuffer_13_126 $end
+ $var wire 8 &f frameBuffer_5_106 $end
+ $var wire 8 &g io_adcValues_35 $end
+ $var wire 8 &h frameBuffer_9_57 $end
+ $var wire 8 &i frameBuffer_13_6 $end
+ $var wire 8 &j frameBuffer_1_42 $end
+ $var wire 8 &k io_frameOut_76 $end
+ $var wire 8 &l frameBuffer_2_88 $end
+ $var wire 8 &m frameBuffer_5_57 $end
+ $var wire 8 &n frameBuffer_8_11 $end
+ $var wire 8 &o frameBuffer_12_39 $end
+ $var wire 8 &p frameBuffer_15_14 $end
+ $var wire 8 &q frameBuffer_7_0 $end
+ $var wire 8 &r frameBuffer_4_26 $end
+ $var wire 8 &s frameBuffer_8_120 $end
+ $var wire 8 &t frameBuffer_11_29 $end
+ $var wire 8 &u frameBuffer_7_42 $end
+ $var wire 8 &v frameBuffer_15_29 $end
+ $var wire 8 &w frameBuffer_7_36 $end
+ $var wire 8 &x frameBuffer_6_1 $end
+ $var wire 8 &y frameBuffer_15_119 $end
+ $var wire 8 &z io_adcValues_62 $end
+ $var wire 8 &{ frameBuffer_10_9 $end
+ $var wire 8 &| frameBuffer_14_109 $end
+ $var wire 8 &} frameBuffer_0_105 $end
+ $var wire 8 &~ io_zeroSums_2 $end
+ $var wire 8 '! io_frameOut_40 $end
+ $var wire 8 '" frameBuffer_12_66 $end
+ $var wire 8 '# frameBuffer_11_113 $end
+ $var wire 8 '$ frameBuffer_11_107 $end
+ $var wire 4 '% indexAccumulators_7 $end
+ $var wire 8 '& frameBuffer_1_36 $end
+ $var wire 8 '' io_frameOut_49 $end
+ $var wire 8 '( frameBuffer_15_82 $end
+ $var wire 8 ') frameBuffer_11_97 $end
+ $var wire 8 '* frameBuffer_14_121 $end
+ $var wire 8 '+ frameBuffer_8_8 $end
+ $var wire 8 ', frameBuffer_0_7 $end
+ $var wire 8 '- io_adcValues_20 $end
+ $var wire 8 '. frameBuffer_7_9 $end
+ $var wire 8 '/ frameBuffer_13_20 $end
+ $var wire 8 '0 frameBuffer_2_32 $end
+ $var wire 8 '1 zeroAccumulators_0 $end
+ $var wire 8 '2 io_adcValues_29 $end
+ $var wire 8 '3 frameBuffer_5_112 $end
+ $var wire 8 '4 frameBuffer_12_30 $end
+ $var wire 8 '5 frameBuffer_1_63 $end
+ $var wire 8 '6 frameBuffer_4_102 $end
+ $var wire 8 '7 frameBuffer_5_78 $end
+ $var wire 8 '8 frameBuffer_8_73 $end
+ $var wire 8 '9 frameBuffer_9_7 $end
+ $var wire 8 ': frameBuffer_15_104 $end
+ $var wire 8 '; frameBuffer_10_0 $end
+ $var wire 8 '< frameBuffer_1_6 $end
+ $var wire 8 '= frameBuffer_15_76 $end
+ $var wire 8 '> frameBuffer_14_12 $end
+ $var wire 8 '? frameBuffer_15_113 $end
+ $var wire 8 '@ frameBuffer_15_58 $end
+ $var wire 8 'A frameBuffer_7_45 $end
+ $var wire 8 'B frameBuffer_14_103 $end
+ $var wire 8 'C frameBuffer_6_4 $end
+ $var wire 8 'D frameBuffer_14_48 $end
+ $var wire 8 'E frameBuffer_9_24 $end
+ $var wire 8 'F io_zeroSums_5 $end
+ $var wire 8 'G frameBuffer_1_30 $end
+ $var wire 8 'H io_frameOut_43 $end
+ $var wire 8 'I frameBuffer_11_91 $end
+ $var wire 8 'J frameBuffer_5_24 $end
+ $var wire 8 'K frameBuffer_15_91 $end
+ $var wire 8 'L frameBuffer_1_39 $end
+ $var wire 8 'M frameBuffer_0_1 $end
+ $var wire 8 'N frameBuffer_9_127 $end
+ $var wire 8 'O frameBuffer_7_3 $end
+ $var wire 8 'P frameBuffer_3_18 $end
+ $var wire 8 'Q io_frameOut_70 $end
+ $var wire 8 'R io_frameOut_126 $end
+ $var wire 8 'S zeroAccumulators_3 $end
+ $var wire 8 'T io_adcValues_59 $end
+ $var wire 8 'U io_frameOut_2 $end
+ $var wire 8 'V frameBuffer_5_51 $end
+ $var wire 8 'W frameBuffer_12_60 $end
+ $var wire 8 'X frameBuffer_12_54 $end
+ $var wire 8 'Y frameBuffer_4_111 $end
+ $var wire 8 'Z frameBuffer_1_66 $end
+ $var wire 8 '[ frameBuffer_3_122 $end
+ $var wire 8 '\ frameBuffer_4_82 $end
+ $var wire 8 '] frameBuffer_12_69 $end
+ $var wire 8 '^ frameBuffer_3_116 $end
+ $var wire 8 '_ frameBuffer_8_2 $end
+ $var wire 8 '` frameBuffer_14_33 $end
+ $var wire 8 'a frameBuffer_8_76 $end
+ $var wire 8 'b frameBuffer_15_107 $end
+ $var wire 8 'c frameBuffer_1_9 $end
+ $var wire 8 'd frameBuffer_15_79 $end
+ $var wire 8 'e frameBuffer_14_118 $end
+ $var wire 8 'f io_adcValues_23 $end
+ $var wire 8 'g frameBuffer_3_66 $end
+ $var wire 8 'h io_adcValues_17 $end
+ $var wire 8 'i frameBuffer_10_48 $end
+ $var wire 8 'j frameBuffer_1_24 $end
+ $var wire 8 'k frameBuffer_9_30 $end
+ $var wire 8 'l frameBuffer_5_45 $end
+ $var wire 8 'm frameBuffer_5_109 $end
+ $var wire 8 'n frameBuffer_5_39 $end
+ $var wire 8 'o frameBuffer_12_27 $end
+ $var wire 8 'p frameBuffer_8_102 $end
+ $var wire 8 'q frameBuffer_2_8 $end
+ $var wire 8 'r frameBuffer_7_24 $end
+ $var wire 8 's frameBuffer_7_113 $end
+ $var wire 8 't frameBuffer_0_14 $end
+ $var wire 8 'u io_adcValues_50 $end
+ $var wire 8 'v frameBuffer_3_24 $end
+ $var wire 8 'w frameBuffer_13_91 $end
+ $var wire 8 'x frameBuffer_13_85 $end
+ $var wire 8 'y frameBuffer_2_97 $end
+ $var wire 8 'z io_frameOut_22 $end
+ $var wire 8 '{ frameBuffer_4_126 $end
+ $var wire 8 '| frameBuffer_9_1 $end
+ $var wire 8 '} frameBuffer_8_82 $end
+ $var wire 8 '~ frameBuffer_1_0 $end
+ $var wire 8 (! frameBuffer_15_70 $end
+ $var wire 8 (" frameBuffer_15_64 $end
+ $var wire 8 (# frameBuffer_11_79 $end
+ $var wire 8 ($ frameBuffer_8_97 $end
+ $var wire 8 (% frameBuffer_9_106 $end
+ $var wire 8 (& frameBuffer_0_82 $end
+ $var wire 8 (' frameBuffer_3_51 $end
+ $var wire 8 (( frameBuffer_10_33 $end
+ $var wire 8 () frameBuffer_4_97 $end
+ $var wire 8 (* io_frameOut_105 $end
+ $var wire 8 (+ frameBuffer_2_82 $end
+ $var wire 8 (, frameBuffer_5_100 $end
+ $var wire 8 (- frameBuffer_10_69 $end
+ $var wire 8 (. frameBuffer_5_30 $end
+ $var wire 8 (/ frameBuffer_12_12 $end
+ $var wire 8 (0 frameBuffer_12_33 $end
+ $var wire 8 (1 frameBuffer_6_76 $end
+ $var wire 8 (2 frameBuffer_1_45 $end
+ $var wire 8 (3 frameBuffer_9_51 $end
+ $var wire 8 (4 frameBuffer_9_45 $end
+ $var wire 8 (5 frameBuffer_0_20 $end
+ $var wire 8 (6 frameBuffer_8_123 $end
+ $var wire 8 (7 frameBuffer_8_55 $end
+ $var wire 8 (8 frameBuffer_8_117 $end
+ $var wire 8 (9 frameBuffer_3_45 $end
+ $var wire 8 (: frameBuffer_0_108 $end
+ $var wire 8 (; frameBuffer_10_27 $end
+ $var wire 8 (< frameBuffer_7_39 $end
+ $var wire 8 (= frameBuffer_5_18 $end
+ $var wire 8 (> frameBuffer_15_85 $end
+ $var wire 8 (? frameBuffer_3_7 $end
+ $var wire 8 (@ frameBuffer_9_18 $end
+ $var wire 8 (A io_frameOut_37 $end
+ $var wire 8 (B frameBuffer_0_97 $end
+ $var wire 8 (C frameBuffer_10_54 $end
+ $var wire 8 (D frameBuffer_14_124 $end
+ $var wire 8 (E frameBuffer_6_61 $end
+ $var wire 8 (F frameBuffer_13_70 $end
+ $var wire 8 (G frameBuffer_13_64 $end
+ $var wire 8 (H frameBuffer_5_5 $end
+ $var wire 8 (I frameBuffer_2_76 $end
+ $var wire 8 (J frameBuffer_13_114 $end
+ $var wire 8 (K frameBuffer_13_108 $end
+ $var wire 8 (L frameBuffer_6_97 $end
+ $var wire 8 (M frameBuffer_4_105 $end
+ $var wire 8 (N frameBuffer_13_79 $end
+ $var wire 8 (O frameBuffer_8_61 $end
+ $var wire 8 (P frameBuffer_4_6 $end
+ $var wire 8 (Q io_frameOut_64 $end
+ $var wire 8 (R frameBuffer_1_51 $end
+ $var wire 8 (S frameBuffer_3_30 $end
+ $var wire 8 (T frameBuffer_11_17 $end
+ $var wire 8 (U frameBuffer_4_76 $end
+ $var wire 8 (V frameBuffer_7_51 $end
+ $var wire 8 (W frameBuffer_7_30 $end
+ $var wire 8 (X frameBuffer_14_27 $end
+ $var wire 8 (Y frameBuffer_3_39 $end
+ $var wire 8 (Z frameBuffer_6_55 $end
+ $var wire 8 ([ frameBuffer_2_14 $end
+ $var wire 8 (\ frameBuffer_9_112 $end
+ $var wire 8 (] frameBuffer_9_39 $end
+ $var wire 17 (^ zeroCount_3 $end
+ $var wire 8 (_ frameBuffer_11_70 $end
+ $var wire 8 (` io_frameOut_58 $end
+ $var wire 8 (a frameBuffer_10_112 $end
+ $var wire 8 (b frameBuffer_10_60 $end
+ $var wire 8 (c frameBuffer_1_18 $end
+ $var wire 8 (d frameBuffer_10_106 $end
+ $var wire 8 (e frameBuffer_11_85 $end
+ $var wire 8 (f frameBuffer_14_60 $end
+ $var wire 8 (g frameBuffer_14_54 $end
+ $var wire 8 (h frameBuffer_2_127 $end
+ $var wire 8 (i frameBuffer_13_120 $end
+ $var wire 8 (j frameBuffer_6_82 $end
+ $var wire 8 (k frameBuffer_7_18 $end
+ $var wire 8 (l io_frameOut_111 $end
+ $var wire 8 (m io_adcValues_44 $end
+ $var wire 8 (n io_adcValues_38 $end
+ $var wire 8 (o io_frameOut_79 $end
+ $var wire 8 (p frameBuffer_3_101 $end
+ $var wire 8 (q frameBuffer_4_61 $end
+ $var wire 8 (r frameBuffer_12_48 $end
+ $var wire 8 (s frameBuffer_0_76 $end
+ $var wire 8 (t io_adcValues_8 $end
+ $var wire 8 (u io_adcValues_127 $end
+ $var wire 8 (v frameBuffer_8_79 $end
+ $var wire 8 (w frameBuffer_11_52 $end
+ $var wire 8 (x frameBuffer_0_64 $end
+ $var wire 8 (y frameBuffer_3_33 $end
+ $var wire 8 (z frameBuffer_3_119 $end
+ $var wire 8 ({ frameBuffer_10_15 $end
+ $var wire 8 (| frameBuffer_4_79 $end
+ $var wire 8 (} frameBuffer_14_36 $end
+ $var wire 8 (~ frameBuffer_13_102 $end
+ $var wire 8 )! frameBuffer_6_64 $end
+ $var wire 8 )" frameBuffer_6_58 $end
+ $var wire 8 )# frameBuffer_9_33 $end
+ $var wire 8 )$ frameBuffer_8_37 $end
+ $var wire 8 )% frameBuffer_2_121 $end
+ $var wire 8 )& io_frameOut_120 $end
+ $var wire 8 )' frameBuffer_7_12 $end
+ $var wire 8 )( frameBuffer_0_58 $end
+ $var wire 8 )) frameBuffer_3_27 $end
+ $var wire 8 )* frameBuffer_13_88 $end
+ $var wire 8 )+ frameBuffer_12_98 $end
+ $var wire 8 ), frameBuffer_0_70 $end
+ $var wire 8 )- io_adcValues_2 $end
+ $var wire 8 ). frameBuffer_4_70 $end
+ $var wire 8 )/ io_frameOut_19 $end
+ $var wire 8 )0 frameBuffer_11_73 $end
+ $var wire 8 )1 frameBuffer_0_85 $end
+ $var wire 8 )2 frameBuffer_8_85 $end
+ $var wire 8 )3 frameBuffer_0_79 $end
+ $var wire 8 )4 frameBuffer_14_21 $end
+ $var wire 8 )5 frameBuffer_10_36 $end
+ $var wire 8 )6 frameBuffer_14_112 $end
+ $var wire 8 )7 frameBuffer_3_95 $end
+ $var wire 8 )8 frameBuffer_14_106 $end
+ $var wire 8 )9 frameBuffer_13_52 $end
+ $var wire 8 ): frameBuffer_7_89 $end
+ $var wire 8 ); frameBuffer_6_127 $end
+ $var wire 8 )< frameBuffer_6_79 $end
+ $var wire 8 )= io_frameOut_52 $end
+ $var wire 8 )> io_frameOut_108 $end
+ $var wire 8 )? frameBuffer_1_33 $end
+ $var wire 8 )@ io_frameOut_46 $end
+ $var wire 8 )A frameBuffer_10_100 $end
+ $var wire 8 )B frameBuffer_5_33 $end
+ $var wire 8 )C frameBuffer_12_36 $end
+ $var wire 8 )D frameBuffer_1_48 $end
+ $var wire 8 )E frameBuffer_8_43 $end
+ $var wire 8 )F frameBuffer_8_111 $end
+ $var wire 8 )G frameBuffer_4_58 $end
+ $var wire 8 )H frameBuffer_7_33 $end
+ $var wire 8 )I frameBuffer_7_101 $end
+ $var wire 8 )J frameBuffer_14_15 $end
+ $var wire 8 )K frameBuffer_6_112 $end
+ $var wire 8 )L frameBuffer_6_37 $end
+ $var wire 8 )M io_frameOut_10 $end
+ $var wire 8 )N frameBuffer_2_100 $end
+ $var wire 8 )O frameBuffer_4_91 $end
+ $var wire 8 )P frameBuffer_3_125 $end
+ $var wire 8 )Q frameBuffer_4_85 $end
+ $var wire 8 )R frameBuffer_11_67 $end
+ $var wire 8 )S frameBuffer_14_42 $end
+ $var wire 8 )T frameBuffer_2_115 $end
+ $var wire 8 )U frameBuffer_2_109 $end
+ $var wire 8 )V frameBuffer_15_88 $end
+ $var wire 8 )W frameBuffer_0_4 $end
+ $var wire 8 )X frameBuffer_10_42 $end
+ $var wire 8 )Y io_adcValues_26 $end
+ $var wire 8 )Z frameBuffer_2_70 $end
+ $var wire 8 )[ frameBuffer_2_64 $end
+ $var wire 8 )\ frameBuffer_12_21 $end
+ $var wire 8 )] frameBuffer_9_89 $end
+ $var wire 8 )^ frameBuffer_2_79 $end
+ $var wire 8 )_ frameBuffer_4_43 $end
+ $var wire 8 )` frameBuffer_4_108 $end
+ $var wire 8 )a frameBuffer_8_64 $end
+ $var wire 8 )b frameBuffer_8_126 $end
+ $var wire 8 )c frameBuffer_15_46 $end
+ $var wire 8 )d frameBuffer_7_122 $end
+ $var wire 8 )e frameBuffer_7_27 $end
+ $var wire 8 )f frameBuffer_7_116 $end
+ $var wire 8 )g io_adcValues_94 $end
+ $var wire 8 )h io_adcValues_88 $end
+ $var wire 8 )i frameBuffer_13_94 $end
+ $var wire 8 )j io_frameOut_31 $end
+ $var wire 8 )k frameBuffer_1_12 $end
+ $var wire 8 )l io_frameOut_25 $end
+ $var wire 8 )m frameBuffer_3_110 $end
+ $var wire 8 )n frameBuffer_5_12 $end
+ $var wire 8 )o frameBuffer_12_15 $end
+ $var wire 8 )p frameBuffer_1_27 $end
+ $var wire 8 )q frameBuffer_15_73 $end
+ $var wire 8 )r frameBuffer_9_27 $end
+ $var wire 8 )s frameBuffer_11_88 $end
+ $var wire 8 )t frameBuffer_9_109 $end
+ $var wire 8 )u frameBuffer_7_95 $end
+ $var wire 8 )v frameBuffer_14_98 $end
+ $var wire 8 )w io_adcValues_11 $end
+ $var wire 8 )x io_frameOut_114 $end
+ $var wire 8 )y frameBuffer_6_70 $end
+ $var wire 8 )z frameBuffer_2_91 $end
+ $var wire 8 ){ frameBuffer_2_85 $end
+ $var wire 8 )| frameBuffer_13_123 $end
+ $var wire 8 )} frameBuffer_13_117 $end
+ $var wire 8 )~ frameBuffer_6_85 $end
+ $var wire 8 *! frameBuffer_12_42 $end
+ $var wire 8 *" frameBuffer_12_113 $end
+ $var wire 8 *# frameBuffer_9_95 $end
+ $var wire 8 *$ frameBuffer_3_104 $end
+ $var wire 8 *% frameBuffer_4_64 $end
+ $var wire 8 *& frameBuffer_8_58 $end
+ $var wire 8 *' frameBuffer_15_67 $end
+ $var wire 8 *( frameBuffer_10_21 $end
+ $var wire 8 *) frameBuffer_3_48 $end
+ $var wire 8 ** frameBuffer_6_43 $end
+ $var wire 8 *+ frameBuffer_9_12 $end
+ $var wire 8 *, frameBuffer_13_46 $end
+ $var wire 8 *- frameBuffer_2_58 $end
+ $var wire 8 *. frameBuffer_5_27 $end
+ $var wire 8 */ frameBuffer_9_100 $end
+ $var wire 8 *0 frameBuffer_0_91 $end
+ $var wire 8 *1 frameBuffer_8_105 $end
+ $var wire 8 *2 frameBuffer_11_94 $end
+ $var wire 8 *3 io_adcValues_32 $end
+ $var wire 8 *4 frameBuffer_3_12 $end
+ $var wire 8 *5 frameBuffer_1_126 $end
+ $var wire 8 *6 frameBuffer_13_73 $end
+ $var wire 8 *7 frameBuffer_13_67 $end
+ $var wire 8 *8 frameBuffer_9_80 $end
+ $var wire 8 *9 frameBuffer_5_95 $end
+ $var wire 8 *: frameBuffer_8_70 $end
+ $var wire 8 *; frameBuffer_15_52 $end
+ $var wire 8 *< zeroAccumulators_6 $end
+ $var wire 8 *= frameBuffer_12_116 $end
+ $var wire 8 *> io_adcValues_100 $end
+ $var wire 8 *? frameBuffer_12_86 $end
+ $var wire 8 *@ frameBuffer_15_61 $end
+ $var wire 8 *A frameBuffer_11_127 $end
+ $var wire 8 *B frameBuffer_3_107 $end
+ $var wire 8 *C frameBuffer_7_83 $end
+ $var wire 8 *D frameBuffer_6_121 $end
+ $var wire 8 *E frameBuffer_0_73 $end
+ $var wire 8 *F frameBuffer_10_30 $end
+ $var wire 8 *G frameBuffer_10_24 $end
+ $var wire 8 *H frameBuffer_2_52 $end
+ $var wire 8 *I frameBuffer_6_67 $end
+ $var wire 8 *J frameBuffer_13_49 $end
+ $var wire 8 *K frameBuffer_4_31 $end
+ $var wire 8 *L frameBuffer_5_77 $end
+ $var wire 8 *M frameBuffer_8_46 $end
+ $var wire 8 *N frameBuffer_15_34 $end
+ $var wire 8 *O frameBuffer_15_28 $end
+ $var wire 8 *P frameBuffer_0_31 $end
+ $var wire 8 *Q frameBuffer_7_104 $end
+ $var wire 8 *R frameBuffer_3_15 $end
+ $var wire 8 *S io_adcValues_76 $end
+ $var wire 8 *T frameBuffer_12_122 $end
+ $var wire 8 *U frameBuffer_13_76 $end
+ $var wire 8 *V frameBuffer_0_125 $end
+ $var wire 8 *W frameBuffer_11_112 $end
+ $var wire 8 *X io_adcValues_121 $end
+ $var wire 8 *Y frameBuffer_9_15 $end
+ $var wire 8 *Z frameBuffer_8_10 $end
+ $var wire 8 *[ frameBuffer_11_61 $end
+ $var wire 8 *\ frameBuffer_8_19 $end
+ $var wire 8 *] frameBuffer_0_88 $end
+ $var wire 8 *^ frameBuffer_2_103 $end
+ $var wire 8 *_ frameBuffer_3_83 $end
+ $var wire 8 *` frameBuffer_6_52 $end
+ $var wire 8 *a frameBuffer_10_86 $end
+ $var wire 8 *b frameBuffer_13_40 $end
+ $var wire 8 *c frameBuffer_13_34 $end
+ $var wire 8 *d frameBuffer_13_105 $end
+ $var wire 8 *e frameBuffer_13_5 $end
+ $var wire 8 *f frameBuffer_12_24 $end
+ $var wire 8 *g frameBuffer_5_83 $end
+ $var wire 8 *h frameBuffer_5_126 $end
+ $var wire 8 *i frameBuffer_9_77 $end
+ $var wire 8 *j frameBuffer_0_52 $end
+ $var wire 8 *k frameBuffer_0_46 $end
+ $var wire 8 *l frameBuffer_1_120 $end
+ $var wire 8 *m frameBuffer_11_49 $end
+ $var wire 8 *n io_adcValues_97 $end
+ $var wire 8 *o frameBuffer_2_31 $end
+ $var wire 8 *p frameBuffer_14_4 $end
+ $var wire 8 *q frameBuffer_10_18 $end
+ $var wire 8 *r frameBuffer_12_92 $end
+ $var wire 8 *s frameBuffer_6_25 $end
+ $var wire 8 *t frameBuffer_13_28 $end
+ $var wire 8 *u frameBuffer_6_109 $end
+ $var wire 8 *v io_frameOut_13 $end
+ $var wire 8 *w io_frameOut_28 $end
+ $var wire 8 *x frameBuffer_1_15 $end
+ $var wire 8 *y frameBuffer_11_82 $end
+ $var wire 8 *z frameBuffer_11_7 $end
+ $var wire 8 *{ frameBuffer_11_76 $end
+ $var wire 8 *| frameBuffer_2_124 $end
+ $var wire 8 *} frameBuffer_14_71 $end
+ $var wire 8 *~ frameBuffer_14_92 $end
+ $var wire 8 +! frameBuffer_1_114 $end
+ $var wire 8 +" frameBuffer_3_98 $end
+ $var wire 8 +# frameBuffer_1_108 $end
+ $var wire 8 +$ frameBuffer_13_61 $end
+ $var wire 8 +% frameBuffer_12_101 $end
+ $var wire 8 +& frameBuffer_13_55 $end
+ $var wire 8 +' frameBuffer_9_62 $end
+ $var wire 8 +( frameBuffer_6_19 $end
+ $var wire 8 +) frameBuffer_9_98 $end
+ $var wire 8 +* frameBuffer_1_83 $end
+ $var wire 8 ++ io_frameOut_96 $end
+ $var wire 8 +, frameBuffer_12_6 $end
+ $var wire 8 +- frameBuffer_11_40 $end
+ $var wire 8 +. frameBuffer_11_34 $end
+ $var wire 8 +/ frameBuffer_8_52 $end
+ $var wire 8 +0 frameBuffer_0_67 $end
+ $var wire 8 +1 frameBuffer_3_21 $end
+ $var wire 8 +2 frameBuffer_4_67 $end
+ $var wire 8 +3 frameBuffer_14_24 $end
+ $var wire 8 +4 frameBuffer_6_31 $end
+ $var wire 8 +5 io_adcValues_109 $end
+ $var wire 8 +6 frameBuffer_14_18 $end
+ $var wire 8 +7 frameBuffer_7_77 $end
+ $var wire 8 +8 frameBuffer_6_115 $end
+ $var wire 8 +9 frameBuffer_6_46 $end
+ $var wire 8 +: io_frameOut_34 $end
+ $var wire 8 +; frameBuffer_2_46 $end
+ $var wire 8 +< frameBuffer_5_21 $end
+ $var wire 8 += frameBuffer_10_92 $end
+ $var wire 8 +> frameBuffer_4_25 $end
+ $var wire 8 +? frameBuffer_2_118 $end
+ $var wire 8 +@ frameBuffer_13_111 $end
+ $var wire 8 +A frameBuffer_14_86 $end
+ $var wire 8 +B frameBuffer_8_108 $end
+ $var wire 8 +C io_frameOut_102 $end
+ $var wire 8 +D frameBuffer_9_83 $end
+ $var wire 4 +E indexAccumulators_6 $end
+ $var wire 8 +F frameBuffer_2_73 $end
+ $var wire 8 +G frameBuffer_1_98 $end
+ $var wire 8 +H frameBuffer_15_40 $end
+ $var wire 8 +I frameBuffer_4_52 $end
+ $var wire 8 +J frameBuffer_4_73 $end
+ $var wire 8 +K frameBuffer_5_98 $end
+ $var wire 8 +L frameBuffer_11_55 $end
+ $var wire 8 +M frameBuffer_7_110 $end
+ $var wire 8 +N io_adcValues_115 $end
+ $var wire 8 +O frameBuffer_8_67 $end
+ $var wire 8 +P frameBuffer_15_55 $end
+ $var wire 8 +Q frameBuffer_6_100 $end
+ $var wire 8 +R frameBuffer_15_49 $end
+ $var wire 8 +S frameBuffer_7_125 $end
+ $var wire 8 +T frameBuffer_3_77 $end
+ $var wire 8 +U frameBuffer_7_98 $end
+ $var wire 8 +V io_adcValues_14 $end
+ $var wire 8 +W frameBuffer_1_21 $end
+ $var wire 4 +X io_indicesOut_1 $end
+ $var wire 8 +Y frameBuffer_2_67 $end
+ $var wire 8 +Z frameBuffer_5_15 $end
+ $var wire 8 +[ frameBuffer_12_18 $end
+ $var wire 8 +\ frameBuffer_8_31 $end
+ $var wire 8 +] frameBuffer_8_25 $end
+ $var wire 8 +^ frameBuffer_10_8 $end
+ $var wire 8 +_ frameBuffer_4_46 $end
+ $var wire 8 +` frameBuffer_7_15 $end
+ $var wire 8 +a frameBuffer_7_119 $end
+ $var wire 8 +b io_adcValues_82 $end
+ $var wire 8 +c frameBuffer_15_3 $end
+ $var wire 8 +d io_frameOut_117 $end
+ $var wire 8 +e frameBuffer_6_28 $end
+ $var wire 8 +f frameBuffer_12_0 $end
+ $var wire 8 +g frameBuffer_12_125 $end
+ $var wire 8 +h frameBuffer_11_115 $end
+ $var wire 8 +i frameBuffer_11_64 $end
+ $var wire 8 +j io_adcValues_124 $end
+ $var wire 8 +k frameBuffer_11_58 $end
+ $var wire 8 +l io_adcValues_118 $end
+ $var wire 8 +m frameBuffer_2_106 $end
+ $var wire 8 +n frameBuffer_7_71 $end
+ $var wire 8 +o frameBuffer_14_74 $end
+ $var wire 8 +p frameBuffer_3_86 $end
+ $var wire 8 +q frameBuffer_5_120 $end
+ $var wire 8 +r frameBuffer_14_89 $end
+ $var wire 8 +s frameBuffer_9_50 $end
+ $var wire 8 +t frameBuffer_2_61 $end
+ $var wire 8 +u frameBuffer_4_5 $end
+ $var wire 8 +v frameBuffer_10_2 $end
+ $var wire 8 +w frameBuffer_1_65 $end
+ $var wire 8 +x io_frameOut_78 $end
+ $var wire 8 +y io_frameOut_99 $end
+ $var wire 8 +z frameBuffer_4_40 $end
+ $var wire 8 +{ frameBuffer_11_22 $end
+ $var wire 8 +| frameBuffer_8_34 $end
+ $var wire 8 +} frameBuffer_15_37 $end
+ $var wire 8 +~ frameBuffer_4_49 $end
+ $var wire 8 ,! frameBuffer_7_65 $end
+ $var wire 8 ," frameBuffer_6_103 $end
+ $var wire 8 ,# frameBuffer_7_59 $end
+ $var wire 8 ,$ io_adcValues_91 $end
+ $var wire 8 ,% io_adcValues_85 $end
+ $var wire 8 ,& frameBuffer_9_111 $end
+ $var wire 8 ,' frameBuffer_12_80 $end
+ $var wire 8 ,( frameBuffer_1_92 $end
+ $var wire 8 ,) frameBuffer_11_100 $end
+ $var wire 8 ,* frameBuffer_14_7 $end
+ $var wire 8 ,+ frameBuffer_2_28 $end
+ $var wire 8 ,, frameBuffer_9_126 $end
+ $var wire 8 ,- frameBuffer_10_111 $end
+ $var wire 8 ,. frameBuffer_12_95 $end
+ $var wire 8 ,/ frameBuffer_4_13 $end
+ $var wire 8 ,0 frameBuffer_10_126 $end
+ $var wire 8 ,1 frameBuffer_7_92 $end
+ $var wire 8 ,2 frameBuffer_8_28 $end
+ $var wire 8 ,3 frameBuffer_3_92 $end
+ $var wire 8 ,4 io_frameOut_90 $end
+ $var wire 8 ,5 frameBuffer_2_55 $end
+ $var wire 8 ,6 io_frameOut_84 $end
+ $var wire 8 ,7 io_adcValues_58 $end
+ $var wire 8 ,8 frameBuffer_5_71 $end
+ $var wire 8 ,9 frameBuffer_12_104 $end
+ $var wire 8 ,: frameBuffer_13_58 $end
+ $var wire 8 ,; frameBuffer_5_65 $end
+ $var wire 8 ,< frameBuffer_1_86 $end
+ $var wire 8 ,= frameBuffer_4_125 $end
+ $var wire 8 ,> frameBuffer_15_22 $end
+ $var wire 8 ,? io_adcValues_103 $end
+ $var wire 8 ,@ frameBuffer_11_37 $end
+ $var wire 8 ,A frameBuffer_7_50 $end
+ $var wire 8 ,B frameBuffer_0_40 $end
+ $var wire 8 ,C frameBuffer_15_127 $end
+ $var wire 8 ,D frameBuffer_7_107 $end
+ $var wire 8 ,E frameBuffer_5_4 $end
+ $var wire 8 ,F frameBuffer_2_40 $end
+ $var wire 8 ,G frameBuffer_6_34 $end
+ $var wire 4 ,H io_indicesOut_4 $end
+ $var wire 8 ,I frameBuffer_11_121 $end
+ $var wire 8 ,J frameBuffer_13_16 $end
+ $var wire 8 ,K frameBuffer_2_49 $end
+ $var wire 8 ,L frameBuffer_8_13 $end
+ $var wire 8 ,M frameBuffer_7_2 $end
+ $var wire 8 ,N frameBuffer_4_28 $end
+ $var wire 8 ,O frameBuffer_2_112 $end
+ $var wire 8 ,P frameBuffer_0_28 $end
+ $var wire 8 ,Q io_adcValues_64 $end
+ $var wire 8 ,R frameBuffer_10_95 $end
+ $var wire 8 ,S frameBuffer_10_89 $end
+ $var wire 8 ,T frameBuffer_0_107 $end
+ $var wire 8 ,U frameBuffer_1_71 $end
+ $var wire 8 ,V frameBuffer_9_71 $end
+ $var wire 8 ,W frameBuffer_5_92 $end
+ $var wire 8 ,X frameBuffer_5_86 $end
+ $var wire 8 ,Y frameBuffer_8_40 $end
+ $var wire 8 ,Z frameBuffer_12_74 $end
+ $var wire 8 ,[ frameBuffer_12_68 $end
+ $var wire 8 ,\ frameBuffer_9_86 $end
+ $var wire 8 ,] frameBuffer_15_43 $end
+ $var wire 8 ,^ frameBuffer_11_109 $end
+ $var wire 8 ,_ frameBuffer_15_112 $end
+ $var wire 8 ,` frameBuffer_0_61 $end
+ $var wire 8 ,a frameBuffer_0_55 $end
+ $var wire 8 ,b frameBuffer_10_12 $end
+ $var wire 8 ,c frameBuffer_3_71 $end
+ $var wire 8 ,d frameBuffer_2_34 $end
+ $var wire 8 ,e frameBuffer_6_49 $end
+ $var wire 8 ,f frameBuffer_5_50 $end
+ $var wire 8 ,g frameBuffer_13_37 $end
+ $var wire 8 ,h frameBuffer_9_44 $end
+ $var wire 8 ,i frameBuffer_5_59 $end
+ $var wire 8 ,j frameBuffer_11_1 $end
+ $var wire 8 ,k frameBuffer_15_16 $end
+ $var wire 8 ,l frameBuffer_0_13 $end
+ $var wire 8 ,m frameBuffer_10_80 $end
+ $var wire 8 ,n frameBuffer_4_34 $end
+ $var wire 8 ,o frameBuffer_11_16 $end
+ $var wire 8 ,p frameBuffer_0_49 $end
+ $var wire 8 ,q frameBuffer_14_95 $end
+ $var wire 8 ,r frameBuffer_15_6 $end
+ $var wire 8 ,s frameBuffer_1_117 $end
+ $var wire 8 ,t frameBuffer_12_110 $end
+ $var wire 8 ,u frameBuffer_6_13 $end
+ $var wire 8 ,v frameBuffer_9_92 $end
+ $var wire 8 ,w frameBuffer_12_119 $end
+ $var wire 8 ,x frameBuffer_12_89 $end
+ $var wire 8 ,y io_adcValues_79 $end
+ $var wire 8 ,z frameBuffer_8_1 $end
+ $var wire 8 ,{ frameBuffer_8_96 $end
+ $var wire 8 ,| io_frameOut_16 $end
+ $var wire 8 ,} frameBuffer_12_9 $end
+ $var wire 8 ,~ frameBuffer_11_43 $end
+ $var wire 8 -! frameBuffer_14_53 $end
+ $var wire 8 -" frameBuffer_3_65 $end
+ $var wire 8 -# frameBuffer_6_40 $end
+ $var wire 8 -$ frameBuffer_10_74 $end
+ $var wire 8 -% frameBuffer_10_68 $end
+ $var wire 8 -& frameBuffer_7_86 $end
+ $var wire 8 -' frameBuffer_13_22 $end
+ $var wire 8 -( frameBuffer_13_43 $end
+ $var wire 8 -) frameBuffer_6_124 $end
+ $var wire 8 -* frameBuffer_6_118 $end
+ $var wire 8 -+ frameBuffer_14_68 $end
+ $var wire 8 -, frameBuffer_5_114 $end
+ $var wire 8 -- frameBuffer_5_108 $end
+ $var wire 8 -. frameBuffer_9_65 $end
+ $var wire 8 -/ frameBuffer_9_0 $end
+ $var wire 8 -0 frameBuffer_9_59 $end
+ $var wire 8 -1 frameBuffer_13_8 $end
+ $var wire 8 -2 frameBuffer_9_9 $end
+ $var wire 8 -3 frameBuffer_0_34 $end
+ $var wire 8 -4 frameBuffer_14_80 $end
+ $var wire 8 -5 frameBuffer_1_102 $end
+ $var wire 8 -6 frameBuffer_1_123 $end
+ $var wire 8 -7 frameBuffer_4_55 $end
+ $var wire 8 -8 frameBuffer_0_113 $end
+ $var wire 8 -9 frameBuffer_8_49 $end
+ $var wire 4 -: indexAccumulators_0 $end
+ $var wire 8 -; frameBuffer_2_13 $end
+ $var wire 8 -< frameBuffer_6_3 $end
+ $var wire 8 -= frameBuffer_3_59 $end
+ $var wire 8 -> io_adcValues_70 $end
+ $var wire 8 -? frameBuffer_2_22 $end
+ $var wire 8 -@ frameBuffer_3_47 $end
+ $var wire 8 -A frameBuffer_6_22 $end
+ $var wire 8 -B frameBuffer_6_16 $end
+ $var wire 8 -C frameBuffer_11_103 $end
+ $var wire 8 -D frameBuffer_9_32 $end
+ $var wire 8 -E frameBuffer_9_114 $end
+ $var wire 8 -F frameBuffer_0_3 $end
+ $var wire 8 -G frameBuffer_11_4 $end
+ $var wire 8 -H frameBuffer_7_80 $end
+ $var wire 8 -I frameBuffer_0_16 $end
+ $var wire 8 -J frameBuffer_14_62 $end
+ $var wire 8 -K frameBuffer_1_105 $end
+ $var wire 8 -L frameBuffer_2_90 $end
+ $var wire 8 -M frameBuffer_10_77 $end
+ $var wire 8 -N frameBuffer_6_90 $end
+ $var wire 8 -O frameBuffer_6_84 $end
+ $var wire 8 -P frameBuffer_2_99 $end
+ $var wire 8 -Q frameBuffer_5_74 $end
+ $var wire 8 -R frameBuffer_12_56 $end
+ $var wire 8 -S frameBuffer_9_68 $end
+ $var wire 8 -T frameBuffer_9_3 $end
+ $var wire 8 -U frameBuffer_1_2 $end
+ $var wire 8 -V io_frameOut_87 $end
+ $var wire 8 -W io_adcValues_1 $end
+ $var wire 8 -X frameBuffer_11_31 $end
+ $var wire 8 -Y frameBuffer_0_43 $end
+ $var wire 8 -Z frameBuffer_0_122 $end
+ $var wire 8 -[ frameBuffer_3_53 $end
+ $var wire 8 -\ frameBuffer_13_10 $end
+ $var wire 8 -] frameBuffer_3_68 $end
+ $var wire 8 -^ frameBuffer_5_102 $end
+ $var wire 8 -_ frameBuffer_5_32 $end
+ $var wire 8 -` frameBuffer_13_19 $end
+ $var wire 8 -a frameBuffer_9_26 $end
+ $var wire 8 -b frameBuffer_2_1 $end
+ $var wire 4 -c io_indicesOut_7 $end
+ $var wire 8 -d frameBuffer_3_80 $end
+ $var wire 8 -e frameBuffer_8_119 $end
+ $var wire 8 -f frameBuffer_10_62 $end
+ $var wire 8 -g frameBuffer_4_16 $end
+ $var wire 8 -h frameBuffer_14_83 $end
+ $var wire 8 -i frameBuffer_14_77 $end
+ $var wire 8 -j frameBuffer_7_5 $end
+ $var wire 8 -k frameBuffer_13_2 $end
+ $var wire 8 -l io_frameOut_4 $end
+ $var wire 8 -m frameBuffer_8_84 $end
+ $var wire 8 -n frameBuffer_12_62 $end
+ $var wire 8 -o frameBuffer_1_74 $end
+ $var wire 8 -p frameBuffer_5_89 $end
+ $var wire 8 -q frameBuffer_11_25 $end
+ $var wire 8 -r frameBuffer_0_99 $end
+ $var wire 8 -s frameBuffer_14_41 $end
+ $var wire 8 -t frameBuffer_14_35 $end
+ $var wire 8 -u frameBuffer_15_115 $end
+ $var wire 8 -v frameBuffer_10_56 $end
+ $var wire 8 -w frameBuffer_7_68 $end
+ $var wire 8 -x frameBuffer_14_126 $end
+ $var wire 8 -y frameBuffer_6_106 $end
+ $var wire 8 -z frameBuffer_14_1 $end
+ $var wire 8 -{ frameBuffer_9_120 $end
+ $var wire 8 -| frameBuffer_9_47 $end
+ $var wire 8 -} frameBuffer_11_124 $end
+ $var wire 8 -~ frameBuffer_13_25 $end
+ $var wire 8 .! frameBuffer_2_37 $end
+ $var wire 8 ." io_frameOut_66 $end
+ $var wire 8 .# frameBuffer_10_120 $end
+ $var wire 8 .$ frameBuffer_10_114 $end
+ $var wire 8 .% frameBuffer_11_93 $end
+ $var wire 8 .& frameBuffer_5_47 $end
+ $var wire 8 .' frameBuffer_8_22 $end
+ $var wire 8 .( frameBuffer_10_83 $end
+ $var wire 8 .) frameBuffer_4_37 $end
+ $var wire 8 .* frameBuffer_11_19 $end
+ $var wire 8 .+ frameBuffer_13_93 $end
+ $var wire 8 ., frameBuffer_15_0 $end
+ $var wire 8 .- io_adcValues_52 $end
+ $var wire 8 .. frameBuffer_1_80 $end
+ $var wire 8 ./ io_frameOut_93 $end
+ $var wire 8 .0 frameBuffer_15_9 $end
+ $var wire 8 .1 frameBuffer_12_3 $end
+ $var wire 8 .2 frameBuffer_5_80 $end
+ $var wire 8 .3 frameBuffer_12_107 $end
+ $var wire 8 .4 frameBuffer_12_83 $end
+ $var wire 8 .5 frameBuffer_1_95 $end
+ $var wire 8 .6 frameBuffer_9_108 $end
+ $var wire 8 .7 frameBuffer_1_89 $end
+ $var wire 8 .8 frameBuffer_15_31 $end
+ $var wire 8 .9 frameBuffer_8_90 $end
+ $var wire 8 .: io_adcValues_112 $end
+ $var wire 8 .; frameBuffer_11_46 $end
+ $var wire 8 .< frameBuffer_15_121 $end
+ $var wire 8 .= io_adcValues_106 $end
+ $var wire 8 .> frameBuffer_10_41 $end
+ $var wire 8 .? frameBuffer_10_108 $end
+ $var wire 8 .@ frameBuffer_7_53 $end
+ $var wire 8 .A frameBuffer_14_111 $end
+ $var wire 8 .B frameBuffer_8_4 $end
+ $var wire 8 .C frameBuffer_14_56 $end
+ $var wire 8 .D frameBuffer_8_99 $end
+ $var wire 8 .E frameBuffer_5_7 $end
+ $var wire 8 .F frameBuffer_2_43 $end
+ $var wire 8 .G io_frameOut_51 $end
+ $var wire 8 .H io_adcValues_46 $end
+ $var wire 17 .I zeroCount_5 $end
+ $var wire 8 .J frameBuffer_12_41 $end
+ $var wire 8 .K frameBuffer_1_53 $end
+ $var wire 8 .L frameBuffer_1_47 $end
+ $var wire 8 .M frameBuffer_9_53 $end
+ $var wire 8 .N frameBuffer_4_22 $end
+ $var wire 8 .O frameBuffer_5_68 $end
+ $var wire 8 .P frameBuffer_8_16 $end
+ $var wire 8 .Q frameBuffer_15_25 $end
+ $var wire 8 .R frameBuffer_15_19 $end
+ $var wire 8 .S frameBuffer_8_125 $end
+ $var wire 8 .T frameBuffer_7_47 $end
+ $var wire 8 .U frameBuffer_6_6 $end
+ $var wire 8 .V frameBuffer_0_37 $end
+ $var wire 8 .W io_adcValues_73 $end
+ $var wire 8 .X io_adcValues_67 $end
+ $var wire 8 .Y frameBuffer_10_98 $end
+ $var wire 8 .Z frameBuffer_0_116 $end
+ $var wire 8 .[ io_zeroSums_7 $end
+ $var wire 4 .\ indexAccumulators_3 $end
+ $var wire 8 .] frameBuffer_2_16 $end
+ $var wire 8 .^ frameBuffer_3_0 $end
+ $var wire 8 ._ frameBuffer_4_90 $end
+ $var wire 8 .` frameBuffer_12_77 $end
+ $var wire 8 .a frameBuffer_3_124 $end
+ $var wire 8 .b frameBuffer_11_118 $end
+ $var wire 8 .c frameBuffer_15_93 $end
+ $var wire 8 .d frameBuffer_15_87 $end
+ $var wire 8 .e frameBuffer_3_9 $end
+ $var wire 8 .f frameBuffer_4_99 $end
+ $var wire 8 .g frameBuffer_7_74 $end
+ $var wire 8 .h io_adcValues_31 $end
+ $var wire 8 .i frameBuffer_3_74 $end
+ $var wire 8 .j frameBuffer_13_31 $end
+ $var wire 8 .k io_frameOut_72 $end
+ $var wire 8 .l zeroAccumulators_5 $end
+ $var wire 8 .m frameBuffer_3_89 $end
+ $var wire 8 .n frameBuffer_5_123 $end
+ $var wire 8 .o frameBuffer_5_53 $end
+ $var wire 8 .p frameBuffer_5_117 $end
+ $var wire 8 .q frameBuffer_6_99 $end
+ $var wire 8 .r frameBuffer_4_113 $end
+ $var wire 8 .s frameBuffer_1_68 $end
+ $var wire 8 .t frameBuffer_15_10 $end
+ $var wire 8 .u frameBuffer_9_74 $end
+ $var wire 8 .v frameBuffer_4_107 $end
+ $var wire 8 .w frameBuffer_15_100 $end
+ $var wire 8 .x frameBuffer_4_8 $end
+ $var wire 8 .y frameBuffer_7_32 $end
+ $var wire 8 .z frameBuffer_11_10 $end
+ $var wire 8 .{ frameBuffer_0_22 $end
+ $var wire 8 .| frameBuffer_8_78 $end
+ $var wire 8 .} frameBuffer_1_111 $end
+ $var wire 8 .~ frameBuffer_15_109 $end
+ $var wire 8 /! frameBuffer_10_5 $end
+ $var wire 8 /" frameBuffer_0_101 $end
+ $var wire 8 /# frameBuffer_14_23 $end
+ $var wire 8 /$ frameBuffer_8_87 $end
+ $var wire 8 /% frameBuffer_15_124 $end
+ $var wire 8 /& frameBuffer_15_118 $end
+ $var wire 8 /' frameBuffer_15_69 $end
+ $var wire 8 /( frameBuffer_7_56 $end
+ $var wire 8 /) frameBuffer_0_110 $end
+ $var wire 8 /* frameBuffer_14_108 $end
+ $var wire 8 /+ frameBuffer_6_9 $end
+ $var wire 8 /, io_zeroSums_1 $end
+ $var wire 8 /- frameBuffer_2_10 $end
+ $var wire 8 /. frameBuffer_0_119 $end
+ $var wire 8 // frameBuffer_12_71 $end
+ $var wire 8 /0 io_frameOut_54 $end
+ $var wire 8 /1 frameBuffer_2_19 $end
+ $var wire 8 /2 io_frameOut_48 $end
+ $var wire 8 /3 frameBuffer_10_102 $end
+ $var wire 8 /4 frameBuffer_5_35 $end
+ $var wire 8 /5 frameBuffer_5_29 $end
+ $var wire 8 /6 frameBuffer_2_123 $end
+ $var wire 8 /7 frameBuffer_15_96 $end
+ $var wire 8 /8 frameBuffer_4_19 $end
+ $var wire 8 /9 frameBuffer_8_113 $end
+ $var wire 8 /: frameBuffer_7_14 $end
+ $var wire 8 /; frameBuffer_7_8 $end
+ $var wire 8 /< io_adcValues_34 $end
+ $var wire 8 /= frameBuffer_6_93 $end
+ $var wire 8 /> frameBuffer_4_101 $end
+ $var wire 8 /? frameBuffer_5_62 $end
+ $var wire 8 /@ frameBuffer_12_65 $end
+ $var wire 8 /A frameBuffer_4_116 $end
+ $var wire 8 /B frameBuffer_8_72 $end
+ $var wire 8 /C frameBuffer_3_127 $end
+ $var wire 8 /D frameBuffer_4_87 $end
+ $var wire 8 /E frameBuffer_8_7 $end
+ $var wire 8 /F frameBuffer_3_41 $end
+ $var wire 8 /G frameBuffer_6_10 $end
+ $var wire 8 /H io_adcValues_28 $end
+ $var wire 8 /I frameBuffer_5_20 $end
+ $var wire 8 /J frameBuffer_12_23 $end
+ $var wire 8 /K frameBuffer_1_35 $end
+ $var wire 8 /L frameBuffer_15_81 $end
+ $var wire 8 /M frameBuffer_9_35 $end
+ $var wire 8 /N frameBuffer_9_123 $end
+ $var wire 8 /O frameBuffer_12_38 $end
+ $var wire 1 /P clock $end
+ $var wire 8 /Q frameBuffer_0_10 $end
+ $var wire 8 /R frameBuffer_8_107 $end
+ $var wire 8 /S frameBuffer_10_71 $end
+ $var wire 8 /T frameBuffer_7_29 $end
+ $var wire 8 /U io_frameOut_122 $end
+ $var wire 8 /V frameBuffer_0_19 $end
+ $var wire 8 /W io_adcValues_55 $end
+ $var wire 8 /X frameBuffer_2_93 $end
+ $var wire 8 /Y frameBuffer_0_104 $end
+ $var wire 8 /Z frameBuffer_12_50 $end
+ $var wire 8 /[ frameBuffer_4_122 $end
+ $var wire 8 /\ frameBuffer_13_96 $end
+ $var wire 8 /] frameBuffer_4_2 $end
+ $var wire 8 /^ frameBuffer_3_112 $end
+ $var wire 8 /_ frameBuffer_5_14 $end
+ $var wire 8 /` frameBuffer_8_93 $end
+ $var wire 8 /a frameBuffer_1_5 $end
+ $var wire 8 /b frameBuffer_15_75 $end
+ $var wire 8 /c io_adcValues_4 $end
+ $var wire 8 /d frameBuffer_11_75 $end
+ $var wire 8 /e frameBuffer_0_87 $end
+ $var wire 8 /f frameBuffer_3_62 $end
+ $var wire 8 /g io_adcValues_13 $end
+ $var wire 8 /h frameBuffer_3_56 $end
+ $var wire 8 /i frameBuffer_10_65 $end
+ $var wire 8 /j frameBuffer_10_44 $end
+ $var wire 8 /k frameBuffer_10_38 $end
+ $var wire 8 /l frameBuffer_13_13 $end
+ $var wire 8 /m frameBuffer_14_114 $end
+ $var wire 8 /n frameBuffer_14_59 $end
+ $var wire 8 /o frameBuffer_5_1 $end
+ $var wire 8 /p frameBuffer_9_20 $end
+ $var wire 8 /q frameBuffer_2_87 $end
+ $var wire 8 /r frameBuffer_5_41 $end
+ $var wire 8 /s frameBuffer_5_105 $end
+ $var wire 8 /t frameBuffer_9_56 $end
+ $var wire 8 /u frameBuffer_2_4 $end
+ $var wire 8 /v frameBuffer_1_41 $end
+ $var wire 8 /w frameBuffer_8_66 $end
+ $var wire 8 /x frameBuffer_3_20 $end
+ $var wire 8 /y frameBuffer_13_81 $end
+ $var wire 8 /z frameBuffer_14_17 $end
+ $var wire 8 /{ frameBuffer_3_29 $end
+ $var wire 8 /| io_adcValues_61 $end
+ $var wire 8 /} frameBuffer_15_60 $end
+ $var wire 8 /~ frameBuffer_3_3 $end
+ $var wire 8 0! frameBuffer_9_14 $end
+ $var wire 8 0" frameBuffer_9_102 $end
+ $var wire 8 0# frameBuffer_9_29 $end
+ $var wire 8 0$ frameBuffer_11_106 $end
+ $var wire 8 0% frameBuffer_0_93 $end
+ $var wire 8 0& frameBuffer_10_50 $end
+ $var wire 8 0' frameBuffer_4_93 $end
+ $var wire 8 0( frameBuffer_7_62 $end
+ $var wire 8 0) frameBuffer_11_96 $end
+ $var wire 8 0* frameBuffer_14_120 $end
+ $var wire 8 0+ frameBuffer_14_50 $end
+ $var wire 8 0, frameBuffer_14_44 $end
+ $var wire 8 0- frameBuffer_2_72 $end
+ $var wire 8 0. frameBuffer_13_110 $end
+ $var wire 8 0/ frameBuffer_10_59 $end
+ $var wire 8 00 frameBuffer_0_6 $end
+ $var wire 8 01 frameBuffer_6_72 $end
+ $var wire 8 02 frameBuffer_6_66 $end
+ $var wire 8 03 frameBuffer_9_41 $end
+ $var wire 8 04 frameBuffer_13_75 $end
+ $var wire 8 05 frameBuffer_13_119 $end
+ $var wire 8 06 io_frameOut_60 $end
+ $var wire 8 07 io_frameOut_75 $end
+ $var wire 8 08 frameBuffer_1_62 $end
+ $var wire 8 09 frameBuffer_1_56 $end
+ $var wire 8 0: io_frameOut_69 $end
+ $var wire 8 0; frameBuffer_4_10 $end
+ $var wire 8 0< frameBuffer_10_123 $end
+ $var wire 8 0= io_frameOut_7 $end
+ $var wire 8 0> frameBuffer_11_13 $end
+ $var wire 8 0? frameBuffer_5_56 $end
+ $var wire 8 0@ frameBuffer_0_25 $end
+ $var wire 8 0A frameBuffer_12_59 $end
+ $var wire 8 0B frameBuffer_15_13 $end
+ $var wire 8 0C frameBuffer_7_20 $end
+ $var wire 8 0D frameBuffer_11_28 $end
+ $var wire 8 0E frameBuffer_15_103 $end
+ $var wire 8 0F frameBuffer_3_35 $end
+ $var wire 8 0G frameBuffer_10_23 $end
+ $var wire 8 0H frameBuffer_7_35 $end
+ $var wire 8 0I frameBuffer_7_124 $end
+ $var wire 8 0J frameBuffer_14_38 $end
+ $var wire 8 0K frameBuffer_2_25 $end
+ $var wire 8 0L frameBuffer_1_20 $end
+ $var wire 8 0M io_frameOut_33 $end
+ $var wire 8 0N frameBuffer_9_117 $end
+ $var wire 8 0O frameBuffer_11_81 $end
+ $var wire 8 0P frameBuffer_1_29 $end
+ $var wire 8 0Q frameBuffer_10_117 $end
+ $var wire 8 0R frameBuffer_14_65 $end
+ $var wire 8 0S frameBuffer_5_111 $end
+ $var wire 8 0T frameBuffer_13_125 $end
+ $var wire 8 0U io_adcValues_40 $end
+ $var wire 8 0V frameBuffer_6_87 $end
+ $var wire 8 0W io_frameOut_81 $end
+ $var wire 8 0X io_frameOut_116 $end
+ $var wire 8 0Y io_adcValues_49 $end
+ $var wire 8 0Z frameBuffer_12_44 $end
+ $var wire 8 0[ frameBuffer_1_77 $end
+ $var wire 8 0\ frameBuffer_4_72 $end
+ $var wire 8 0] frameBuffer_3_106 $end
+ $var wire 8 0^ frameBuffer_7_41 $end
+ $var wire 8 0_ frameBuffer_9_6 $end
+ $var wire 8 0` frameBuffer_6_0 $end
+ $var wire 8 0a frameBuffer_4_81 $end
+ $var wire 8 0b frameBuffer_11_57 $end
+ $var wire 8 0c frameBuffer_0_69 $end
+ $var wire 8 0d frameBuffer_3_44 $end
+ $var wire 8 0e frameBuffer_15_106 $end
+ $var wire 8 0f frameBuffer_6_60 $end
+ $var wire 8 0g frameBuffer_14_47 $end
+ $var wire 8 0h frameBuffer_6_54 $end
+ $var wire 8 0i frameBuffer_5_23 $end
+ $var wire 8 0j frameBuffer_13_107 $end
+ $var wire 8 0k frameBuffer_6_69 $end
+ $var wire 8 0l frameBuffer_9_38 $end
+ $var wire 8 0m frameBuffer_8_101 $end
+ $var wire 8 0n frameBuffer_1_23 $end
+ $var wire 8 0o frameBuffer_11_90 $end
+ $var wire 8 0p frameBuffer_11_84 $end
+ $var wire 8 0q frameBuffer_1_59 $end
+ $var wire 8 0r frameBuffer_1_122 $end
+ $var wire 8 0s frameBuffer_7_23 $end
+ $var wire 8 0t io_adcValues_43 $end
+ $var wire 8 0u frameBuffer_12_124 $end
+ $var wire 8 0v frameBuffer_1_50 $end
+ $var wire 8 0w frameBuffer_12_53 $end
+ $var wire 8 0x frameBuffer_0_81 $end
+ $var wire 8 0y io_adcValues_7 $end
+ $var wire 8 0z frameBuffer_1_17 $end
+ $var wire 8 0{ frameBuffer_3_115 $end
+ $var wire 8 0| frameBuffer_15_63 $end
+ $var wire 8 0} frameBuffer_4_75 $end
+ $var wire 8 0~ frameBuffer_11_78 $end
+ $var wire 8 1! frameBuffer_14_102 $end
+ $var wire 8 1" frameBuffer_14_32 $end
+ $var wire 8 1# frameBuffer_2_105 $end
+ $var wire 8 1$ frameBuffer_7_91 $end
+ $var wire 8 1% frameBuffer_6_123 $end
+ $var wire 8 1& frameBuffer_14_117 $end
+ $var wire 8 1' frameBuffer_13_57 $end
+ $var wire 8 1( io_frameOut_42 $end
+ $var wire 8 1) io_adcValues_16 $end
+ $var wire 17 1* zeroCount_2 $end
+ $var wire 8 1+ frameBuffer_12_11 $end
+ $var wire 8 1, frameBuffer_1_44 $end
+ $var wire 8 1- io_frameOut_57 $end
+ $var wire 8 1. frameBuffer_15_90 $end
+ $var wire 8 1/ frameBuffer_5_38 $end
+ $var wire 4 10 lineCounter $end
+ $var wire 8 11 frameBuffer_8_54 $end
+ $var wire 8 12 frameBuffer_2_7 $end
+ $var wire 8 13 frameBuffer_8_116 $end
+ $var wire 8 14 frameBuffer_8_48 $end
+ $var wire 8 15 frameBuffer_4_69 $end
+ $var wire 8 16 frameBuffer_7_38 $end
+ $var wire 8 17 frameBuffer_7_17 $end
+ $var wire 8 18 frameBuffer_7_106 $end
+ $var wire 8 19 frameBuffer_4_110 $end
+ $var wire 8 1: io_zeroSums_4 $end
+ $var wire 8 1; io_frameOut_15 $end
+ $var wire 8 1< frameBuffer_3_100 $end
+ $var wire 8 1= frameBuffer_11_63 $end
+ $var wire 8 1> frameBuffer_8_81 $end
+ $var wire 8 1? frameBuffer_2_111 $end
+ $var wire 8 1@ frameBuffer_15_84 $end
+ $var wire 8 1A frameBuffer_4_96 $end
+ $var wire 8 1B frameBuffer_0_9 $end
+ $var wire 8 1C frameBuffer_0_96 $end
+ $var wire 8 1D io_adcValues_22 $end
+ $var wire 8 1E frameBuffer_10_53 $end
+ $var wire 8 1F frameBuffer_10_47 $end
+ $var wire 8 1G io_frameOut_104 $end
+ $var wire 8 1H io_frameOut_63 $end
+ $var wire 8 1I io_adcValues_37 $end
+ $var wire 8 1J frameBuffer_2_75 $end
+ $var wire 8 1K frameBuffer_2_69 $end
+ $var wire 8 1L frameBuffer_5_44 $end
+ $var wire 8 1M frameBuffer_12_32 $end
+ $var wire 8 1N frameBuffer_12_26 $end
+ $var wire 8 1O frameBuffer_4_104 $end
+ $var wire 8 1P frameBuffer_4_54 $end
+ $var wire 8 1Q frameBuffer_14_11 $end
+ $var wire 8 1R frameBuffer_8_75 $end
+ $var wire 8 1S frameBuffer_8_69 $end
+ $var wire 8 1T frameBuffer_7_127 $end
+ $var wire 8 1U io_adcValues_90 $end
+ $var wire 8 1V frameBuffer_10_11 $end
+ $var wire 8 1W frameBuffer_13_90 $end
+ $var wire 8 1X io_frameOut_21 $end
+ $var wire 8 1Y frameBuffer_3_38 $end
+ $var wire 8 1Z io_adcValues_99 $end
+ $var wire 8 1[ frameBuffer_13_99 $end
+ $var wire 8 1\ io_frameOut_36 $end
+ $var wire 8 1] frameBuffer_3_121 $end
+ $var wire 8 1^ frameBuffer_5_17 $end
+ $var wire 8 1_ frameBuffer_0_0 $end
+ $var wire 8 1` frameBuffer_15_78 $end
+ $var wire 8 1a frameBuffer_2_126 $end
+ $var wire 8 1b frameBuffer_2_60 $end
+ $var wire 8 1c io_frameOut_125 $end
+ $var wire 8 1d frameBuffer_6_81 $end
+ $var wire 8 1e io_frameOut_119 $end
+ $var wire 8 1f frameBuffer_6_75 $end
+ $var wire 8 1g frameBuffer_13_63 $end
+ $var wire 8 1h frameBuffer_2_96 $end
+ $var wire 8 1i frameBuffer_12_47 $end
+ $var wire 8 1j frameBuffer_12_118 $end
+ $var wire 8 1k frameBuffer_4_119 $end
+ $var wire 8 1l frameBuffer_8_60 $end
+ $var wire 8 1m frameBuffer_8_122 $end
+ $var wire 8 1n frameBuffer_15_42 $end
+ $var wire 8 1o frameBuffer_3_109 $end
+ $var wire 8 1p frameBuffer_7_112 $end
+ $var wire 8 1q frameBuffer_4_60 $end
+ $var wire 8 1r frameBuffer_1_8 $end
+ $var wire 8 1s frameBuffer_0_75 $end
+ $var wire 8 1t frameBuffer_3_50 $end
+ $var wire 8 1u frameBuffer_3_23 $end
+ $var wire 8 1v frameBuffer_10_32 $end
+ $var wire 8 1w frameBuffer_10_26 $end
+ $var wire 8 1x frameBuffer_7_44 $end
+ $var wire 8 1y frameBuffer_14_26 $end
+ $var wire 8 1z frameBuffer_2_54 $end
+ $var wire 8 1{ frameBuffer_6_48 $end
+ $var wire 8 1| frameBuffer_9_23 $end
+ $var wire 8 1} frameBuffer_3_6 $end
+ $var wire 8 1~ frameBuffer_9_17 $end
+ $var wire 8 2! frameBuffer_9_105 $end
+ $var wire 8 2" frameBuffer_15_99 $end
+ $var wire 8 2# frameBuffer_1_38 $end
+ $var wire 8 2$ frameBuffer_10_105 $end
+ $var wire 8 2% io_frameOut_110 $end
+ $var wire 8 2& frameBuffer_11_99 $end
+ $var wire 8 2' frameBuffer_14_123 $end
+ $var wire 8 2( frameBuffer_2_81 $end
+ $var wire 8 2) frameBuffer_13_113 $end
+ $var wire 8 2* frameBuffer_3_17 $end
+ $var wire 8 2+ frameBuffer_6_96 $end
+ $var wire 8 2, frameBuffer_13_84 $end
+ $var wire 8 2- frameBuffer_13_78 $end
+ $var wire 8 2. frameBuffer_9_91 $end
+ $var wire 8 2/ zeroAccumulators_2 $end
+ $var wire 8 20 io_frameOut_1 $end
+ $var wire 8 21 frameBuffer_15_57 $end
+ $var wire 8 22 frameBuffer_0_60 $end
+ $var wire 8 23 frameBuffer_11_51 $end
+ $var wire 8 24 io_adcValues_111 $end
+ $var wire 8 25 frameBuffer_8_63 $end
+ $var wire 8 26 frameBuffer_12_97 $end
+ $var wire 8 27 frameBuffer_3_118 $end
+ $var wire 8 28 frameBuffer_15_66 $end
+ $var wire 8 29 frameBuffer_4_78 $end
+ $var wire 8 2: frameBuffer_0_78 $end
+ $var wire 8 2; frameBuffer_10_35 $end
+ $var wire 8 2< frameBuffer_14_105 $end
+ $var wire 8 2= io_adcValues_19 $end
+ $var wire 8 2> frameBuffer_2_63 $end
+ $var wire 8 2? frameBuffer_2_57 $end
+ $var wire 8 2@ frameBuffer_12_14 $end
+ $var wire 8 2A frameBuffer_6_78 $end
+ $var wire 8 2B frameBuffer_8_21 $end
+ $var wire 8 2C frameBuffer_15_24 $end
+ $var wire 8 2D frameBuffer_4_36 $end
+ $var wire 8 2E frameBuffer_7_100 $end
+ $var wire 8 2F frameBuffer_15_39 $end
+ $var wire 8 2G frameBuffer_7_109 $end
+ $var wire 8 2H frameBuffer_3_11 $end
+ $var wire 8 2I io_adcValues_72 $end
+ $var wire 8 2J frameBuffer_13_72 $end
+ $var wire 8 2K frameBuffer_13_122 $end
+ $var wire 8 2L frameBuffer_3_26 $end
+ $var wire 8 2M frameBuffer_13_87 $end
+ $var wire 8 2N frameBuffer_12_82 $end
+ $var wire 8 2O frameBuffer_6_36 $end
+ $var wire 8 2P frameBuffer_11_123 $end
+ $var wire 8 2Q frameBuffer_9_94 $end
+ $var wire 8 2R frameBuffer_10_20 $end
+ $var wire 8 2S frameBuffer_4_84 $end
+ $var wire 8 2T frameBuffer_11_66 $end
+ $var wire 8 2U frameBuffer_2_108 $end
+ $var wire 8 2V frameBuffer_13_30 $end
+ $var wire 8 2W frameBuffer_3_94 $end
+ $var wire 8 2X frameBuffer_3_88 $end
+ $var wire 8 2Y frameBuffer_6_63 $end
+ $var wire 8 2Z frameBuffer_5_122 $end
+ $var wire 8 2[ frameBuffer_13_45 $end
+ $var wire 8 2\ frameBuffer_2_78 $end
+ $var wire 8 2] frameBuffer_13_116 $end
+ $var wire 8 2^ io_adcValues_25 $end
+ $var wire 8 2_ frameBuffer_12_106 $end
+ $var wire 8 2` frameBuffer_8_110 $end
+ $var wire 8 2a frameBuffer_8_42 $end
+ $var wire 8 2b frameBuffer_12_20 $end
+ $var wire 8 2c frameBuffer_1_32 $end
+ $var wire 8 2d frameBuffer_9_88 $end
+ $var wire 8 2e frameBuffer_4_42 $end
+ $var wire 8 2f frameBuffer_0_57 $end
+ $var wire 8 2g frameBuffer_1_125 $end
+ $var wire 8 2h frameBuffer_10_14 $end
+ $var wire 8 2i frameBuffer_7_26 $end
+ $var wire 8 2j frameBuffer_7_115 $end
+ $var wire 8 2k frameBuffer_6_21 $end
+ $var wire 8 2l frameBuffer_2_36 $end
+ $var wire 8 2m frameBuffer_6_105 $end
+ $var wire 8 2n io_frameOut_24 $end
+ $var wire 8 2o frameBuffer_0_90 $end
+ $var wire 8 2p frameBuffer_0_84 $end
+ $var wire 8 2q frameBuffer_15_72 $end
+ $var wire 8 2r frameBuffer_1_110 $end
+ $var wire 8 2s frameBuffer_11_87 $end
+ $var wire 8 2t frameBuffer_7_94 $end
+ $var wire 8 2u frameBuffer_13_51 $end
+ $var wire 8 2v frameBuffer_13_101 $end
+ $var wire 8 2w frameBuffer_1_119 $end
+ $var wire 8 2x io_adcValues_10 $end
+ $var wire 8 2y frameBuffer_13_66 $end
+ $var wire 8 2z io_frameOut_113 $end
+ $var wire 8 2{ frameBuffer_9_73 $end
+ $var wire 8 2| frameBuffer_5_88 $end
+ $var wire 8 2} io_frameOut_92 $end
+ $var wire 8 2~ frameBuffer_0_42 $end
+ $var wire 8 3! frameBuffer_1_88 $end
+ $var wire 8 3" frameBuffer_15_30 $end
+ $var wire 8 3# frameBuffer_4_63 $end
+ $var wire 8 3$ frameBuffer_7_11 $end
+ $var wire 8 3% frameBuffer_11_45 $end
+ $var wire 8 3& frameBuffer_14_20 $end
+ $var wire 8 3' frameBuffer_11_39 $end
+ $var wire 8 3( frameBuffer_8_57 $end
+ $var wire 8 3) frameBuffer_14_14 $end
+ $var wire 8 3* frameBuffer_6_42 $end
+ $var wire 8 3+ frameBuffer_14_29 $end
+ $var wire 8 3, frameBuffer_7_88 $end
+ $var wire 8 3- frameBuffer_6_126 $end
+ $var wire 8 3. frameBuffer_10_29 $end
+ $var wire 8 3/ frameBuffer_1_11 $end
+ $var wire 8 30 io_frameOut_45 $end
+ $var wire 8 31 io_frameOut_18 $end
+ $var wire 8 32 frameBuffer_11_3 $end
+ $var wire 8 33 frameBuffer_11_72 $end
+ $var wire 8 34 frameBuffer_5_26 $end
+ $var wire 8 35 frameBuffer_2_120 $end
+ $var wire 8 36 frameBuffer_2_114 $end
+ $var wire 8 37 frameBuffer_14_82 $end
+ $var wire 8 38 frameBuffer_1_104 $end
+ $var wire 8 39 frameBuffer_10_97 $end
+ $var wire 8 3: frameBuffer_14_97 $end
+ $var wire 8 3; io_frameOut_107 $end
+ $var wire 8 3< frameBuffer_2_84 $end
+ $var wire 8 3= frameBuffer_12_2 $end
+ $var wire 8 3> frameBuffer_12_35 $end
+ $var wire 8 3? frameBuffer_5_94 $end
+ $var wire 8 3@ frameBuffer_11_30 $end
+ $var wire 8 3A frameBuffer_12_127 $end
+ $var wire 8 3B frameBuffer_0_63 $end
+ $var wire 8 3C frameBuffer_15_51 $end
+ $var wire 8 3D frameBuffer_11_117 $end
+ $var wire 8 3E frameBuffer_15_45 $end
+ $var wire 8 3F frameBuffer_4_57 $end
+ $var wire 8 3G frameBuffer_7_121 $end
+ $var wire 8 3H io_adcValues_126 $end
+ $var wire 8 3I frameBuffer_7_73 $end
+ $var wire 8 3J frameBuffer_6_111 $end
+ $var wire 8 3K frameBuffer_3_32 $end
+ $var wire 8 3L io_adcValues_93 $end
+ $var wire 8 3M frameBuffer_14_0 $end
+ $var wire 8 3N io_frameOut_30 $end
+ $var wire 8 3O frameBuffer_2_42 $end
+ $var wire 8 3P frameBuffer_13_1 $end
+ $var wire 8 3Q frameBuffer_5_11 $end
+ $var wire 8 3R frameBuffer_6_57 $end
+ $var wire 8 3S frameBuffer_1_26 $end
+ $var wire 8 3T io_frameOut_39 $end
+ $var wire 8 3U frameBuffer_9_11 $end
+ $var wire 8 3V frameBuffer_13_39 $end
+ $var wire 8 3W frameBuffer_12_29 $end
+ $var wire 8 3X frameBuffer_8_104 $end
+ $var wire 8 3Y frameBuffer_8_36 $end
+ $var wire 8 3Z io_adcValues_87 $end
+ $var wire 8 3[ frameBuffer_15_8 $end
+ $var wire 8 3\ frameBuffer_12_112 $end
+ $var wire 8 3] frameBuffer_1_94 $end
+ $var wire 8 3^ frameBuffer_3_103 $end
+ $var wire 8 3_ frameBuffer_14_9 $end
+ $var wire 8 3` io_frameOut_12 $end
+ $var wire 8 3a frameBuffer_11_111 $end
+ $var wire 8 3b frameBuffer_12_5 $end
+ $var wire 8 3c frameBuffer_11_60 $end
+ $var wire 8 3d frameBuffer_15_54 $end
+ $var wire 8 3e frameBuffer_3_82 $end
+ $var wire 8 3f frameBuffer_11_69 $end
+ $var wire 8 3g frameBuffer_7_82 $end
+ $var wire 8 3h frameBuffer_7_76 $end
+ $var wire 8 3i frameBuffer_14_79 $end
+ $var wire 8 3j frameBuffer_7_7 $end
+ $var wire 8 3k frameBuffer_5_125 $end
+ $var wire 8 3l frameBuffer_13_48 $end
+ $var wire 8 3m io_frameOut_80 $end
+ $var wire 8 3n frameBuffer_2_66 $end
+ $var wire 8 3o frameBuffer_13_4 $end
+ $var wire 8 3p io_frameOut_74 $end
+ $var wire 8 3q frameBuffer_5_61 $end
+ $var wire 8 3r frameBuffer_0_30 $end
+ $var wire 8 3s frameBuffer_8_30 $end
+ $var wire 8 3t frameBuffer_1_76 $end
+ $var wire 8 3u frameBuffer_15_12 $end
+ $var wire 8 3v frameBuffer_4_45 $end
+ $var wire 8 3w frameBuffer_11_33 $end
+ $var wire 8 3x frameBuffer_11_27 $end
+ $var wire 8 3y frameBuffer_8_45 $end
+ $var wire 8 3z frameBuffer_8_39 $end
+ $var wire 8 3{ frameBuffer_15_48 $end
+ $var wire 8 3| frameBuffer_15_117 $end
+ $var wire 8 3} frameBuffer_7_118 $end
+ $var wire 8 3~ io_adcValues_60 $end
+ $var wire 8 4! frameBuffer_6_108 $end
+ $var wire 8 4" io_adcValues_96 $end
+ $var wire 8 4# frameBuffer_2_30 $end
+ $var wire 8 4$ frameBuffer_14_3 $end
+ $var wire 8 4% frameBuffer_12_121 $end
+ $var wire 4 4& io_indicesOut_0 $end
+ $var wire 8 4' frameBuffer_12_91 $end
+ $var wire 8 4( frameBuffer_6_24 $end
+ $var wire 8 4) io_frameOut_27 $end
+ $var wire 8 4* frameBuffer_11_105 $end
+ $var wire 8 4+ frameBuffer_2_39 $end
+ $var wire 8 4, io_adcValues_120 $end
+ $var wire 8 4- io_adcValues_114 $end
+ $var wire 8 4. frameBuffer_2_102 $end
+ $var wire 8 4/ frameBuffer_14_70 $end
+ $var wire 8 40 frameBuffer_4_18 $end
+ $var wire 8 41 frameBuffer_7_97 $end
+ $var wire 8 42 frameBuffer_11_6 $end
+ $var wire 8 43 frameBuffer_2_51 $end
+ $var wire 8 44 io_adcValues_54 $end
+ $var wire 8 45 frameBuffer_3_97 $end
+ $var wire 8 46 frameBuffer_13_54 $end
+ $var wire 8 47 io_frameOut_95 $end
+ $var wire 8 48 frameBuffer_5_82 $end
+ $var wire 8 49 frameBuffer_5_76 $end
+ $var wire 8 4: frameBuffer_12_109 $end
+ $var wire 8 4; frameBuffer_8_51 $end
+ $var wire 8 4< frameBuffer_12_64 $end
+ $var wire 8 4= frameBuffer_9_76 $end
+ $var wire 8 4> frameBuffer_15_33 $end
+ $var wire 8 4? frameBuffer_9_97 $end
+ $var wire 8 4@ frameBuffer_15_123 $end
+ $var wire 8 4A io_adcValues_108 $end
+ $var wire 8 4B frameBuffer_7_55 $end
+ $var wire 8 4C frameBuffer_0_45 $end
+ $var wire 8 4D io_adcValues_81 $end
+ $var wire 8 4E frameBuffer_3_14 $end
+ $var wire 8 4F frameBuffer_0_124 $end
+ $var wire 8 4G frameBuffer_13_12 $end
+ $var wire 8 4H frameBuffer_2_24 $end
+ $var wire 8 4I frameBuffer_6_39 $end
+ $var wire 8 4J frameBuffer_11_126 $end
+ $var wire 8 4K frameBuffer_8_24 $end
+ $var wire 8 4L frameBuffer_8_18 $end
+ $var wire 8 4M io_frameOut_101 $end
+ $var wire 8 4N frameBuffer_10_70 $end
+ $var wire 8 4O frameBuffer_10_91 $end
+ $var wire 8 4P frameBuffer_2_117 $end
+ $var wire 8 4Q frameBuffer_13_104 $end
+ $var wire 8 4R frameBuffer_14_85 $end
+ $var wire 8 4S frameBuffer_1_107 $end
+ $var wire 8 4T io_adcValues_69 $end
+ $var wire 8 4U frameBuffer_12_100 $end
+ $var wire 8 4V frameBuffer_0_118 $end
+ $var wire 8 4W frameBuffer_12_70 $end
+ $var wire 8 4X frameBuffer_13_69 $end
+ $var wire 8 4Y frameBuffer_9_82 $end
+ $var wire 4 4Z indexAccumulators_5 $end
+ $var wire 8 4[ frameBuffer_2_18 $end
+ $var wire 8 4\ frameBuffer_5_97 $end
+ $var wire 8 4] frameBuffer_12_79 $end
+ $var wire 8 4^ frameBuffer_4_51 $end
+ $var wire 8 4_ frameBuffer_0_66 $end
+ $var wire 8 4` frameBuffer_10_17 $end
+ $var wire 8 4a frameBuffer_3_76 $end
+ $var wire 8 4b frameBuffer_6_30 $end
+ $var wire 8 4c frameBuffer_13_33 $end
+ $var wire 8 4d frameBuffer_2_45 $end
+ $var wire 8 4e frameBuffer_6_114 $end
+ $var wire 8 4f frameBuffer_9_122 $end
+ $var wire 8 4g frameBuffer_9_55 $end
+ $var wire 8 4h frameBuffer_10_122 $end
+ $var wire 8 4i frameBuffer_0_24 $end
+ $var wire 8 4j frameBuffer_1_113 $end
+ $var wire 8 4k frameBuffer_10_7 $end
+ $var wire 8 4l frameBuffer_10_85 $end
+ $var wire 8 4m frameBuffer_13_60 $end
+ $var wire 8 4n frameBuffer_12_115 $end
+ $var wire 8 4o frameBuffer_6_18 $end
+ $var wire 8 4p frameBuffer_1_82 $end
+ $var wire 8 4q frameBuffer_0_72 $end
+ $var wire 8 4r frameBuffer_0_51 $end
+ $var wire 8 4s frameBuffer_8_6 $end
+ $var wire 8 4t frameBuffer_12_85 $end
+ $var wire 8 4u frameBuffer_1_97 $end
+ $var wire 8 4v frameBuffer_4_66 $end
+ $var wire 8 4w frameBuffer_11_54 $end
+ $var wire 8 4x frameBuffer_3_61 $end
+ $var wire 8 4y frameBuffer_11_48 $end
+ $var wire 8 4z frameBuffer_7_61 $end
+ $var wire 8 4{ frameBuffer_6_120 $end
+ $var wire 8 4| frameBuffer_14_64 $end
+ $var wire 8 4} frameBuffer_6_51 $end
+ $var wire 8 4~ frameBuffer_6_45 $end
+ $var wire 8 5! frameBuffer_5_110 $end
+ $var wire 8 5" frameBuffer_10_79 $end
+ $var wire 8 5# frameBuffer_5_104 $end
+ $var wire 8 5$ frameBuffer_13_27 $end
+ $var wire 8 5% frameBuffer_9_61 $end
+ $var wire 8 5& frameBuffer_5_119 $end
+ $var wire 8 5' frameBuffer_1_14 $end
+ $var wire 8 5( frameBuffer_9_5 $end
+ $var wire 8 5) io_frameOut_89 $end
+ $var wire 8 5* frameBuffer_4_30 $end
+ $var wire 8 5+ frameBuffer_12_17 $end
+ $var wire 8 5, frameBuffer_4_24 $end
+ $var wire 8 5- frameBuffer_11_12 $end
+ $var wire 8 5. frameBuffer_14_91 $end
+ $var wire 8 5/ frameBuffer_0_39 $end
+ $var wire 8 50 frameBuffer_15_27 $end
+ $var wire 8 51 frameBuffer_4_39 $end
+ $var wire 8 52 frameBuffer_7_103 $end
+ $var wire 8 53 frameBuffer_15_2 $end
+ $var wire 8 54 io_adcValues_75 $end
+ $var wire 8 55 frameBuffer_2_27 $end
+ $var wire 8 56 frameBuffer_6_27 $end
+ $var wire 8 57 frameBuffer_1_91 $end
+ $var wire 8 58 frameBuffer_3_5 $end
+ $var wire 8 59 frameBuffer_9_125 $end
+ $var wire 8 5: frameBuffer_9_119 $end
+ $var wire 8 5; frameBuffer_3_70 $end
+ $var wire 8 5< frameBuffer_11_9 $end
+ $var wire 8 5= frameBuffer_10_73 $end
+ $var wire 8 5> frameBuffer_10_119 $end
+ $var wire 8 5? frameBuffer_7_85 $end
+ $var wire 8 5@ frameBuffer_14_73 $end
+ $var wire 8 5A frameBuffer_14_67 $end
+ $var wire 8 5B frameBuffer_10_88 $end
+ $var wire 8 5C frameBuffer_5_113 $end
+ $var wire 8 5D frameBuffer_6_95 $end
+ $var wire 8 5E frameBuffer_9_70 $end
+ $var wire 8 5F frameBuffer_9_64 $end
+ $var wire 8 5G frameBuffer_13_98 $end
+ $var wire 8 5H frameBuffer_4_4 $end
+ $var wire 8 5I io_frameOut_0 $end
+ $var wire 8 5J frameBuffer_1_85 $end
+ $var wire 8 5K io_frameOut_98 $end
+ $var wire 8 5L frameBuffer_1_7 $end
+ $var wire 8 5M frameBuffer_4_33 $end
+ $var wire 8 5N frameBuffer_11_15 $end
+ $var wire 8 5O frameBuffer_11_36 $end
+ $var wire 8 5P frameBuffer_0_48 $end
+ $var wire 8 5Q frameBuffer_3_64 $end
+ $var wire 8 5R frameBuffer_3_58 $end
+ $var wire 8 5S frameBuffer_6_12 $end
+ $var wire 8 5T frameBuffer_7_58 $end
+ $var wire 8 5U frameBuffer_13_15 $end
+ $var wire 8 5V io_adcValues_84 $end
+ $var wire 8 5W frameBuffer_5_107 $end
+ $var wire 8 5X frameBuffer_9_110 $end
+ $var wire 8 5Y frameBuffer_9_37 $end
+ $var wire 8 5Z frameBuffer_11_120 $end
+ $var wire 17 5[ zeroCount_1 $end
+ $var wire 8 5\ frameBuffer_11_0 $end
+ $var wire 8 5] frameBuffer_2_6 $end
+ $var wire 8 5^ frameBuffer_11_114 $end
+ $var wire 8 5_ io_frameOut_56 $end
+ $var wire 8 5` frameBuffer_10_110 $end
+ $var wire 8 5a io_adcValues_123 $end
+ $var wire 8 5b frameBuffer_10_104 $end
+ $var wire 8 5c frameBuffer_0_12 $end
+ $var wire 8 5d frameBuffer_3_91 $end
+ $var wire 8 5e frameBuffer_8_12 $end
+ $var wire 8 5f frameBuffer_1_101 $end
+ $var wire 8 5g frameBuffer_4_27 $end
+ $var wire 8 5h frameBuffer_14_94 $end
+ $var wire 8 5i frameBuffer_14_88 $end
+ $var wire 8 5j io_adcValues_42 $end
+ $var wire 8 5k frameBuffer_1_70 $end
+ $var wire 8 5l io_frameOut_83 $end
+ $var wire 8 5m frameBuffer_13_7 $end
+ $var wire 8 5n frameBuffer_11_21 $end
+ $var wire 8 5o frameBuffer_12_67 $end
+ $var wire 8 5p frameBuffer_1_79 $end
+ $var wire 8 5q frameBuffer_15_21 $end
+ $var wire 8 5r frameBuffer_12_8 $end
+ $var wire 8 5s frameBuffer_15_111 $end
+ $var wire 8 5t frameBuffer_4_95 $end
+ $var wire 8 5u frameBuffer_7_64 $end
+ $var wire 8 5v frameBuffer_7_43 $end
+ $var wire 8 5w frameBuffer_6_102 $end
+ $var wire 8 5x frameBuffer_14_52 $end
+ $var wire 8 5y frameBuffer_14_46 $end
+ $var wire 8 5z frameBuffer_7_79 $end
+ $var wire 8 5{ frameBuffer_6_117 $end
+ $var wire 8 5| frameBuffer_9_43 $end
+ $var wire 8 5} frameBuffer_2_33 $end
+ $var wire 8 5~ frameBuffer_14_6 $end
+ $var wire 4 6! io_indicesOut_3 $end
+ $var wire 8 6" frameBuffer_12_94 $end
+ $var wire 8 6# io_frameOut_77 $end
+ $var wire 8 6$ frameBuffer_4_12 $end
+ $var wire 8 6% frameBuffer_10_125 $end
+ $var wire 8 6& frameBuffer_5_58 $end
+ $var wire 8 6' frameBuffer_8_33 $end
+ $var wire 8 6( frameBuffer_7_1 $end
+ $var wire 8 6) frameBuffer_15_105 $end
+ $var wire 8 6* frameBuffer_7_37 $end
+ $var wire 8 6+ io_adcValues_63 $end
+ $var wire 8 6, frameBuffer_15_5 $end
+ $var wire 8 6- frameBuffer_1_116 $end
+ $var wire 8 6. io_adcValues_57 $end
+ $var wire 8 6/ frameBuffer_5_70 $end
+ $var wire 8 60 frameBuffer_0_106 $end
+ $var wire 8 61 frameBuffer_12_52 $end
+ $var wire 8 62 frameBuffer_5_85 $end
+ $var wire 8 63 frameBuffer_11_42 $end
+ $var wire 8 64 io_adcValues_102 $end
+ $var wire 8 65 frameBuffer_12_88 $end
+ $var wire 8 66 frameBuffer_11_108 $end
+ $var wire 8 67 frameBuffer_15_36 $end
+ $var wire 8 68 frameBuffer_8_0 $end
+ $var wire 8 69 frameBuffer_8_95 $end
+ $var wire 8 6: io_adcValues_117 $end
+ $var wire 8 6; frameBuffer_15_126 $end
+ $var wire 8 6< frameBuffer_14_122 $end
+ $var wire 8 6= frameBuffer_14_116 $end
+ $var wire 8 6> frameBuffer_8_9 $end
+ $var wire 8 6? frameBuffer_5_3 $end
+ $var wire 8 6@ frameBuffer_0_8 $end
+ $var wire 8 6A frameBuffer_13_21 $end
+ $var wire 8 6B io_frameOut_62 $end
+ $var wire 8 6C frameBuffer_2_48 $end
+ $var wire 8 6D frameBuffer_5_43 $end
+ $var wire 8 6E frameBuffer_12_46 $end
+ $var wire 8 6F frameBuffer_1_58 $end
+ $var wire 8 6G frameBuffer_9_58 $end
+ $var wire 8 6H frameBuffer_5_79 $end
+ $var wire 8 6I frameBuffer_8_121 $end
+ $var wire 8 6J frameBuffer_8_27 $end
+ $var wire 8 6K frameBuffer_9_8 $end
+ $var wire 8 6L frameBuffer_6_2 $end
+ $var wire 8 6M frameBuffer_0_33 $end
+ $var wire 8 6N frameBuffer_10_94 $end
+ $var wire 8 6O io_adcValues_78 $end
+ $var wire 8 6P frameBuffer_2_12 $end
+ $var wire 8 6Q frameBuffer_5_91 $end
+ $var wire 8 6R frameBuffer_12_103 $end
+ $var wire 8 6S frameBuffer_0_127 $end
+ $var wire 8 6T frameBuffer_12_73 $end
+ $var wire 8 6U frameBuffer_4_124 $end
+ $var wire 8 6V frameBuffer_9_85 $end
+ $var wire 8 6W frameBuffer_8_80 $end
+ $var wire 8 6X frameBuffer_9_104 $end
+ $var wire 8 6Y frameBuffer_15_98 $end
+ $var wire 8 6Z frameBuffer_10_52 $end
+ $var wire 8 6[ frameBuffer_7_70 $end
+ $var wire 8 6\ frameBuffer_3_85 $end
+ $var wire 8 6] io_adcValues_36 $end
+ $var wire 8 6^ frameBuffer_3_79 $end
+ $var wire 8 6_ frameBuffer_6_33 $end
+ $var wire 8 6` frameBuffer_10_67 $end
+ $var wire 8 6a frameBuffer_13_42 $end
+ $var wire 8 6b frameBuffer_13_36 $end
+ $var wire 8 6c frameBuffer_5_64 $end
+ $var wire 8 6d frameBuffer_9_79 $end
+ $var wire 8 6e frameBuffer_4_118 $end
+ $var wire 8 6f frameBuffer_15_15 $end
+ $var wire 8 6g frameBuffer_10_1 $end
+ $var wire 8 6h frameBuffer_1_64 $end
+ $var wire 8 6i frameBuffer_0_54 $end
+ $var wire 8 6j io_frameOut_9 $end
+ $var wire 8 6k frameBuffer_8_89 $end
+ $var wire 8 6l frameBuffer_0_27 $end
+ $var wire 8 6m frameBuffer_4_48 $end
+ $var wire 8 6n frameBuffer_0_112 $end
+ $var wire 8 6o frameBuffer_3_43 $end
+ $var wire 8 6p frameBuffer_0_36 $end
+ $var wire 8 6q frameBuffer_0_121 $end
+ $var wire 8 6r frameBuffer_0_115 $end
+ $var wire 8 6s frameBuffer_10_34 $end
+ $var wire 8 6t frameBuffer_2_21 $end
+ $var wire 8 6u frameBuffer_2_15 $end
+ $var wire 8 6v io_adcValues_18 $end
+ $var wire 8 6w frameBuffer_5_31 $end
+ $var wire 17 6x zeroCount_4 $end
+ $var wire 8 6y frameBuffer_13_18 $end
+ $var wire 8 6z io_frameOut_59 $end
+ $var wire 8 6{ frameBuffer_15_92 $end
+ $var wire 8 6| frameBuffer_9_25 $end
+ $var wire 8 6} frameBuffer_8_15 $end
+ $var wire 8 6~ frameBuffer_2_9 $end
+ $var wire 8 7! frameBuffer_8_118 $end
+ $var wire 8 7" io_adcValues_30 $end
+ $var wire 8 7# frameBuffer_10_61 $end
+ $var wire 8 7$ frameBuffer_7_19 $end
+ $var wire 8 7% io_adcValues_45 $end
+ $var wire 8 7& frameBuffer_2_83 $end
+ $var wire 8 7' frameBuffer_12_40 $end
+ $var wire 8 7( frameBuffer_4_112 $end
+ $var wire 8 7) frameBuffer_13_86 $end
+ $var wire 8 7* frameBuffer_5_67 $end
+ $var wire 8 7+ io_frameOut_3 $end
+ $var wire 8 7, frameBuffer_8_83 $end
+ $var wire 8 7- frameBuffer_8_77 $end
+ $var wire 8 7. frameBuffer_15_114 $end
+ $var wire 8 7/ frameBuffer_10_4 $end
+ $var wire 8 70 frameBuffer_14_104 $end
+ $var wire 8 71 frameBuffer_3_52 $end
+ $var wire 8 72 frameBuffer_7_67 $end
+ $var wire 4 73 indexAccumulators_2 $end
+ $var wire 8 74 frameBuffer_1_31 $end
+ $var wire 8 75 io_frameOut_44 $end
+ $var wire 8 76 frameBuffer_5_25 $end
+ $var wire 8 77 frameBuffer_12_28 $end
+ $var wire 8 78 frameBuffer_9_46 $end
+ $var wire 8 79 frameBuffer_8_103 $end
+ $var wire 1 7: reset $end
+ $var wire 8 7; frameBuffer_7_4 $end
+ $var wire 8 7< frameBuffer_0_15 $end
+ $var wire 8 7= frameBuffer_10_82 $end
+ $var wire 8 7> frameBuffer_10_76 $end
+ $var wire 8 7? frameBuffer_14_76 $end
+ $var wire 8 7@ frameBuffer_13_71 $end
+ $var wire 8 7A frameBuffer_7_25 $end
+ $var wire 8 7B frameBuffer_0_109 $end
+ $var wire 8 7C frameBuffer_6_98 $end
+ $var wire 8 7D frameBuffer_4_7 $end
+ $var wire 8 7E frameBuffer_15_71 $end
+ $var wire 8 7F frameBuffer_8_98 $end
+ $var wire 8 7G frameBuffer_0_83 $end
+ $var wire 8 7H io_adcValues_9 $end
+ $var wire 8 7I io_adcValues_105 $end
+ $var wire 8 7J frameBuffer_10_40 $end
+ $var wire 8 7K frameBuffer_7_52 $end
+ $var wire 8 7L frameBuffer_14_110 $end
+ $var wire 8 7M frameBuffer_0_98 $end
+ $var wire 8 7N frameBuffer_3_73 $end
+ $var wire 8 7O frameBuffer_3_67 $end
+ $var wire 8 7P frameBuffer_10_49 $end
+ $var wire 8 7Q frameBuffer_13_24 $end
+ $var wire 8 7R frameBuffer_6_83 $end
+ $var wire 8 7S frameBuffer_14_119 $end
+ $var wire 8 7T frameBuffer_9_31 $end
+ $var wire 8 7U frameBuffer_5_6 $end
+ $var wire 8 7V frameBuffer_5_116 $end
+ $var wire 8 7W frameBuffer_5_46 $end
+ $var wire 8 7X io_frameOut_50 $end
+ $var wire 8 7Y frameBuffer_9_113 $end
+ $var wire 8 7Z frameBuffer_8_124 $end
+ $var wire 8 7[ frameBuffer_1_46 $end
+ $var wire 8 7\ frameBuffer_4_21 $end
+ $var wire 8 7] frameBuffer_10_113 $end
+ $var wire 8 7^ frameBuffer_3_31 $end
+ $var wire 8 7_ frameBuffer_3_25 $end
+ $var wire 8 7` frameBuffer_13_92 $end
+ $var wire 8 7a frameBuffer_7_46 $end
+ $var wire 8 7b frameBuffer_6_5 $end
+ $var wire 8 7c frameBuffer_14_28 $end
+ $var wire 8 7d io_adcValues_66 $end
+ $var wire 8 7e frameBuffer_1_73 $end
+ $var wire 8 7f frameBuffer_3_8 $end
+ $var wire 8 7g frameBuffer_9_19 $end
+ $var wire 8 7h io_zeroSums_6 $end
+ $var wire 8 7i io_adcValues_0 $end
+ $var wire 8 7j frameBuffer_9_107 $end
+ $var wire 8 7k frameBuffer_12_76 $end
+ $var wire 8 7l frameBuffer_14_40 $end
+ $var wire 8 7m frameBuffer_15_120 $end
+ $var wire 8 7n frameBuffer_10_107 $end
+ $var wire 8 7o frameBuffer_10_55 $end
+ $var wire 8 7p frameBuffer_4_98 $end
+ $var wire 8 7q frameBuffer_14_55 $end
+ $var wire 8 7r frameBuffer_14_49 $end
+ $var wire 8 7s frameBuffer_13_121 $end
+ $var wire 8 7t frameBuffer_5_101 $end
+ $var wire 8 7u frameBuffer_6_77 $end
+ $var wire 8 7v frameBuffer_9_52 $end
+ $var wire 8 7w frameBuffer_2_0 $end
+ $var wire 8 7x io_frameOut_71 $end
+ $var wire 8 7y zeroAccumulators_4 $end
+ $var wire 8 7z io_adcValues_39 $end
+ $var wire 4 7{ io_indicesOut_6 $end
+ $var wire 8 7| frameBuffer_5_52 $end
+ $var wire 8 7} frameBuffer_0_21 $end
+ $var wire 8 7~ frameBuffer_12_34 $end
+ $var wire 8 8! frameBuffer_1_67 $end
+ $var wire 8 8" frameBuffer_4_106 $end
+ $var wire 8 8# frameBuffer_4_15 $end
+ $var wire 8 8$ frameBuffer_11_24 $end
+ $var wire 8 8% frameBuffer_11_18 $end
+ $var wire 8 8& frameBuffer_7_31 $end
+ $var wire 8 8' frameBuffer_15_18 $end
+ $var wire 8 8( frameBuffer_3_46 $end
+ $var wire 8 8) frameBuffer_15_108 $end
+ $var wire 8 8* io_adcValues_51 $end
+ $var wire 8 8+ frameBuffer_0_100 $end
+ $var wire 8 8, frameBuffer_9_10 $end
+ $var wire 8 8- frameBuffer_12_61 $end
+ $var wire 8 8. frameBuffer_6_15 $end
+ $var wire 8 8/ frameBuffer_11_102 $end
+ $var wire 8 80 io_frameOut_38 $end
+ $var wire 8 81 frameBuffer_3_123 $end
+ $var wire 8 82 frameBuffer_4_83 $end
+ $var wire 8 83 frameBuffer_11_92 $end
+ $var wire 8 84 frameBuffer_11_86 $end
+ $var wire 8 85 frameBuffer_14_61 $end
+ $var wire 8 86 frameBuffer_8_3 $end
+ $var wire 8 87 frameBuffer_15_86 $end
+ $var wire 8 88 frameBuffer_0_2 $end
+ $var wire 8 89 frameBuffer_14_125 $end
+ $var wire 8 8: io_adcValues_24 $end
+ $var wire 8 8; io_frameOut_127 $end
+ $var wire 8 8< frameBuffer_1_52 $end
+ $var wire 8 8= io_frameOut_65 $end
+ $var wire 8 8> io_frameOut_86 $end
+ $var wire 8 8? frameBuffer_2_98 $end
+ $var wire 8 8@ frameBuffer_5_73 $end
+ $var wire 8 8A frameBuffer_12_55 $end
+ $var wire 8 8B frameBuffer_12_49 $end
+ $var wire 8 8C frameBuffer_4_127 $end
+ $var wire 8 8D frameBuffer_9_67 $end
+ $var wire 8 8E frameBuffer_9_2 $end
+ $var wire 8 8F frameBuffer_8_62 $end
+ $var wire 8 8G frameBuffer_1_1 $end
+ $var wire 8 8H frameBuffer_3_117 $end
+ $var wire 8 8I frameBuffer_4_77 $end
+ $var wire 8 8J frameBuffer_14_34 $end
+ $var wire 8 8K frameBuffer_0_65 $end
+ $var wire 8 8L frameBuffer_3_40 $end
+ $var wire 8 8M frameBuffer_15_53 $end
+ $var wire 8 8N frameBuffer_10_22 $end
+ $var wire 8 8O frameBuffer_4_65 $end
+ $var wire 8 8P frameBuffer_7_40 $end
+ $var wire 8 8Q frameBuffer_7_34 $end
+ $var wire 8 8R frameBuffer_11_68 $end
+ $var wire 8 8S frameBuffer_14_43 $end
+ $var wire 8 8T frameBuffer_3_55 $end
+ $var wire 8 8U frameBuffer_6_65 $end
+ $var wire 8 8V io_zeroSums_0 $end
+ $var wire 8 8W io_frameOut_32 $end
+ $var wire 8 8X frameBuffer_1_34 $end
+ $var wire 8 8Y io_frameOut_68 $end
+ $var wire 8 8Z frameBuffer_1_28 $end
+ $var wire 8 8[ frameBuffer_10_116 $end
+ $var wire 8 8\ frameBuffer_11_95 $end
+ $var wire 8 8] frameBuffer_3_13 $end
+ $var wire 8 8^ frameBuffer_6_92 $end
+ $var wire 8 8_ frameBuffer_13_74 $end
+ $var wire 8 8` frameBuffer_7_28 $end
+ $var wire 8 8a frameBuffer_4_1 $end
+ $var wire 8 8b io_frameOut_121 $end
+ $var wire 8 8c io_adcValues_48 $end
+ $var wire 8 8d frameBuffer_1_61 $end
+ $var wire 8 8e frameBuffer_3_111 $end
+ $var wire 8 8f frameBuffer_4_71 $end
+ $var wire 8 8g frameBuffer_12_58 $end
+ $var wire 8 8h frameBuffer_8_71 $end
+ $var wire 8 8i frameBuffer_0_86 $end
+ $var wire 8 8j frameBuffer_15_102 $end
+ $var wire 8 8k frameBuffer_1_4 $end
+ $var wire 8 8l frameBuffer_15_74 $end
+ $var wire 8 8m frameBuffer_4_86 $end
+ $var wire 8 8n frameBuffer_14_113 $end
+ $var wire 8 8o frameBuffer_6_50 $end
+ $var wire 8 8p frameBuffer_14_37 $end
+ $var wire 8 8q io_adcValues_12 $end
+ $var wire 8 8r frameBuffer_5_9 $end
+ $var wire 8 8s io_frameOut_53 $end
+ $var wire 8 8t frameBuffer_2_65 $end
+ $var wire 8 8u frameBuffer_5_40 $end
+ $var wire 8 8v frameBuffer_5_34 $end
+ $var wire 17 8w zeroCount_7 $end
+ $var wire 8 8x frameBuffer_12_22 $end
+ $var wire 8 8y frameBuffer_12_16 $end
+ $var wire 8 8z frameBuffer_1_49 $end
+ $var wire 8 8{ frameBuffer_2_3 $end
+ $var wire 8 8| frameBuffer_5_49 $end
+ $var wire 8 8} frameBuffer_7_13 $end
+ $var wire 8 8~ frameBuffer_8_127 $end
+ $var wire 8 9! frameBuffer_8_59 $end
+ $var wire 8 9" frameBuffer_7_117 $end
+ $var wire 8 9# frameBuffer_13_80 $end
+ $var wire 8 9$ frameBuffer_2_92 $end
+ $var wire 8 9% frameBuffer_3_28 $end
+ $var wire 8 9& frameBuffer_4_121 $end
+ $var wire 8 9' frameBuffer_4_115 $end
+ $var wire 8 9( io_frameOut_26 $end
+ $var wire 8 9) frameBuffer_3_105 $end
+ $var wire 8 9* frameBuffer_11_74 $end
+ $var wire 8 9+ frameBuffer_8_92 $end
+ $var wire 8 9, frameBuffer_8_86 $end
+ $var wire 8 9- frameBuffer_2_116 $end
+ $var wire 8 9. frameBuffer_15_68 $end
+ $var wire 8 9/ io_frameOut_100 $end
+ $var wire 8 90 io_adcValues_27 $end
+ $var wire 8 91 frameBuffer_10_58 $end
+ $var wire 8 92 frameBuffer_1_40 $end
+ $var wire 8 93 io_frameOut_109 $end
+ $var wire 8 94 frameBuffer_9_40 $end
+ $var wire 8 95 frameBuffer_2_86 $end
+ $var wire 8 96 frameBuffer_5_55 $end
+ $var wire 8 97 frameBuffer_13_118 $end
+ $var wire 8 98 frameBuffer_4_50 $end
+ $var wire 8 99 frameBuffer_12_37 $end
+ $var wire 8 9: frameBuffer_4_109 $end
+ $var wire 8 9; frameBuffer_9_49 $end
+ $var wire 8 9< frameBuffer_8_50 $end
+ $var wire 8 9= frameBuffer_8_112 $end
+ $var wire 8 9> frameBuffer_8_44 $end
+ $var wire 8 9? frameBuffer_4_59 $end
+ $var wire 8 9@ frameBuffer_7_123 $end
+ $var wire 8 9A frameBuffer_14_16 $end
+ $var wire 8 9B frameBuffer_0_18 $end
+ $var wire 8 9C frameBuffer_0_103 $end
+ $var wire 8 9D frameBuffer_10_16 $end
+ $var wire 8 9E frameBuffer_12_120 $end
+ $var wire 8 9F frameBuffer_3_49 $end
+ $var wire 8 9G frameBuffer_5_13 $end
+ $var wire 8 9H frameBuffer_15_80 $end
+ $var wire 8 9I frameBuffer_3_2 $end
+ $var wire 8 9J frameBuffer_9_13 $end
+ $var wire 8 9K frameBuffer_3_126 $end
+ $var wire 8 9L frameBuffer_5_28 $end
+ $var wire 8 9M frameBuffer_9_116 $end
+ $var wire 8 9N frameBuffer_15_89 $end
+ $var wire 8 9O frameBuffer_0_5 $end
+ $var wire 8 9P frameBuffer_0_92 $end
+ $var wire 8 9Q frameBuffer_8_106 $end
+ $var wire 8 9R frameBuffer_10_43 $end
+ $var wire 8 9S frameBuffer_11_89 $end
+ $var wire 8 9T frameBuffer_5_0 $end
+ $var wire 8 9U frameBuffer_2_71 $end
+ $var wire 8 9V frameBuffer_13_103 $end
+ $var wire 8 9W frameBuffer_6_86 $end
+ $var wire 8 9X frameBuffer_4_100 $end
+ $var wire 8 9Y frameBuffer_13_68 $end
+ $var wire 8 9Z frameBuffer_8_65 $end
+ $var wire 8 9[ frameBuffer_1_55 $end
+ $var wire 8 9\ io_adcValues_3 $end
+ $var wire 8 9] frameBuffer_14_22 $end
+ $var wire 8 9^ frameBuffer_3_34 $end
+ $var wire 8 9_ frameBuffer_10_37 $end
+ $var wire 8 9` frameBuffer_13_95 $end
+ $var wire 8 9a frameBuffer_7_49 $end
+ $var wire 8 9b frameBuffer_14_107 $end
+ $var wire 8 9c frameBuffer_6_8 $end
+ $var wire 8 9d frameBuffer_9_101 $end
+ $var wire 8 9e frameBuffer_6_59 $end
+ $var wire 8 9f frameBuffer_9_34 $end
+ $var wire 8 9g frameBuffer_9_28 $end
+ $var wire 8 9h frameBuffer_1_13 $end
+ $var wire 8 9i io_frameOut_47 $end
+ $var wire 8 9j frameBuffer_10_101 $end
+ $var wire 8 9k frameBuffer_4_92 $end
+ $var wire 8 9l frameBuffer_11_80 $end
+ $var wire 8 9m frameBuffer_2_122 $end
+ $var wire 8 9n frameBuffer_15_95 $end
+ $var wire 8 9o frameBuffer_10_64 $end
+ $var wire 8 9p io_frameOut_115 $end
+ $var wire 8 9q frameBuffer_6_71 $end
+ $var wire 8 9r frameBuffer_14_58 $end
+ $var wire 8 9s frameBuffer_13_53 $end
+ $var wire 8 9t frameBuffer_13_124 $end
+ $var wire 8 9u io_adcValues_33 $end
+ $var wire 8 9v frameBuffer_13_89 $end
+ $var wire 8 9w frameBuffer_9_96 $end
+ $var wire 8 9x zeroAccumulators_7 $end
+ $var wire 8 9y io_frameOut_6 $end
+ $var wire 8 9z frameBuffer_12_43 $end
+ $var wire 8 9{ frameBuffer_0_71 $end
+$upscope $end
+$enddefinitions $end
+$dumpvars
+b00000000 5w
+b00000000 &a
+b00000000 'B
+b00000000 (#
+b00000000 1p
+b00000000 2Q
+b00000000 32
+b00000000 6X
+b00000000 79
+b00000000 "Z
+b00000000 #;
+b00000000 "y
+b00000000 .i
+b00000000 /J
+b00000000 0+
+b00000000 #Z
+b00000000 $;
+b00000000 4m
+b00000000 5N
+b00000000 6/
+b00000000 1f
+b00000000 2G
+b00000000 ,~
+b00000000 -_
+b00000000 .@
+b00000000 /!
+b00000000 3(
+b00000000 9n
+b00000000 5g
+b00000000 6H
+b00000000 7)
+b00000000 %p
+b00000000 &Q
+b00000000 '2
+b00000000 2`
+b00000000 "i
+b00000000 #J
+b00000000 $+
+b00000000 3A
+b00000000 4"
+b00000000 8d
+b00000000 9E
+b00000000 4|
+b00000000 5]
+b00000000 6>
+b00000000 8}
+b00000000 9^
+b00000000 ~
+b00000000 5v
+b00000000 &`
+b00000000 'A
+b00000000 ("
+b00000000 6W
+b00000000 78
+b00000000 "x
+b00000000 #Y
+b00000000 $:
+b00000000 9m
+b00000000 )v
+b00000000 *W
+b00000000 +8
+b00000000 &o
+b00000000 'P
+b00000000 (1
+b00000000 )
+b00000000 #h
+b00000000 $I
+b00000000 %*
+b00000000 'i
+b00000000 (J
+b00000000 )+
+b00000000 -m
+b00000000 .N
+b00000000 //
+b00000000 *f
+b00000000 +G
+b00000000 ,(
+b00000000 2n
+b00000000 #X
+b00000000 $9
+b00000000 3O
+b00000000 40
+b00000000 .g
+b00000000 /H
+b00000000 0)
+b00000000 +`
+b00000000 ,A
+b00000000 -"
+b00000000 1d
+b00000000 2E
+b00000000 3&
+b00000000 -|
+b00000000 .]
+b00000000 />
+b00000000 6e
+b00000000 &n
+b00000000 'O
+b00000000 (0
+b00000000 7F
+b00000000 8'
+b00000000 1}
+b00000000 2^
+b00000000 3?
+b00000000 (
+b00000000 .v
+b00000000 /W
+b00000000 08
+b00000000 1s
+b00000000 2T
+b00000000 35
+b00000000 8{
+b00000000 9\
+b00000000 9{
+b00000000 5t
+b00000000 6U
+b00000000 76
+b00000000 2m
+b00000000 3N
+b00000000 4/
+b00000000 "v
+b00000000 #W
+b00000000 $8
+b00000000 9k
+b00000000 6d
+b00000000 7E
+b00000000 8&
+b00000000 &m
+b00000000 'N
+b00000000 (/
+b00000000 '
+b00000000 2|
+b00000000 #f
+b00000000 $G
+b00000000 %(
+b00000000 3]
+b00000000 4>
+b00000000 "!
+b00000000 9z
+b00000000 6s
+b00000000 &|
+b00000000 ']
+b00000000 (>
+b00000000 7T
+b00000000 85
+b00000000 6
+b00000000 #u
+b00000000 $V
+b00000000 %7
+b00000000 *}
+b00000000 +^
+b00000000 ,?
+b00000000 'v
+b00000000 (W
+b00000000 )8
+b00000000 *s
+b00000000 +T
+b00000000 ,5
+b00000000 &
+b00000000 2{
+b00000000 3\
+b00000000 .t
+b00000000 /U
+b00000000 06
+b00000000 4=
+b00000000 #e
+b00000000 $F
+b00000000 %'
+b00000000 +m
+b00000000 ,N
+b00000000 -/
+b00000000 (f
+b00000000 )G
+b00000000 *(
+b00000000 .j
+b00000000 /K
+b00000000 0,
+b00000000 6r
+b00000000 7S
+b00000000 84
+b00000000 2k
+b00000000 3L
+b00000000 4-
+b00000000 5
+b00000000 3k
+b00000000 4L
+b00000000 5-
+b00000000 /d
+b00000000 0E
+b00000000 1&
+b00000000 +|
+b00000000 ,]
+b00000000 ->
+b00000000 2a
+b00000000 3B
+b00000000 4#
+b00000000 6b
+b00000000 7C
+b00000000 8$
+b00000000 2z
+b00000000 3[
+b00000000 4<
+b00000000 D
+b00000000 /s
+b00000000 0T
+b00000000 15
+b00000000 9x
+b00000000 6q
+b00000000 7R
+b00000000 83
+b00000000 4
+b00000000 3j
+b00000000 4K
+b00000000 5,
+b00000000 #s
+b00000000 $T
+b00000000 %5
+b00000000 ".
+b00000000 "G
+b00000000 #(
+b00000000 7a
+b00000000 8B
+b00000000 9#
+b00000000 'j
+b00000000 (K
+b00000000 ),
+b00000000 C
+b00000000 3y
+b00000000 $c
+b00000000 %D
+b00000000 &%
+b00000000 +k
+b00000000 ,L
+b00000000 --
+b00000000 /r
+b00000000 0S
+b00000000 14
+b00000000 5;
+b00000000 ,k
+b00000000 -L
+b00000000 .-
+b00000000 (d
+b00000000 )E
+b00000000 *&
+b00000000 $|
+b00000000 %]
+b00000000 &>
+b00000000 +a
+b00000000 ,B
+b00000000 -#
+b00000000 3
+b00000000 3i
+b00000000 4J
+b00000000 5+
+b00000000 #r
+b00000000 $S
+b00000000 %4
+b00000000 /b
+b00000000 0C
+b00000000 1$
+b00000000 0b
+b00000000 "-
+b00000000 1C
+b00000000 2$
+b00000000 +z
+b00000000 ,[
+b00000000 -<
+b00000000 (s
+b00000000 )T
+b00000000 *5
+b00000000 7`
+b00000000 8A
+b00000000 9"
+b00000000 2x
+b00000000 3Y
+b00000000 4:
+b00000000 B
+b00000000 3x
+b00000000 4Y
+b00000000 5:
+b00000000 /q
+b00000000 0R
+b00000000 13
+b00000000 ,j
+b00000000 -K
+b00000000 .,
+b00000000 3h
+b00000000 4I
+b00000000 5*
+b00000000 Q
+b00000000 0a
+b00000000 1B
+b00000000 2#
+b00000000 ",
+b00000000 ,y
+b00000000 -Z
+b00000000 .;
+b00000000 %k
+b00000000 &L
+b00000000 '-
+b00000000 6~
+b00000000 7_
+b00000000 8@
+b00000000 9!
+b00000000 A
+b00000000 3w
+b00000000 4X
+b00000000 59
+b00000000 $a
+b00000000 %B
+b00000000 &#
+b00000000 `
+b00000000 0p
+b00000000 ";
+b00000000 1Q
+b00000000 22
+b00000000 )b
+b00000000 *C
+b00000000 +$
+b00000000 $z
+b00000000 %[
+b00000000 &<
+b00000000 "T
+b00000000 #5
+b00000000 7n
+b00000000 8O
+b00000000 90
+b00000000 P
+b00000000 0`
+b00000000 1A
+b00000000 2"
+b00000000 +x
+b00000000 ,Y
+b00000000 ,x
+b00000000 -Y
+b00000000 .:
+b00000000 (q
+b00000000 )R
+b00000000 *3
+b00000000 %j
+b00000000 &K
+b00000000 ',
+b00000000 3v
+b00000000 4W
+b00000000 58
+b00000000 0o
+b00000000 1P
+b00000000 21
+b00000000 ":
+b00000000 ,h
+b00000000 -I
+b00000000 .*
+b00000000 )a
+b00000000 *B
+b00000000 +#
+b00000000 %y
+b00000000 &Z
+b00000000 ';
+b00000000 7m
+b00000000 8N
+b00000000 9/
+b00000000 O
+b00000000 4f
+b00000000 5G
+b0000 4&
+b00000000 6(
+b00000000 /~
+b00000000 0_
+b00000000 1@
+b00000000 2!
+b00000000 0~
+b00000000 1_
+b00000000 2@
+b00000000 3!
+b00000000 ,w
+b00000000 -X
+b00000000 .9
+b00000000 )p
+b00000000 *Q
+b00000000 +2
+b00000000 #C
+b00000000 $$
+b00000000 3u
+b00000000 4V
+b00000000 57
+b00000000 ^
+b00000000 0n
+b00000000 1O
+b00000000 20
+b00000000 -g
+b00000000 .H
+b00000000 /)
+b00000000 w
+b00000000 %x
+b00000000 &Y
+b00000000 ':
+b00000000 7l
+b00000000 8M
+b00000000 9.
+b00000000 N
+b00000000 4e
+b00000000 5F
+b00000000 6'
+b00000000 m
+b00000000 0}
+b00000000 1^
+b00000000 ,v
+b00000000 -W
+b00000000 .8
+b00000000 2?
+b00000000 "H
+b00000000 #)
+b00000000 )o
+b00000000 *P
+b00000000 +1
+b00000000 %h
+b00000000 &I
+b00000000 '*
+b00000000 "a
+b00000000 #B
+b00000000 $#
+b00000000 8\
+b00000000 9=
+b00000000 0m
+b00000000 1N
+b00000000 2/
+b0000 #\
+b00000000 -f
+b00000000 .G
+b00000000 /(
+b00000000 8u
+b00000000 9V
+b00000000 (~
+b00000000 )_
+b00000000 *@
+b00000000 +!
+b00000000 )~
+b00000000 *_
+b00000000 +@
+b00000000 ,!
+b00000000 %w
+b00000000 &X
+b00000000 '9
+b00000000 "p
+b00000000 #Q
+b00000000 $2
+b00000000 4d
+b00000000 5E
+b00000000 6&
+b00000000 0|
+b00000000 1]
+b00000000 2>
+b00000000 ,u
+b00000000 -V
+b00000000 .7
+b00000000 -u
+b00000000 .V
+b00000000 /7
+b00000000 9e
+b00000000 )n
+b00000000 *O
+b00000000 +0
+b00000000 &g
+b00000000 'H
+b00000000 ()
+b00000000 7z
+b00000000 8[
+b00000000 9<
+b00000000 \
+b00000000 4s
+b00000000 5T
+b00000000 65
+b00000000 0l
+b00000000 1M
+b00000000 2.
+b00000000 -e
+b00000000 .F
+b00000000 /'
+b00000000 )}
+b00000000 *^
+b00000000 +?
+b00000000 "o
+b00000000 #P
+b00000000 $1
+b00000000 k
+b00000000 0{
+b00000000 1\
+b00000000 2=
+b00000000 -t
+b00000000 .U
+b00000000 /6
+b00000000 &f
+b00000000 'G
+b00000000 ((
+b00000000 "~
+b00000000 #_
+b00000000 $@
+b00000000 %!
+b00000000 4r
+b00000000 5S
+b00000000 64
+b00000000 z
+b00000000 -d
+b00000000 .E
+b00000000 /&
+b00000000 9s
+b00000000 )|
+b00000000 *]
+b00000000 +>
+b00000000 %u
+b00000000 &V
+b00000000 '7
+b00000000 &u
+b00000000 'V
+b00000000 (7
+b00000000 "n
+b00000000 #O
+b00000000 $0
+b00000000 8i
+b0000 +X
+b00000000 9J
+b00000000 0z
+b00000000 1[
+b00000000 2<
+b00000000 -s
+b00000000 .T
+b00000000 /5
+b00000000 9c
+b00000000 )l
+b00000000 *M
+b00000000 +.
+b00000000 *l
+b00000000 +M
+b00000000 ,.
+b00000000 5{
+b00000000 &e
+b00000000 'F
+b00000000 ('
+b00000000 6\
+b00000000 7=
+b00000000 "}
+b00000000 #^
+b00000000 $?
+b00000000 1j
+b00000000 2K
+b00000000 3,
+b00000000 .c
+b00000000 /D
+b00000000 0%
+b00000000 9r
+b00000000 ){
+b00000000 *\
+b00000000 +=
+b00000000 *{
+b00000000 +\
+b00000000 ,=
+b00000000 &t
+b00000000 'U
+b00000000 (6
+b00000000 -r
+b00000000 .S
+b00000000 /4
+b00000000 *k
+b00000000 +L
+b00000000000000000 1*
+b00000000 ,-
+b00000000 2s
+b00000000 "|
+b00000000 #]
+b00000000 $>
+b00000000 3T
+b00000000 45
+b00000000 x
+b00000000 1i
+b00000000 2J
+b00000000 3+
+b00000000 .b
+b00000000 /C
+b00000000 )z
+b00000000 *[
+b00000000 +<
+b00000000 0$
+b00000000 6j
+b00000000 &s
+b00000000 'T
+b00000000 (5
+b00000000 7K
+b00000000 8,
+b00000000 -
+b00000000 #l
+b00000000 $M
+b00000000 %.
+b00000000 5`
+b00000000 6A
+b00000000 7"
+b00000000 *j
+b00000000 +K
+b00000000 ,,
+b00000000 'c
+b00000000 (D
+b00000000 )%
+b00000000 "{
+b00000000 $=
+b00000000 #{
+b00000000 $\
+b00000000 %=
+b00000000 .a
+b00000000 /B
+b00000000 0#
+b00000000 9p
+b00000000 *y
+b00000000 +Z
+b00000000 ,;
+b00000000 6i
+b00000000 7J
+b00000000 8+
+b00000000 &r
+b00000000 'S
+b00000000 (4
+b00000000 'r
+b00000000 (S
+b00000000 )4
+b00000000 #k
+b00000000 $L
+b00000000 %-
+b00000000 "&
+b00000000 1w
+b00000000 2X
+b00000000 39
+b00000000 .p
+b00000000 /Q
+b00000000 02
+b00000000 *i
+b00000000 +J
+b00000000 ,+
+b00000000 +i
+b00000000 ,J
+b00000000 -+
+b00000000 'b
+b00000000 (C
+b00000000 )$
+b00000000 7Y
+b00000000 8:
+b00000000 ;
+b00000000 /j
+b00000000 0K
+b00000000 1,
+b00000000 *x
+b00000000 +Y
+b00000000 ,:
+b00000000 +
+b00000000 3a
+b00000000 #j
+b00000000 $K
+b00000000 %,
+b00000000 4B
+b00000000 5#
+b00000000 "%
+b00000000 !
+b00000000 6w
+b00000000 'a
+b00000000 (B
+b00000000 )#
+b00000000 7X
+b00000000 89
+b00000000 :
+b00000000 #y
+b00000000 $Z
+b00000000 %;
+b00000000 "4
+b00000000 *w
+b00000000 ,9
+b00000000 7g
+b00000000 'p
+b00000000 (Q
+b00000000 )2
+b00000000 8H
+b00000000 9)
+b00000000 #i
+b00000000 $J
+b00000000 %+
+b00000000 I
+b00000000 $i
+b00000000 %J
+b00000000 &+
+b00000000 /x
+b00000000 "$
+b00000000 0Y
+b00000000 1:
+b00000000 .n
+b00000000 /O
+b00000000 00
+b00000000 +g
+b00000000 -)
+b00000000 6v
+b00000000 7W
+b00000000 88
+b00000000 (`
+b00000000 )A
+b00000000 *"
+b00000000 3o
+b00000000 #x
+b00000000 $Y
+b00000000 %:
+b00000000 4P
+b00000000 51
+b00000000 ,a
+b00000000 -B
+b00000000 .#
+b00000000 .}
+b00000000 /^
+b00000000 0?
+b00000000 +v
+b00000000 ,W
+b00000000 'o
+b00000000 (P
+b00000000 )1
+b00000000 -8
+b00000000 7f
+b00000000 8G
+b00000000 9(
+b00000000 H
+b00000000 /w
+b00000000 "#
+b00000000 0X
+b00000000 19
+b0000 4Z
+b00000000 +f
+b00000000 ,G
+b00000000 -(
+b00000000 8
+b00000000 3n
+b00000000 #w
+b00000000 $X
+b00000000 %9
+b00000000 4O
+b00000000 50
+b00000000 W
+b00000000 0g
+b00000000 "2
+b00000000 1H
+b00000000 2)
+b00000000 .
+b00000000 7e
+b00000000 'n
+b00000000 (O
+b00000000 )0
+b00000000 8F
+b00000000 9'
+b00000000 G
+b00000000 3}
+b00000000 $g
+b00000000 %H
+b00000000 &)
+b00000000 4^
+b00000000 5?
+b00000000 "A
+b00000000 #"
+b00000000 7t
+b00000000 8U
+b00000000 96
+b00000000 '}
+b00000000 )?
+b00000000 3m
+b00000000 4N
+b00000000 5/
+b00000000 V
+b00000000 $v
+b00000000 %W
+b00000000 "1
+b00000000 &8
+b00000000 0f
+b00000000 1G
+b00000000 2(
+b00000000 "P
+b00000000 #1
+b00000000 +t
+b00000000 ,U
+b00000000 -6
+b00000000 7d
+b00000000 8E
+b00000000 9&
+b00000000 (m
+b00000000 )N
+b00000000 $f
+b00000000 %G
+b00000000 &(
+b00000000 */
+b00000000 3|
+b00000000 4]
+b00000000 e
+b00000000 5>
+b00000000 ,n
+b00000000 -O
+b00000000 .0
+b00000000 )g
+b00000000 *H
+b00000000 +)
+b00000000 /k
+b00000000 0L
+b00000000 1-
+b00000000 7s
+b00000000 '|
+b00000000 (]
+b00000000 )>
+b00000000 8T
+b00000000 95
+b00000000 U
+b00000000 0e
+b00000000 "0
+b00000000 1F
+b00000000 2'
+b00000000 ,}
+b00000000 -^
+b00000000 .?
+b00000000 7c
+b00000000 8D
+b00000000 9%
+b00000000 E
+b00000000 3{
+b00000000 4\
+07:
+b00000000 5=
+b00000000 0t
+b00000000 "?
+b00000000 1U
+b00000000 26
+b00000000 7r
+b00000000 8S
+b00000000 94
+b00000000 T
+b00000000 4k
+b00000000 $t
+b00000000 %U
+b00000000 &6
+b00000000 5L
+b00000000 6-
+b00000000 "N
+b00000000 #/
+b00000000 "g
+b00000000 #H
+b00000000 $)
+b00000000 8b
+b00000000 9C
+b00000000 3z
+b00000000 4[
+b00000000 5<
+b00000000000000000 .I
+b00000000 (k
+b00000000 )L
+b00000000 *-
+b00000000 c
+b00000000 4z
+b00000000 %d
+b00000000 &E
+b00000000 ">
+b00000000 '&
+b00000000 6<
+b00000000 0s
+b00000000 1T
+b00000000 25
+b00000000 "]
+b00000000 #>
+b00000000 -l
+b00000000 )e
+b00000000 *F
+b00000000 +'
+b00000000 .M
+b00000000 /.
+b00000000 %}
+b00000000 &^
+b00000000 '?
+b00000000 7q
+b00000000 8R
+b00000000 93
+b00000000 8q
+b00000000 (z
+b00000000 )[
+b00000000 *<
+b00000000 9R
+b00000000 4j
+b00000000 5K
+b00000000 6,
+b00000000 ,{
+b00000000 -\
+b00000000 .=
+b00000000000000000 "b
+b00000000 )t
+b00000000 *U
+b00000000 +6
+b00000000 8a
+b00000000 9B
+b00000000 b
+b00000000 0r
+b00000000 1S
+b00000000 24
+b00000000 -k
+b00000000 .L
+b00000000 /-
+b00000000 *d
+b00000000 ,&
+b00000000 4i
+b00000000 5J
+b00000000 6+
+b00000000 1b
+b00000000 "L
+b00000000 #-
+b00000000 2C
+b00000000 3$
+b00000000 -z
+b00000000 .[
+b00000000 /<
+b00000000 8`
+b00000000 9A
+b00000000 a
+b00000000 4x
+b00000000 5Y
+b00000000 6:
+b00000000 1q
+b00000000 "[
+b00000000 #<
+b00000000 2R
+b00000000 33
+b00000000 *c
+b00000000 +D
+b00000000 ,%
+b00000000 "t
+b00000000 #U
+b00000000 $6
+b00000000 8o
+b00000000 9P
+b00000000 4h
+b00000000 5I
+b00000000 6*
+b00000000 p
+b00000000 5h
+b00000000 6I
+b00000000 7*
+b00000000 %q
+b00000000 &R
+b00000000 '3
+b00000000 1a
+b00000000 2B
+b00000000 3#
+b00000000 9i
+b00000000 )r
+b00000000 *S
+b00000000 +4
+b00000000 &k
+b00000000 'L
+b00000000 (-
+b00000000 #d
+b00000000 $E
+b00000000 %&
+b00000000 8~
+b00000000 9_
+b00000000 )h
+b00000000 *I
+b00000000 +*
+b00000000 4w
+b00000000 5X
+b00000000 69
+b00000000 -i
+b00000000 .J
+b00000000 /+
+b0000 10
+b00000000 *b
+b00000000 +C
+b00000000 ,$
+b00000000 &z
+b00000000 '[
+b00000000 (<
+b00000000 8n
+b00000000 9O
+b00000000 o
+b00000000 1`
+b00000000 2A
+b00000000 3"
+b00000000 -x
+b00000000 .Y
+b00000000 /:
+b00000000 *q
+b00000000 +R
+b00000000 ,3
+b00000000 4v
+b00000000 5W
+b00000000 68
+b00000000 1o
+b00000000 2P
+b00000000 31
+b00000000 .h
+b00000000 /I
+b00000000 0*
+b00000000 5f
+b00000000 6G
+b00000000 7(
+b00000000 1~
+b00000000 2_
+b00000000 -w
+b00000000 .X
+b00000000 /9
+b00000000 3@
+b00000000 4!
+b00000000 "h
+b00000000 #I
+b00000000 $*
+b00000000 .w
+b00000000 /X
+b00000000 09
+b00000000 6`
+b00000000 7A
+b00000000 8"
+b00000000 &i
+b00000000 'J
+b00000000 (+
+b00000000 *p
+b00000000 +Q
+b00000000 ,2
+b00000000 #b
+b00000000 $C
+b00000000 %$
+b00000000 8|
+b00000000 9]
+b00000000 }
+b00000000 5u
+b00000000 6V
+b00000000 1n
+b00000000 2O
+b00000000 30
+b00000000 77
+b00000000 %~
+b00000000 &_
+b00000000 '@
+b00000000 (!
+b00000000 9v
+b00000000 *`
+b00000000 +A
+b00000000 ,"
+b00000000 6o
+b00000000 &x
+b00000000 'Y
+b00000000 (:
+b00000000 7P
+b00000000 81
+b00000000 2
+b00000000 #q
+b00000000 $R
+b00000000 %3
+b00000000 9l
+b00000000 5e
+b00000000 6F
+b00000000 7'
+b00000000 -v
+b00000000 .W
+b00000000 /8
+b00000000 *o
+b00000000 +P
+b00000000 ,1
+b00000000 'h
+b00000000 (I
+b00000000 )*
+b00000000 .f
+b00000000 /G
+b00000000 0(
+b00000000 *~
+b00000000 +_
+b00000000 ,@
+b00000000 -!
+b00000000 'w
+b00000000 (X
+b00000000 )9
+b00000000 "+
+b00000000 1|
+b00000000 2]
+b00000000 3>
+b00000000 .u
+b00000000 /V
+b00000000 07
+b00000000 +n
+b00000000 ,O
+b00000000 -0
+b00000000 @
+b00000000 $`
+b00000000 %A
+b00000000 &"
+b00000000 /o
+b00000000 0P
+b00000000 11
+b00000000 5s
+b00000000 6T
+b00000000 75
+b00000000 2l
+b00000000 3M
+b00000000 .e
+b00000000 /F
+b00000000 0'
+b00000000 4.
+b00000000 /e
+b00000000 0F
+b00000000 1'
+b00000000 6m
+b00000000 7N
+b00000000 8/
+b00000000 &v
+b00000000 'W
+b00000000 (8
+b00000000 3f
+b00000000 #o
+b00000000 $P
+b00000000 %1
+b00000000 4G
+b00000000 5(
+b00000000 "*
+b00000000 9j
+b0000 -:
+b00000000 6c
+b00000000 7D
+b00000000 8%
+b00000000000000000 6x
+b00000000 6|
+b00000000 'f
+b00000000 (G
+b00000000 )(
+b00000000 7]
+b00000000 8>
+b00000000 ?
+b00000000 #~
+b00000000 $_
+b00000000 %@
+b00000000 &!
+b00000000 "9
+b00000000 9y
+b00000000 *|
+b00000000 +]
+b00000000 ,>
+b00000000 'u
+b00000000 (V
+b00000000 )7
+b00000000 $n
+b00000000 %O
+b00000000 &0
+b00000000 (o
+b00000000 )P
+b00000000 *1
+b00000000 %
+b00000000 .s
+b00000000 /T
+b00000000 05
+b00000000 +l
+b00000000 ,M
+b00000000 -.
+b00000000 (e
+b00000000 )F
+b00000000 *'
+b00000000 "8
+b00000000 ,f
+b00000000 -G
+b00000000 .(
+b00000000 2j
+b00000000 3K
+b00000000 4,
+b00000000 /c
+b00000000 0D
+b00000000 1%
+b00000000 +{
+b00000000 ,\
+b00000000 -=
+b00000000 3d
+b00000000 4E
+b00000000 5&
+b00000000 M
+b00000000 $m
+b00000000 %N
+b00000000 &/
+b00000000 /|
+b00000000 "(
+b00000000 0]
+b00000000 1>
+b0000 6!
+b00000000 2y
+b00000000 3Z
+b00000000 4;
+b00000000 6z
+b00000000 7[
+b00000000 8<
+b00000000 3s
+b00000000 #|
+b00000000 $]
+b00000000 %>
+b00000000 4T
+b00000000 55
+b00000000 "7
+b00000000 6p
+b00000000 7Q
+b00000000 82
+b00000000 7j
+b00000000 's
+b00000000 (T
+b00000000 )5
+b00000000 8K
+b00000000 9,
+b00000000 L
+b00000000 4c
+b00000000 $l
+b00000000 %M
+b00000000 &.
+b00000000 5D
+b00000000 6%
+b00000000 "F
+b00000000 #'
+b00000000 +j
+b00000000 ,K
+b00000000 -,
+b00000000 7y
+b00000000 (c
+b00000000 )D
+b00000000 *%
+b00000000 8Z
+b00000000 9;
+b00000000 [
+b00000000 ${
+b00000000 %\
+b00000000 &=
+b00000000 (|
+b00000000 )]
+b00000000 *>
+b00000000 +y
+b00000000 ,Z
+b00000000 -;
+b00000000 (r
+b00000000 )S
+b00000000 *4
+b00000000 "E
+b00000000 #&
+b00000000 ,s
+b00000000 -T
+b00000000 .5
+b00000000 /p
+b00000000 0Q
+b00000000 12
+b00000000 ,i
+b00000000 -J
+b00000000 (b
+b00000000 )C
+b00000000 *$
+b00000000 .+
+b00000000 3q
+b00000000 4R
+b00000000 53
+b00000000 Z
+b00000000 4q
+b00000000 5R
+b00000000 63
+b00000000 "5
+b00000000 0j
+b00000000 1K
+b00000000 2,
+b00000000 .D
+b00000000 /%
+b00000000 3g
+b00000000 4H
+b00000000 5)
+b00000000 7h
+b00000000 8I
+b00000000 9*
+b00000000 8h
+b00000000 9I
+b00000000 4a
+b00000000 $j
+b00000000 %K
+b00000000 &,
+b00000000 5B
+b00000000 6#
+b00000000 i
+b00000000 0y
+b00000000 "D
+b00000000 #%
+b00000000 1Z
+b00000000 2;
+b00000000 6}
+b00000000 7^
+b00000000 8?
+b00000000 7w
+b00000000 8X
+b00000000 99
+b00000000 Y
+b00000000 4p
+b00000000 $y
+b00000000 %Z
+b00000000 &;
+b00000000 5Q
+b00000000 62
+b00000000 "S
+b00000000 #4
+b00000000 8g
+b00000000 (p
+b00000000 )Q
+b00000000 *2
+b00000000 9H
+b00000000 h
+b00000000 %i
+b00000000 &J
+b00000000 '+
+b00000000 -q
+b00000000 .R
+b00000000 )j
+b00000000 *K
+b00000000 +,
+b00000000 /3
+b00000000 &c
+b00000000 'D
+b00000000 (%
+b00000000 ,g
+b00000000 -H
+b00000000 .)
+b00000000 8v
+b00000000 )`
+b00000000 *A
+b00000000 +"
+b00000000 9W
+b00000000 1h
+b00000000 "R
+b00000000 #3
+b00000000 2I
+b00000000 3*
+b00000000 -a
+b00000000 .B
+b00000000 /#
+b00000000 )y
+b00000000 *Z
+b00000000 +;
+b00000000000000000 5[
+b00000000 8f
+b00000000 9G
+b00000000 3~
+b00000000 4_
+b00000000 5@
+b00000000 g
+b00000000 4~
+b00000000 5_
+b00000000 6@
+b00000000 7!
+b00000000 0w
+b00000000 1X
+b00000000 29
+b00000000 -p
+b00000000 .Q
+b00000000 /2
+b0000 +E
+b00000000 4n
+b00000000 5O
+b00000000 60
+b00000000 v
+b00000000 1g
+b00000000 "Q
+b00000000 #2
+b00000000 2H
+b00000000 3)
+b00000000 .`
+b00000000 /A
+b00000000 0"
+b00000000 8e
+b00000000 9F
+b00000000 f
+b00000000 4}
+b00000000 %g
+b00000000 &H
+b00000000 ')
+b00000000 5^
+b00000000 6?
+b00000000 1v
+b00000000 "`
+b00000000 #A
+b00000000 $"
+b00000000 2W
+b00000000 38
+b00000000 *h
+b00000000 +I
+b00000000 ,*
+b00000000 8t
+b00000000 9U
+b00000000 u
+b00000000 5m
+b00000000 %v
+b00000000 &W
+b00000000 '8
+b00000000 6N
+b00000000 7/
+b00000000 -~
+b00000000 ._
+b00000000 /@
+b00000000 0!
+b00000000 )w
+b00000000 *X
+b00000000 +9
+b00000000 &p
+b00000000 'Q
+b00000000 (2
+b00000000 9d
+b00000000 )m
+b00000000 *N
+b00000000 +/
+b00000000 1u
+b00000000 2V
+b00000000 37
+b00000000 "_
+b00000000 #@
+b00000000 $!
+b00000000 -n
+b00000000 .O
+b00000000 /0
+b00000000 *g
+b00000000000000000 $U
+b00000000 +H
+b00000000 ,)
+b00000000 '`
+b00000000 (A
+b00000000 )"
+b00000000 9T
+b00000000 8s
+b00000000 t
+b00000000 5l
+b00000000 6M
+b00000000 1e
+b00000000 2F
+b00000000 3'
+b00000000 7.
+b00000000 2e
+b00000000 3F
+b00000000 -}
+b00000000 .^
+b00000000 /?
+b00000000 4'
+b00000000 ,8
+b00000000 *v
+b00000000 +W
+b00000000 4{
+b00000000 5\
+b00000000 6=
+b00000000 1t
+b00000000 2U
+b00000000 36
+b00000000 .m
+b00000000 /N
+b00000000 0/
+b00000000 &~
+b00000000 '_
+b00000000 (@
+b00000000 )!
+b00000000 8r
+b00000000 9S
+b00000000 s
+b00000000 5k
+b00000000 6L
+b00000000 7-
+b00000000 2d
+b00000000 3E
+b00000000 "m
+b00000000 #N
+b00000000 $/
+b00000000 *u
+b00000000 +V
+b00000000 ,7
+b00000000 #g
+b00000000 $H
+b00000000 %)
+b00000000 ""
+b00000000 9b
+b00000000 5z
+b00000000 6[
+b00000000 7<
+b00000000 &d
+b00000000 'E
+b00000000 (&
+b00000000 .l
+b00000000 /M
+b00000000 *e
+b00000000 +F
+b00000000 ,'
+b00000000 0.
+b00000000 +e
+b00000000 ,F
+b00000000 &}
+b00000000 '^
+b00000000 (?
+b00000000 -'
+b00000000 #v
+b00000000 $W
+b00000000 %8
+b00000000 9q
+b00000000 5j
+b00000000 6K
+b00000000 7,
+b00000000 2c
+b00000000 3D
+b00000000 -{
+b00000000 /=
+b00000000 4%
+b00000000 "l
+b00000000 #M
+b00000000 $.
+b00000000 .{
+b00000000 /\
+b00000000 *t
+b00000000 +U
+b00000000 ,6
+b00000000 0=
+b00000000 'm
+b00000000 (N
+b00000000 )/
+b00000000 9a
+b00000000 5y
+b00000000 6Z
+b00000000 1r
+b00000000 2S
+b00000000 34
+b00000000 7;
+b00000000 2r
+b00000000 3S
+b00000000 .k
+b00000000 /L
+b00000000 0-
+b00000000 44
+b00000000 +d
+b00000000 ,E
+b00000000 -&
+b00000000 2b
+b00000000 3C
+b00000000 4$
+b00000000 ,
+b00000000 .z
+b00000000 /[
+b00000000 0<
+b00000000 +s
+b00000000 ,T
+b00000000 -5
+b00000000 'l
+b00000000 (M
+b00000000 ).
+b00000000 $e
+b00000000 %F
+b00000000 &'
+b00000000 5x
+b00000000 6Y
+b00000000 2q
+b00000000 3R
+b00000000 43
+b00000000 "z
+b00000000 #[
+b00000000 $<
+b00000000 +c
+b00000000 ,D
+b00000000 &{
+b00000000 '\
+b00000000 (=
+b00000000 -%
+b00000000 '{
+b00000000 (\
+b00000000 #t
+b00000000 %6
+b00000000 )=
+b00000000 "/
+b00000000 9o
+b00000000 6h
+b00000000 7I
+b00000000 8*
+b00000000 .y
+b00000000 /Z
+b00000000 *r
+b00000000 +S
+b00000000 ,4
+b00000000 0;
+b00000000 +r
+b00000000 7b
+b00000000 'k
+b00000000 (L
+b00000000 )-
+b00000000 8C
+b00000000 9$
+b00000000 ,S
+b00000000 -4
+b00000000 $d
+b00000000 %E
+b00000000 &&
+b00000000 2p
+b00000000 3Q
+b00000000 42
+b00000000 /i
+b00000000 0J
+b00000000 +b
+b00000000 ,C
+b00000000 -$
+b00000000 1+
+b00000000 ,b
+b00000000 -C
+b00000000 'z
+b00000000 ([
+b00000000 )<
+b00000000 .$
+b00000000 $s
+b00000000 %T
+b00000000 &5
+b00000000 6g
+b00000000 7H
+b00000000 8)
+b00000000 *
+b00000000 3`
+b00000000 4A
+b00000000 .x
+b00000000 /Y
+b00000000 0:
+b00000000 5"
+b00000000 +q
+b00000000 ,R
+b00000000 -3
+b00000000 (j
+b00000000 )K
+b00000000 *,
+b00000000 "=
+b0000 7{
+b00000000 2o
+b00000000 3P
+b00000000 41
+b00000000 9
+b00000000 /h
+b00000000 0I
+b00000000 7p
+b00000000 'y
+b00000000 (Z
+b00000000 );
+b00000000 8Q
+b00000000 92
+b00000000 R
+b00000000 $r
+b00000000 %S
+b00000000 &4
+b00000000 6f
+b00000000 7G
+b00000000 8(
+b00000000 2~
+b00000000 3_
+b00000000 4@
+b00000000 5!
+b00000000 +p
+b00000000 ,Q
+b00000000 -2
+b00000000 (i
+b00000000 )J
+b00000000 $b
+b00000000 %C
+b00000000 &$
+b00000000 *+
+b00000000 %b
+b00000000 &C
+b00000000 "<
+b00000000 '$
+b00000000 6u
+b00000000 7V
+b00000000 87
+b00000000 /g
+b00000000 0H
+b00000000 1)
+b00000000 ,`
+b00000000 7o
+b00000000 8P
+b00000000 91
+b00000000 'x
+b00000000 (Y
+b00000000 ):
+b00000000 -A
+b00000000 ."
+b00000000 (x
+b00000000 )Y
+b00000000 $q
+b00000000 %R
+b00000000 &3
+b00000000 *:
+b00000000 "K
+b00000000 #,
+b00000000 2}
+b00000000 3^
+b00000000 4?
+b00000000 /v
+b00000000 0W
+b00000000 +o
+b00000000 ,P
+b00000000 -1
+b00000000 18
+b00000000 ,o
+b00000000 7~
+b00000000 (h
+b00000000 )I
+b00000000 **
+b00000000 8_
+b00000000 9@
+b00000000 -P
+b00000000 .1
+b00000000 %a
+b00000000 &B
+b00000000 '#
+b00000000 6t
+b00000000 7U
+b00000000 86
+b00000000 7
+b00000000 /f
+b00000000 0G
+b00000000 1(
+b00000000 +~
+b00000000 ,_
+b00000000 -@
+b00000000 .!
+b00000000 (w
+b00000000 )X
+b00000000 *9
+b00000000 4g
+b00000000 $p
+b00000000 %Q
+b00000000 &2
+b00000000 5H
+b00000000 6)
+b00000000 "J
+b00000000 #+
+b00000000 F
+b00000000 /u
+b00000000 0V
+b00000000 17
+b00000000 7}
+b00000000 (g
+b00000000 )H
+b00000000 *)
+b00000000 8^
+b00000000 9?
+b00000000 _
+b00000000 %`
+b00000000 &A
+b00000000 '"
+b00000000 "Y
+b00000000 #:
+b0000 73
+b00000000 3l
+b00000000 4M
+b00000000 5.
+b0000 -c
+b00000000 +}
+b00000000 ,^
+b00000000 -?
+b00000000 8m
+b00000000 (v
+b00000000 )W
+b00000000 $o
+b00000000 %P
+b00000000 &1
+b00000000 *8
+b00000000 9N
+b00000000 n
+b00000000 %o
+b00000000 &P
+b00000000 "I
+b00000000 #*
+b00000000 '1
+b00000000 /t
+b00000000 0U
+b00000000 16
+b0000 $%
+b00000000 ,m
+b00000000 7|
+b00000000 8]
+b00000000 9>
+b00000000 -N
+b00000000 ./
+b00000000 )f
+b00000000 4u
+b00000000 $~
+b00000000 %_
+b00000000 &@
+b00000000 '!
+b00000000 5V
+b00000000 67
+b00000000 *G
+b00000000 +(
+b00000000 "X
+b00000000 #9
+b00000000 0d
+b00000000 1E
+b00000000 2&
+b00000000 ,|
+b00000000 8l
+b00000000 9M
+b00000000 (u
+b00000000 )V
+b00000000 *7
+b00000000 -]
+b00000000 .>
+b00000000 )u
+b00000000 *V
+b00000000 %n
+b00000000 &O
+b00000000 '0
+b00000000 +7
+b00000000000000000 8w
+b00000000 ,l
+b00000000 -M
+b00000000 ..
+b00000000 ]
+b00000000 4t
+b00000000 5U
+b00000000 66
+b00000000 $}
+b00000000 %^
+b00000000 &?
+b00000000 |
+b00000000 1m
+b00000000 "W
+b00000000 #8
+b00000000 2N
+b00000000 3/
+b00000000 S
+b00000000 0c
+b00000000 1D
+b00000000 2%
+b00000000 8k
+b00000000 (t
+b00000000 )U
+b00000000 *6
+b00000000 9L
+b00000000 l
+b00000000 5d
+b00000000 6E
+b00000000 7&
+b00000000 %m
+b00000000 &N
+b00000000 '/
+b00000000 "f
+b00000000 #G
+b00000000 $(
+b00000000 8z
+b00000000 )d
+b00000000 *E
+b00000000 +&
+b00000000 9[
+b00000000 {
+b00000000 %|
+b00000000 1l
+b00000000 2M
+b00000000 3.
+b00000000 "V
+b00000000 #7
+b00000000 &]
+b00000000 '>
+b00000000 "u
+b00000000 #V
+b00000000 $7
+b00000000 ,z
+b00000000 -[
+b00000000 .<
+b00000000 8j
+b00000000 9K
+b00000000 )s
+b00000000 5c
+b00000000 6D
+b00000000 7%
+b00000000 %l
+b00000000 &M
+b00000000 '.
+b00000000 *T
+b00000000 +5
+b00000000 &l
+b00000000 1{
+b00000000 "e
+b00000000 #F
+b00000000 $'
+b00000000 2\
+b00000000 3=
+b00000000 'M
+b00000000 (.
+b00000000 *m
+b00000000 +N
+b00000000 ,/
+b00000000 0q
+b00000000 1R
+b00000000 23
+b00000000 -j
+b00000000 8y
+b00000000 9Z
+b00000000 )c
+b00000000 *D
+b00000000 +%
+b00000000 .K
+b00000000 /,
+b00000000 5r
+b00000000 %{
+b00000000 &\
+b00000000 '=
+b00000000 6S
+b00000000 74
+b00000000 1k
+b00000000 2L
+b00000000 3-
+b00000000 "U
+b00000000 #6
+b00000000 .d
+b00000000 /E
+b00000000 0&
+b00000000 j
+b00000000 5b
+b00000000 6C
+b00000000 7$
+b00000000 1z
+b00000000 "d
+b00000000 #E
+b00000000 $&
+b00000000 2[
+b00000000 3<
+b00000000 8x
+b00000000 9Y
+b0000 ,H
+b00000000 y
+b00000000 5q
+b00000000 %z
+b00000000 &[
+b00000000 '<
+b00000000 6R
+b00000000 "s
+b00000000 #T
+b00000000 $5
+b00000000 #m
+b00000000 $N
+b00000000 %/
+b00000000 9h
+b00000000 )q
+b00000000 *R
+b00000000 +3
+b00000000 5a
+b00000000 6B
+b00000000 7#
+b00000000 6a
+b00000000 &j
+b00000000 1y
+b00000000 2Z
+b00000000 3;
+b0000 &*
+b00000000 "c
+b00000000 #D
+b00000000 'K
+b00000000 $
+b00000000 (,
+b00000000 7B
+b00000000 .r
+b00000000 /S
+b00000000 04
+b00000000 8#
+b00000000 #c
+b00000000 $D
+b00000000 %%
+b00000000 'd
+b00000000 (E
+b00000000 )&
+b00000000 -h
+b00000000 /*
+b00000000 9X
+b00000000 9w
+b00000000 *a
+b00000000 5p
+b00000000 6Q
+b00000000 72
+b00000000 +B
+b00000000 ,#
+b00000000 &y
+b00000000 2i
+b00000000 "r
+b00000000 #S
+b00000000 $4
+b00000000 3J
+b00000000 4+
+b00000000 'Z
+b00000000 (;
+b00000000 *z
+b00000000 +[
+b00000000 ,<
+b00000000 9g
+b00000000 1x
+b00000000 2Y
+b00000000 3:
+b00000000 #
+b00000000 .q
+b00000000 /R
+b00000000 03
+b00000000 5o
+b00000000 6P
+b00000000 71
+b00000000 2h
+b00000000 3I
+b00000000 4*
+b00000000 "q
+b00000000 #R
+b00000000 $3
+b00000000 /a
+b00000000 0B
+b00000000 1#
+b00000000 9f
+b00000000 5~
+b00000000 &h
+b00000000 'I
+b00000000 (*
+b00000000 6_
+b00000000 7@
+b00000000 8!
+b00000000 "
+b00000000 2w
+b00000000 3X
+b00000000 49
+b00000000000000000 (^
+b00000000 #a
+b00000000 $B
+b00000000 %#
+b00000000 #z
+b00000000 $[
+b00000000 %<
+b00000000 9u
+b00000000 5n
+b00000000 6O
+b00000000 70
+b00000000 6n
+b00000000 &w
+b00000000 'X
+b00000000 (9
+b00000000 2g
+b00000000 3H
+b00000000 4)
+b00000000 7O
+b00000000 80
+b00000000 1
+b00000000 #p
+b00000000 /`
+b00000000 0A
+b00000000 1"
+b00000000 $Q
+b00000000 %2
+b00000000 'q
+b00000000 (R
+b00000000 )3
+b00000000 *n
+b00000000 +O
+b00000000 ,0
+b00000000 5}
+b00000000 6^
+b00000000 7?
+b00000000 'g
+b00000000 2v
+b00000000 3W
+b00000000 48
+b00000000 #`
+b00000000 $A
+b00000000 %"
+b00000000 (H
+b00000000 ))
+b00000000 .o
+b00000000 01
+b00000000 +h
+b00000000 ,I
+b00000000 -*
+b00000000 (a
+b00000000 )B
+b00000000 *#
+b00000000 9t
+b00000000 2f
+b00000000 3G
+b00000000 4(
+b00000000 0
+b00000000 .~
+b00000000 /_
+b00000000 0@
+b00000000 1!
+b00000000 +w
+b00000000 ,X
+b00000000 -9
+b00000000 5|
+b00000000 6]
+b00000000 7>
+b00000000 2u
+b00000000 3V
+b00000000 47
+b00000000 /n
+b00000000 0O
+b00000000 "3
+b00000000 6l
+b00000000 7M
+b00000000 8.
+b00000000 /
+b00000000 3e
+b00000000 #n
+b00000000 $O
+b00000000 %0
+b00000000 4F
+b00000000 5'
+b00000000 /}
+b00000000 ")
+b00000000 0^
+b00000000 1?
+b00000000 $h
+b00000000 %I
+b00000000 "B
+b00000000 ##
+b00000000 6{
+b00000000 'e
+b00000000 (F
+b00000000 )'
+b00000000 2t
+b00000000 3U
+b00000000 46
+b0000 '%
+b00000000 7\
+b00000000 >
+b00000000 8=
+b00000000 #}
+b00000000 /m
+b00000000 0N
+b00000000 1/
+b00000000 $^
+b00000000 %?
+b00000000 3t
+b00000000 4U
+b00000000 56
+b00000000 7u
+b00000000 '~
+b00000000 (_
+b00000000 )@
+b00000000 *!
+b00000000 8V
+b00000000 97
+b00000000 $w
+b00000000 %X
+b00000000 &9
+b00000000 6k
+b00000000 7L
+b00000000 8-
+b00000000 7k
+b00000000 't
+b00000000 (U
+b00000000 )6
+b00000000 .|
+b00000000 /]
+b00000000 0>
+b00000000 8L
+b00000000 9-
+b00000000 +u
+b00000000 ,V
+b00000000 -7
+b00000000 (n
+b00000000 )O
+b00000000 *0
+b00000000 =
+b00000000 /l
+b00000000 0M
+b00000000 1.
+b00000000 ,e
+b00000000 -F
+b00000000 .'
+b00000000 (}
+b00000000 )^
+b00000000 *?
+b00000000 3c
+b00000000 4D
+b00000000 5%
+b00000000 /{
+b00000000 "'
+b00000000 0\
+b00000000 1=
+b00000000 ,t
+b00000000 -U
+b00000000 .6
+b00000000 %f
+b00000000 &G
+b00000000 '(
+b00000000 0u
+b00000000 "@
+b00000000 #!
+b00000000 1V
+b00000000 27
+b00000000 6y
+b00000000 7Z
+b00000000 8;
+b00000000 <
+b00000000 3r
+b00000000 4S
+b00000000 54
+b00000000 0k
+b00000000 "6
+b00000000 ,d
+b00000000 -E
+b00000000 .&
+b00000000 1L
+b00000000 2-
+b00000000 4l
+b00000000 $u
+b00000000 %V
+b00000000 &7
+b00000000 5M
+b00000000 6.
+b00000000 "O
+b00000000 #0
+b00000000 7i
+b00000000 8J
+b00000000 3b
+b00000000 4C
+b00000000 5$
+b00000000 9+
+b00000000 K
+b00000000 4b
+b00000000 $k
+b00000000 %L
+b00000000 &-
+b00000000 /z
+b00000000 0[
+b00000000 1<
+b00000000 5C
+b00000000 6$
+b00000000 8c
+b00000000 (l
+b00000000 )M
+b00000000 *.
+b00000000 9D
+b00000000 d
+b00000000 %e
+b00000000 &F
+b00000000 ''
+b00000000 "^
+b00000000 #?
+b00000000 7x
+b00000000 8Y
+b00000000 9:
+b00000000 ,c
+b00000000 -D
+b00000000 .%
+b00000000 ({
+b00000000 )\
+b00000000 *=
+b00000000 %t
+b00000000 &U
+b00000000 '6
+b00000000 J
+b00000000 /y
+b00000000 0Z
+b00000000 1;
+b00000000 ,r
+b00000000 -S
+b00000000 .4
+0/P
+b00000000 )k
+b00000000 *L
+b00000000 +-
+b00000000 3p
+b00000000 4Q
+b00000000 52
+b00000000 0i
+b00000000 1J
+b00000000 2+
+b0000 "w
+b00000000 -b
+b00000000 .C
+b00000000 /$
+b00000000 r
+b00000000 %s
+b00000000 &T
+b00000000 '5
+b00000000 1c
+b00000000 "M
+b00000000 #.
+b00000000 2D
+b00000000 3%
+b00000000 4`
+b00000000 5A
+b00000000 6"
+b00000000 0x
+b00000000 "C
+b00000000 #$
+b00000000 ,q
+b00000000 -R
+b00000000 .3
+b00000000 1Y
+b00000000 2:
+b00000000 4y
+b00000000 5Z
+b00000000 6;
+b00000000 %c
+b00000000 &D
+b00000000 "\
+b00000000 #=
+b00000000 7v
+b00000000 8W
+b00000000 98
+b00000000 X
+b00000000 4o
+b00000000 $x
+b00000000 %Y
+b00000000 &:
+b00000000 0h
+b00000000 1I
+b00000000 2*
+b00000000 5P
+b00000000 61
+b00000000 8p
+b00000000 9Q
+b00000000 (y
+b00000000 )Z
+b00000000 *;
+b00000000 q
+b00000000 5i
+b00000000 %r
+b00000000 &S
+b00000000 '4
+b00000000 6J
+b00000000 7+
+b00000000 "k
+b00000000 #L
+b00000000 $-
+b0000 .\
+b00000000 ,p
+b00000000 -Q
+b00000000 .2
+b00000000 9`
+b00000000 )i
+b00000000 *J
+b00000000 ++
+b00000000 &b
+b00000000 'C
+b00000000 ($
+b00000000 -`
+b00000000 .A
+b00000000 /"
+b00000000 )x
+b00000000 *Y
+b00000000 +:
+b00000000 &q
+b00000000 'R
+b00000000 "j
+b00000000 #K
+b00000000 $,
+b00000000 (3
+b00000000 -y
+b00000000 .Z
+b00000000 /;
+b00000000 0v
+b00000000 1W
+b00000000 28
+b00000000 -o
+b00000000 .P
+b00000000 /1
+$end
+#0
+b00000000000010000 6x
+b00000000000010000 1*
+b00000000000010000 (^
+b00000000000010000 "b
+17:
+b00000000000010000 5[
+b00000000000010000 .I
+b00000000000010000 8w
+b00000000000010000 $U
+#1
+b0010 &*
+b0110 +E
+b0101 4Z
+b0111 '%
+1/P
+b0101 "w
+b0001 +X
+b0111 -c
+b0100 $%
+b0100 ,H
+b0110 7{
+b0010 73
+b0011 .\
+b0001 #\
+b0011 6!
+#6
+0/P
+07:
+#11
+b00010000 7h
+b00010000 1:
+b00010000 X
+b00010000 'F
+b00010000 '1
+b00010000 .l
+b00010000 7y
+1/P
+b00010000 &~
+b00010000 *<
+b00010000 y
+b00010000 /,
+b0001 10
+b00010000 9x
+b00010000 'S
+b00010000 2/
+b00010000 .[
+b00010000 8V
+#16
+b00010100 ,Q
+b10111001 %}
+b11111110 4D
+b10000010 )-
+b10100010 6O
+b00000000000000000 .I
+b10000011 j
+b01110101 b
+b00011110 +l
+b10001101 "p
+b01000011 *S
+b00100110 *>
+b11011000 6.
+b11111010 .=
+b10010100 2x
+b10111111 $.
+b11101100 44
+b00101001 +b
+b11011000 )Y
+b01111111 /c
+b10111011 &g
+b00011111 .X
+b11011110 7"
+b00110110 ,y
+b00001110 &5
+b00001001 $s
+b00000000000000000 "b
+b11111111 /H
+b00110001 '-
+b01111100 (t
+b00000011 8c
+b10101111 /|
+b11000011 /g
+b11111001 1)
+b10100101 24
+b01111101 $o
+b00101001 4,
+b01110100 5V
+b10001001 $~
+b00010101 $L
+b00101011 )h
+b10101000 +V
+b01000111 ,7
+b01100110 "o
+b00100100 .-
+b00110101 4T
+b10001011 #g
+b10110000 4"
+b11000101 'h
+b00001000 %#
+b01001101 #a
+b01010100 /<
+b00110110 +5
+b11010100 2=
+b00001001 90
+b11000101 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b11000001 Y
+b10011000 6]
+b10101010 .W
+b11001000 '2
+b00000110 6+
+b11101101 *3
+b11011100 9u
+b10111000 5a
+b11011100 ->
+b11011001 7d
+b10011110 #
+b00000000000000000 5[
+b11111010 (u
+b01010100 $Q
+b11110111 ,%
+b01110111 9\
+b00001000 3L
+b10100111 4-
+b10000101 'T
+b00010000 $!
+b01000010 )g
+b11101010 $M
+b00000010 "Y
+b00000000000000000 8w
+b00111011 54
+b11010011 64
+b01111100 8q
+b01010011 5j
+b10110000 &T
+b01001010 +j
+b01011001 w
+b11110110 7i
+b01011001 *n
+b01101000 1D
+0/P
+b01111110 ,?
+b10101111 ,$
+b10111110 0t
+b01010101 (n
+b01010011 1U
+b10110100 &z
+b01010000 4A
+b11101101 0Y
+b00111011 3Z
+b01111110 .H
+b11000010 i
+b11110010 $c
+b11110100 2^
+b10101011 )w
+b01011000 2I
+b00011101 &Y
+b10010100 *X
+b10000101 7z
+b01010000 0U
+b01100010 7H
+b10011001 'f
+b01111001 /W
+b00100011 6v
+b10010111 7%
+b00111000 1I
+b10010000 -W
+b00001110 #]
+b01000110 +N
+b01110011 "|
+b00010000 %h
+b10011110 .:
+b00000000000000000 $U
+b00000001 !
+b01101010 0y
+b01100011 1Z
+b00000000000000000 (^
+b00101011 6:
+b00100100 'u
+b10001101 .h
+b10010000 3H
+b10101110 (m
+b01100011 8*
+b01100111 7I
+b01110110 3~
+#21
+b01100011 (R
+b11101101 2c
+b01010100 8X
+b00101001 4p
+b01100111 -K
+b10111000 -6
+b01100110 ,U
+b01000010 3]
+b11000010 +W
+b10111111 4j
+b01000011 3t
+b10011110 %?
+b10110000 $,
+b10100111 +!
+b00110110 %m
+b11011000 &N
+b00001000 .s
+b01001101 2r
+b00101001 *l
+b11011000 3S
+b00101011 3!
+b01010101 2#
+b00110001 0L
+b10110000 0[
+b11000101 0z
+b01110101 0r
+b10101010 7e
+b11110010 .L
+b01010100 .7
+b01111001 9[
+b11101101 8z
+b00001110 +w
+b00010000 /v
+b10010100 #q
+b10100010 %|
+b11011100 5k
+b01011001 4u
+b00100100 0v
+b01011001 +*
+b11010100 #;
+b00111000 N
+b00111011 "T
+b0010 10
+b00110101 $B
+b01101000 |
+b01000111 6F
+b01110111 %<
+b11011110 'G
+b11110111 5J
+b01001010 #Y
+b10100101 .}
+b01011000 "c
+b00110110 5p
+b10001001 .K
+b10011000 '&
+b01111100 )k
+b10000011 *x
+b11110100 #S
+b10010100 "@
+b00010000 ,<
+b10101011 3/
+b11111001 }
+b01010000 +#
+b00011101 5f
+b10000101 0q
+b11111111 8Z
+b00000011 )D
+b01111101 4S
+b00100011 (c
+b11111010 %\
+b00010101 ..
+b00111011 $f
+b00001110 09
+b10111110 2
+b00000110 '5
+b01111111 8k
+b11001000 0P
+b11110110 '~
+b10000101 'L
+b01100010 'c
+b01100011 o
+b00001000 #^
+b00000010 38
+b11000001 +G
+b10001101 ,(
+b11101010 -o
+b00001001 )p
+1/P
+b00101011 ,s
+b00001001 .5
+b00011110 #Z
+b01111100 1r
+b01111110 #=
+b01010011 "G
+b10111001 /a
+b00100110 %g
+b10011001 0n
+b11101100 %5
+b01000110 "$
+b01110100 &W
+b11010011 -5
+b00100100 8<
+b01111110 7[
+b11111110 $e
+b10110100 08
+b10010111 (2
+b10011110 '<
+b00011111 8!
+b11000011 9h
+b00000001 6-
+b10101111 57
+b11111010 $_
+b01101010 5L
+b10001011 2w
+b01010011 &j
+b11000101 'j
+b01010000 92
+b10101110 1,
+b10010000 *5
+b11011100 )?
+b10101000 5'
+b01110011 2g
+b10000010 -U
+b10101111 8d
+b10010000 8G
+b01110110 $<
+b11011001 'Z
+b10111011 /K
+b00010100 6h
+b10001101 74
+#26
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#31
+b00100000 7h
+b00100000 1:
+b00100000 X
+b00100000 'F
+b00100000 '1
+b00100000 .l
+b00100000 7y
+1/P
+b00100000 &~
+b00100000 *<
+b00100000 y
+b00100000 /,
+b0011 10
+b00100000 9x
+b00100000 'S
+b00100000 2/
+b00100000 .[
+b00100000 8V
+#36
+b10000111 ,Q
+b01001001 %}
+b00010110 4D
+b01010111 )-
+b11010110 6O
+b00000000000000001 .I
+b11011111 j
+b10110100 b
+b11010100 +l
+b00110001 "p
+b01001010 *S
+b00100010 *>
+b01000111 6.
+b01111011 .=
+b01111100 2x
+b11100110 $.
+b10010011 44
+b00001101 +b
+b01100001 )Y
+b10110100 /c
+b10000000 &g
+b10001010 .X
+b00101110 7"
+b11111011 ,y
+b10000011 &5
+b01001011 $s
+b00000000000000000 "b
+b00110011 /H
+b10110001 '-
+b10011110 (t
+b00001111 8c
+b10011100 /|
+b11001100 /g
+b11101101 1)
+b00000110 24
+b00011110 $o
+b01000010 4,
+b01111100 5V
+b10010010 $~
+b00010101 $L
+b10001100 )h
+b00011101 +V
+b00100101 ,7
+b01001001 "o
+b01010100 .-
+b11101000 4T
+b01100100 #g
+b10011010 4"
+b10010110 'h
+b01110101 %#
+b11010001 #a
+b00101000 /<
+b11110101 +5
+b11011100 2=
+b11101001 90
+b11000000 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b01011011 Y
+b11110011 6]
+b11111101 .W
+b11110011 '2
+b00011101 6+
+b10100101 *3
+b01110011 9u
+b00011100 5a
+b11100010 ->
+b10001001 7d
+b10000101 #
+b00000000000000000 5[
+b00100101 $Q
+b01010110 ,%
+b00000101 9\
+b11100101 3L
+b00010111 4-
+b01100100 'T
+b01010101 )g
+b10100000 $M
+b11101010 "Y
+b00000000000000001 8w
+b00011000 54
+b11111110 64
+b10011100 8q
+b01110110 5j
+b01110000 &T
+b01000010 +j
+b01100111 w
+b10110110 7i
+b11000101 *n
+b01101000 1D
+0/P
+b00010101 ,?
+b11000100 ,$
+b01111011 0t
+b01001101 (n
+b01110111 1U
+b01010110 &z
+b01000001 4A
+b00111001 0Y
+b11010101 3Z
+b11001000 .H
+b00011001 i
+b01110101 $c
+b10000001 2^
+b01011110 )w
+b00101111 2I
+b10100111 &Y
+b00011010 *X
+b10111101 7z
+b01110110 0U
+b01011001 7H
+b11011110 'f
+b10101110 /W
+b10110100 6v
+b01100101 7%
+b11110000 1I
+b01111010 -W
+b11001101 #]
+b00011011 +N
+b00101010 "|
+b00101001 %h
+b00111101 .:
+b00000000000000000 $U
+b11011000 !
+b00111100 0y
+b11010010 1Z
+b00000000000000000 (^
+b10101010 6:
+b10000110 'u
+b10110110 .h
+b10110010 3H
+b10011101 (m
+b01100100 8*
+b11100000 7I
+b00100010 3~
+#41
+b01001001 58
+b01101000 4
+b11101101 S
+b10110110 .^
+b10000111 5Q
+b00011000 $2
+b11111011 6^
+b00010111 ^
+b11010010 I
+b10000110 1t
+b00011101 &;
+b00100101 .m
+b11110011 &R
+b01111100 %i
+b01001101 1Y
+b00100010 1<
+b01110110 8L
+b10000000 0F
+b11111101 7N
+b11011100 $$
+b01111011 0]
+b11000000 'v
+b00011100 81
+b10100000 .i
+b01111011 6o
+b11001100 8]
+b11100000 9)
+b10101010 8H
+b10100101 3K
+b10100111 (p
+b01011011 +"
+b00110011 9%
+b00010110 $1
+b00100101 5R
+b00010101 3^
+b0100 10
+b10000001 7_
+b00100001 .[
+b00011011 0{
+b01000111 &#
+b01110000 +T
+b11010101 #N
+b10000011 /h
+b01110110 &:
+b00101111 #e
+b11011110 1u
+b00011001 +1
+b00101000 9^
+b01001001 ,c
+b10011010 $]
+b01010111 9I
+b11011000 '^
+b00111100 (?
+b10010010 -[
+b01110111 @
+b00111101 /^
+b10001010 7O
+b11010110 &E
+b01100001 2L
+b11010100 27
+b00101010 )P
+b11101000 $K
+b01100111 *_
+b01111100 "n
+b01011110 2H
+b00011110 *B
+b01100101 (9
+b11001000 8(
+b10110100 'P
+b01100100 (z
+b00100010 %G
+b11110000 "6
+b10101110 8T
+b10110110 7^
+b10001001 'g
+b11101001 ))
+b11111110 "U
+b00010101 -d
+b00001111 *)
+b11000100 5d
+b00011010 1]
+b01010110 6\
+b01100100 ('
+b00100001 'F
+b01010101 2W
+b10011100 *4
+b01100100 -=
+1/P
+b00011101 4E
+b11001101 -"
+b00100001 9x
+b00000110 8e
+b00111001 9F
+b10111101 (Y
+b00000101 /~
+b10110100 '[
+b10110001 /x
+b00101110 (S
+b00101001 /F
+b01011001 .e
+b11100010 5;
+b01010100 71
+b11100110 %x
+b10000101 1}
+b10110100 &'
+b01000010 .a
+b10110010 9K
+b10011101 0d
+b00110001 ,3
+b01110101 -]
+b01110101 -@
+b01111010 $'
+b10010110 2*
+b01000001 "3
+b11101010 *$
+b11000101 45
+b00100001 .l
+b01110011 (y
+b01001010 4a
+b01000010 [
+b10001100 2X
+b11011111 *R
+b11110101 1o
+b10011100 4x
+b11110011 /{
+b01001011 )7
+b00001101 3e
+b01010110 /f
+b11100101 #<
+b10010011 $n
+b10011110 7f
+b11010001 )m
+#46
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#51
+b00100001 7h
+b00100001 1:
+b00110000 X
+b00100000 'F
+b00110000 '1
+b00100000 .l
+b0100 4Z
+b00100001 7y
+b0110 '%
+1/P
+b00110000 &~
+b0100 "w
+b00100001 *<
+b00110000 y
+b0110 -c
+b0101 $%
+b00110000 /,
+b0101 10
+b00100000 9x
+b0101 ,H
+b0111 7{
+b00110000 'S
+b00100000 .[
+b00110000 2/
+b00110000 8V
+b0111 +E
+#56
+b11110011 ,Q
+b00001011 %}
+b01000001 4D
+b10110110 )-
+b10100011 6O
+b00000000000000000 .I
+b10011010 j
+b11100110 b
+b01010000 +l
+b11101011 "p
+b01000101 *S
+b01000011 *>
+b11010111 6.
+b10001010 .=
+b01011001 2x
+b11001100 $.
+b11001110 44
+b10010010 +b
+b00001111 )Y
+b11111110 /c
+b01110011 &g
+b01101001 .X
+b10010010 7"
+b00010011 ,y
+b01011000 &5
+b10000011 $s
+b00000000000000000 "b
+b10100001 /H
+b01111010 '-
+b10111110 (t
+b01100111 8c
+b01010000 /|
+b00001110 /g
+b10010011 1)
+b11101010 24
+b00101100 $o
+b11001000 4,
+b10000101 5V
+b11000010 $~
+b00111111 $L
+b00001011 )h
+b10000010 +V
+b01110111 ,7
+b00010011 "o
+b10100101 .-
+b01010000 4T
+b11010111 #g
+b10010011 4"
+b11111111 'h
+b01011010 %#
+b11001110 #a
+b11010001 /<
+b01001001 +5
+b00001001 2=
+b11001111 90
+b10010110 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b10110110 Y
+b00011101 6]
+b01101011 .W
+b11000100 '2
+b11000010 6+
+b11110001 *3
+b11000011 9u
+b10110110 5a
+b10011001 ->
+b11001010 7d
+b11101011 #
+b00000000000000000 5[
+b00111000 (u
+b00000011 $Q
+b00100001 ,%
+b10110100 9\
+b10011010 3L
+b01010011 4-
+b11000111 'T
+b01001001 $!
+b11001000 )g
+b01000111 $M
+b00010010 "Y
+b00000000000000000 8w
+b01101011 54
+b11101011 64
+b11001111 8q
+b11010111 5j
+b01111001 &T
+b01110010 +j
+b11100011 w
+b00100100 7i
+b10000100 *n
+b00101000 1D
+0/P
+b00000111 ,?
+b10001101 ,$
+b11111111 0t
+b01110000 (n
+b10100110 1U
+b11100011 &z
+b00100011 4A
+b11011001 0Y
+b00110111 3Z
+b10100101 .H
+b11101111 i
+b10000000 $c
+b11100101 2^
+b10110101 )w
+b01100011 2I
+b10111111 &Y
+b00110100 *X
+b11001010 7z
+b11101011 0U
+b01001010 7H
+b10010000 'f
+b00101111 /W
+b10001100 6v
+b01001100 7%
+b01100110 1I
+b11101011 -W
+b11001011 #]
+b10110011 +N
+b10100111 "|
+b00111100 %h
+b10100101 .:
+b00000000000000000 $U
+b01110000 !
+b11011111 0y
+b10110111 1Z
+b00000000000000000 (^
+b00010100 6:
+b00110011 'u
+b10101111 .h
+b10111110 3H
+b01001001 (m
+b01101111 8*
+b00001000 7I
+b00111010 3~
+#61
+b00100000 7h
+b10001100 (=
+b00101100 5W
+b00111111 .2
+b01000111 -Q
+b11101011 8u
+b01110010 $8
+b01101111 'V
+b11100011 /?
+b00100001 62
+b00111010 $d
+b00001011 2|
+b00010011 ,8
+b01101001 7*
+b10000000 .&
+b10010010 48
+b00110011 ,f
+b01000001 %$
+b11000100 /5
+b11000011 )B
+b11010111 &m
+b11001111 )n
+b10100110 "I
+b00110111 #*
+b10100101 '3
+b11001110 %7
+b01100111 %9
+b11001111 *.
+b10000010 /_
+b01001001 ,X
+b10100101 7|
+b00001001 "{
+b0100 +E
+b11001000 +q
+b10011010 "u
+b11110011 6c
+b00110100 #$
+b11010001 8v
+b01100110 ~
+b11000111 ,i
+b01001100 'l
+b10010011 a
+b00010011 6H
+b10010011 %)
+b01001010 8r
+b0110 10
+b01101011 8@
+b11100110 2Z
+b10010010 (.
+b11110001 -_
+b01010000 3q
+b00100011 --
+b00001110 9G
+b10001010 &f
+b11000010 %p
+b11101011 7U
+b10110110 .n
+b00000011 -p
+b11010111 &K
+b01010000 %8
+b01011000 0?
+b10001101 6Q
+b01111001 *L
+b11101011 ,W
+b11001110 5!
+b10110110 &d
+b01101011 $h
+b00010010 5#
+b10010000 0i
+b00001000 /s
+b01001001 'm
+b01001001 1L
+b00011101 &(
+b00100000 *<
+b01110000 1/
+b00001011 (H
+b01110000 7V
+b11101111 +<
+b11011111 .E
+b10100001 9L
+b11101011 /o
+b10101111 6w
+b10110101 3Q
+b10110110 +K
+b10100011 '7
+b11101011 -^
+b01010011 -,
+b00100001 'F
+b10110100 6?
+b00111000 &3
+b01010000 %R
+b11111110 ,E
+b11001100 5C
+1/P
+b11010111 5&
+b10111110 *h
+b11000010 .o
+b10010110 'J
+b0111 "w
+b10110111 "0
+b01110111 6&
+b10000100 4\
+b10110011 #o
+b10111110 $P
+b00001111 34
+b11001011 ,;
+b10011010 +Z
+b11011001 8|
+b00000111 %L
+b0111 4Z
+b11101010 0S
+b00111100 /r
+b11001000 3?
+b11001010 'n
+b10111111 7t
+b00101111 96
+b01000101 49
+b10100101 7W
+b00010100 .p
+b01000011 (,
+b11111111 6D
+b10011001 6/
+b00101000 "9
+b11111111 1^
+b10000011 *9
+b11001010 "g
+b00100001 .l
+b11100101 76
+b01011010 .O
+b10100111 3k
+b01011001 #t
+b11100011 *g
+b01100011 #B
+b10000101 "L
+b01111010 /I
+b01110011 /4
+b0100 7{
+b00100100 9T
+#66
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#71
+b00110000 7h
+b00110001 1:
+b01000000 X
+b00110001 'F
+b01000000 '1
+b00110001 .l
+b00110001 7y
+1/P
+b01000000 &~
+b00110000 *<
+b01000000 y
+b01000000 /,
+b0111 10
+b00110000 9x
+b01000000 'S
+b01000000 2/
+b00110000 .[
+b01000000 8V
+#76
+b00100100 ,Q
+b11011101 %}
+b01101000 4D
+b10000010 )-
+b00000101 6O
+b00000000000000000 .I
+b00000010 j
+b11000000 b
+b01001001 +l
+b01100100 "p
+b01010101 *S
+b01100111 *>
+b01001111 6.
+b00001111 .=
+b11011101 2x
+b01001001 $.
+b11001010 44
+b10001001 +b
+b00000011 )Y
+b10111100 /c
+b01000011 &g
+b10100110 .X
+b00001110 7"
+b01111101 ,y
+b00110001 &5
+b10010111 $s
+b00000000000000000 "b
+b01101100 /H
+b00010001 '-
+b01110101 (t
+b10101011 8c
+b10100111 /|
+b01101000 /g
+b01100100 1)
+b11010101 24
+b01010101 $o
+b10010101 4,
+b11001111 5V
+b10011011 $~
+b10011110 $L
+b01011101 )h
+b10011011 +V
+b11110110 ,7
+b00101110 "o
+b00010101 .-
+b01110110 4T
+b01110110 #g
+b01001000 4"
+b11111000 'h
+b10011001 %#
+b01011111 #a
+b00110000 /<
+b01010001 +5
+b01111001 2=
+b00110001 90
+b10100111 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b11101100 Y
+b11100010 6]
+b11100001 .W
+b01101101 '2
+b01011001 6+
+b00011011 *3
+b11001000 9u
+b11101110 5a
+b01000110 ->
+b11010010 7d
+b01101101 #
+b00000000000000000 5[
+b11100001 (u
+b00011001 $Q
+b10100011 ,%
+b11101111 9\
+b01010101 3L
+b11110110 4-
+b11110111 'T
+b10011110 $!
+b00010010 )g
+b11010000 $M
+b01111011 "Y
+b00000000000000000 8w
+b00111001 54
+b00011100 64
+b01111011 8q
+b00010110 5j
+b01000101 &T
+b10000111 +j
+b00111000 w
+b00101001 7i
+b01001100 *n
+b10000111 1D
+0/P
+b10101000 ,?
+b10001101 ,$
+b10101111 0t
+b00100000 (n
+b10110101 1U
+b11110100 &z
+b10001010 4A
+b01111111 0Y
+b00011111 3Z
+b01011101 .H
+b01011001 i
+b11000010 $c
+b01000110 2^
+b01000011 )w
+b10100011 2I
+b11011110 &Y
+b01111000 *X
+b10001110 7z
+b11111010 0U
+b10010111 7H
+b10010000 'f
+b11101000 /W
+b11000101 6v
+b01110001 7%
+b00101111 1I
+b11100100 -W
+b11010101 #]
+b11000011 +N
+b01011101 "|
+b01011011 %h
+b11001000 .:
+b00000000000000000 $U
+b01010101 !
+b11010001 0y
+b01110010 1Z
+b00000000000000000 (^
+b00011110 6:
+b11101000 'u
+b11101011 .h
+b10011011 3H
+b11011001 (m
+b01111010 8*
+b00001101 7I
+b11110111 3~
+#81
+b10001101 1$
+b00010001 0C
+b00010101 7K
+b00010110 &u
+b11101011 8&
+b10000010 ,M
+b00011100 $G
+b11111000 17
+b00101001 &q
+b10100011 #K
+b11011001 1x
+b01011001 &?
+b11110110 #.
+b01101101 $}
+b01011101 +S
+b10111100 7;
+b11000010 .T
+b11100100 6(
+b11011101 #y
+b01010101 3h
+b01101101 /T
+b01011111 +M
+b01111011 )'
+b10011001 -w
+b11010000 .g
+b11001000 1p
+b01111111 9a
+b01000011 0H
+b00001110 (W
+b01011101 3,
+b11000000 )d
+b01001001 3}
+b10100011 5?
+b00001111 18
+b11000011 2j
+b00111001 %J
+b01110010 g
+b00001101 "&
+b11101111 'O
+b01100100 ,1
+b01000011 3$
+b1000 10
+b01100111 2E
+b10011110 -H
+b10000111 0I
+b01111101 5z
+b01000110 6[
+b10011011 .@
+b01010101 ,D
+b01011001 &Q
+b01101000 8}
+b11110100 0(
+b01110001 'A
+b10101111 5v
+b10000111 r
+b10011011 U
+b01001100 41
+b10100110 72
+b10100111 4z
+b11011101 -j
+b10001001 3g
+b00000011 2i
+b01001000 $4
+b00110001 )e
+b11101000 4B
+b00011110 9"
+b11010010 #j
+b00011011 .y
+b00110001 /(
+b01001111 &A
+b01101100 8`
+b01001001 's
+b01110110 %.
+b11101100 +U
+b11010101 ,!
+b11000101 (k
+b11100010 &w
+b00101110 +n
+b11110111 %*
+b01000110 7A
+b01110101 /;
+b01111001 7$
+b11001000 )H
+b10101000 52
+b11111010 8P
+b10010101 #d
+b00101111 6*
+b10101011 $q
+b10001010 #{
+b11010001 3j
+b00010010 2t
+b10011110 -&
+b11001111 E
+b01111011 *Q
+b00100100 5u
+1/P
+b11101000 ,A
+b00000010 +`
+b11100001 3I
+b00011111 "\
+b11110110 5T
+b00011001 ):
+b10001110 (<
+b01010101 )f
+b11101110 9@
+b11011110 )I
+b10100111 'r
+b01011101 7a
+b01010001 2G
+b01111000 3G
+b01100100 7
+b00111000 *C
+b00100000 16
+b10011011 /:
+b10110101 e
+b01010101 #i
+b11001010 $J
+b11010101 t
+b01101000 $Y
+b10010111 )u
+b01000101 +7
+b00110000 8Q
+b01111010 (V
+b00000101 &b
+b11110111 ,#
+b10010111 '.
+b11100001 1T
+b01011011 0^
+b10010000 0s
+b01110110 +a
+#86
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#91
+b01000000 7h
+b01000001 1:
+b01010000 X
+b01000001 'F
+b01010000 '1
+b01000001 .l
+b01000001 7y
+1/P
+b01010000 &~
+b01000000 *<
+b01010000 y
+b01010000 /,
+b1001 10
+b01000000 9x
+b01010000 'S
+b01010000 2/
+b01000000 .[
+b01010000 8V
+#96
+b00101011 ,Q
+b11101000 %}
+b11101110 4D
+b10010100 )-
+b10000011 6O
+b00000000000000000 .I
+b10010001 j
+b00101000 b
+b01100111 +l
+b01101110 "p
+b10110110 *S
+b01111100 *>
+b00110000 6.
+b00111010 .=
+b11001011 2x
+b00000011 $.
+b10111011 44
+b10100101 +b
+b11010111 )Y
+b11110110 /c
+b11101101 &g
+b11100110 .X
+b11000011 7"
+b11111000 ,y
+b01100001 &5
+b00110101 $s
+b00000000000000000 "b
+b00100001 /H
+b10010011 '-
+b01001010 (t
+b00100110 8c
+b01100100 /|
+b00101100 /g
+b11111110 1)
+b01010100 24
+b01010001 $o
+b10110110 4,
+b01110110 5V
+b10000001 $~
+b01100111 $L
+b10101100 )h
+b01001110 +V
+b01100100 ,7
+b01111010 "o
+b11011110 .-
+b10100000 4T
+b00111001 #g
+b10110000 4"
+b00111001 'h
+b11111111 %#
+b01011011 #a
+b11101011 /<
+b11001011 +5
+b01001010 2=
+b01001010 90
+b01000001 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b10000110 Y
+b11010111 6]
+b00110011 .W
+b11010011 '2
+b01000001 6+
+b10110001 *3
+b01001101 9u
+b01101110 5a
+b11010000 ->
+b01101101 7d
+b01101000 #
+b00000000000000000 5[
+b11000101 (u
+b11101001 $Q
+b00000110 ,%
+b00001000 9\
+b01101001 3L
+b11001110 4-
+b00100111 'T
+b00110001 $!
+b00110011 )g
+b01100010 $M
+b11011011 "Y
+b00000000000000000 8w
+b11101000 54
+b10101010 64
+b01100000 8q
+b11110100 5j
+b00110111 &T
+b00111110 +j
+b10100010 w
+b11110010 7i
+b01011000 *n
+b11111111 1D
+0/P
+b11001010 ,?
+b01011101 ,$
+b10101100 0t
+b01110001 (n
+b00010101 1U
+b11110010 &z
+b10000110 4A
+b11111110 0Y
+b00100111 3Z
+b10010001 .H
+b01010110 i
+b01011100 $c
+b11101111 2^
+b10101000 )w
+b00010000 2I
+b00111001 &Y
+b01101110 *X
+b01010111 7z
+b00011110 0U
+b01010001 7H
+b10000110 'f
+b00011011 /W
+b10111001 6v
+b00100111 7%
+b10100010 1I
+b01010111 -W
+b01100010 #]
+b11000001 +N
+b00011011 "|
+b01101000 %h
+b01001000 .:
+b00000000000000000 $U
+b10001101 !
+b11110100 0y
+b10001101 1Z
+b00000000000000000 (^
+b01010100 6:
+b11101111 'u
+b00001111 .h
+b01100111 3H
+b00101101 (m
+b01100110 8*
+b00011111 7I
+b11011101 3~
+#101
+b01010001 -2
+b11001011 8,
+b01100000 *+
+b01100100 5%
+b11000011 'k
+b11111000 6d
+b11110100 '9
+b01010110 &&
+b01110110 M
+b01100010 -.
+b10010001 *Y
+b11001110 -E
+b01100110 (3
+b01001010 )r
+b11101001 )]
+b11111111 ,
+b11001011 )t
+b01101001 #E
+b00101000 4f
+b00110101 *#
+b10100000 %;
+b11000101 'N
+b00001111 7T
+b01101110 /N
+b11011011 6X
+b00110011 2Q
+b01001101 )#
+b00111010 (%
+b11010111 %e
+b01001010 7g
+b10001101 ;
+b01010100 ,&
+b00011011 59
+b10101100 2d
+b01011100 -|
+b11111110 ";
+b11100110 8D
+b10110110 4=
+b00110011 2{
+b01001110 0!
+b11010111 -a
+b01011000 4?
+b11110010 -/
+b00100110 $+
+b01011101 2.
+b01110001 0l
+b1010 10
+b00100111 (4
+b11001010 &U
+b10001101 9M
+b11011110 7v
+b10010011 /p
+b00000011 7Y
+b00011011 4g
+b11101110 %'
+b10101100 5|
+b10110001 -D
+b01001000 (\
+b01010001 7j
+b00110000 &h
+b10010001 78
+b11110110 %U
+b11111111 -S
+b10010100 8E
+b00110111 *i
+b11101000 $:
+b10000011 l
+b01000001 'E
+b10100010 +D
+b11110010 +'
+b11000001 $S
+b01101101 #r
+b10000110 +)
+b00111001 5:
+b10100101 4Y
+b00101101 ,h
+b01100100 6G
+b11111110 9;
+b01100010 .u
+b10101010 0"
+b00111001 1~
+b00100001 9g
+b00100111 -0
+b01010100 0N
+b01001010 6K
+b01101000 03
+b10110110 -{
+b01100111 ,,
+b01000001 %u
+b01100111 *8
+b10000110 1|
+b10101000 3U
+b00000110 6V
+b00101100 9J
+b01011011 5X
+b01010111 (]
+b00110001 ,\
+b01010111 '|
+1/P
+b10111001 (@
+b11010000 5E
+b11011101 %N
+b00001000 -T
+b01111010 ,V
+b11101000 5(
+b00010101 9
+b00010000 #(
+b00011111 2!
+b01101000 0_
+b00111110 &)
+b11110100 &H
+b11101111 +s
+b01100001 /t
+b00011110 94
+b11101111 6|
+b11010011 0#
+b00101011 5F
+b00100111 #F
+b00111001 9d
+b01101110 ,v
+b01101110 $)
+b11101101 /M
+b11101011 9f
+b10100010 5Y
+b10110000 9w
+b10000110 .6
+b10111011 %O
+b01111100 */
+b10000001 .M
+b01100111 %f
+#106
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#111
+b01010000 7h
+b01010001 1:
+b01100000 X
+b01010001 'F
+b01100000 '1
+b01010001 .l
+b01010001 7y
+1/P
+b01100000 &~
+b01010000 *<
+b01100000 y
+b01100000 /,
+b1011 10
+b01010000 9x
+b01100000 'S
+b01100000 2/
+b01010000 .[
+b01100000 8V
+#116
+b01101100 ,Q
+b10001100 %}
+b00010100 4D
+b11111110 )-
+b11110100 6O
+b00000000000000000 .I
+b00010110 j
+b01111100 b
+b00001010 +l
+b10010001 "p
+b01001000 *S
+b00000011 *>
+b00100010 6.
+b11001000 .=
+b01000000 2x
+b11011110 $.
+b10101110 44
+b11000011 +b
+b11101001 )Y
+b11011110 /c
+b01110001 &g
+b00111010 .X
+b10111101 7"
+b00101101 ,y
+b11110011 &5
+b11110110 $s
+b00000000000000000 "b
+b00111100 /H
+b00111100 '-
+b10111001 (t
+b11001111 8c
+b00011101 /|
+b00000100 /g
+b00101111 1)
+b00100111 24
+b10001101 $o
+b01111000 4,
+b11111001 5V
+b10100011 $~
+b11111111 $L
+b10011001 )h
+b01110001 +V
+b11011100 ,7
+b01110110 "o
+b11110111 .-
+b00111100 4T
+b10100100 #g
+b00010001 4"
+b10100111 'h
+b11001011 %#
+b00011110 #a
+b10111011 /<
+b01000100 2=
+b10111110 90
+b10101000 8:
+b00000000000000000 1*
+b00000000000000000 6x
+b10111011 Y
+b11100010 6]
+b10001000 .W
+b01110001 '2
+b11111110 6+
+b10010011 *3
+b01010100 9u
+b11001010 5a
+b10001111 ->
+b01001001 7d
+b11000001 #
+b00000000000000000 5[
+b01101001 (u
+b10110100 $Q
+b00111000 ,%
+b11100101 9\
+b00110100 3L
+b00100110 4-
+b00100010 'T
+b01111001 $!
+b01110000 )g
+b10100001 $M
+b10100010 "Y
+b00000000000000000 8w
+b11101000 54
+b00001101 64
+b00011000 8q
+b10100001 5j
+b01111110 &T
+b11100111 +j
+b11011010 w
+b11111001 7i
+b11001110 *n
+b01101100 1D
+0/P
+b11101100 ,?
+b01010111 ,$
+b01110000 0t
+b11110011 (n
+b00100000 1U
+b11011111 &z
+b00101011 4A
+b10101110 0Y
+b11101100 3Z
+b00000010 .H
+b10110011 i
+b00010011 $c
+b10110101 2^
+b00111010 )w
+b01000010 2I
+b10100010 &Y
+b11110111 *X
+b00001010 7z
+b00001010 0U
+b10101011 7H
+b00000111 'f
+b01111111 /W
+b01000111 6v
+b11010100 7%
+b11001000 1I
+b10011010 -W
+b11111100 #]
+b10000110 +N
+b11110111 "|
+b01111100 %h
+b01110111 .:
+b00000000000000001 $U
+b00100111 !
+b10110001 0y
+b01100010 1Z
+b00000000000000000 (^
+b00000010 6:
+b01101101 'u
+b00011000 .h
+b00111011 3H
+b01100111 (m
+b10100101 8*
+b11011000 7I
+b01000010 3~
+#121
+b10100001 9*
+b01010001 7h
+b00000010 3D
+b00100000 0o
+b01000010 3c
+b11100111 -}
+b10110011 5n
+b10001101 '$
+b10101011 5<
+b10011010 ,j
+b10100010 %(
+b00100010 #f
+b01111100 "S
+b00111000 (e
+b11010100 3%
+b00111100 &7
+b11011110 -G
+b11110111 ,I
+b10000110 +h
+b01100111 #b
+b00001010 3'
+b11110100 0~
+b11001011 8R
+b00111100 0D
+b00000010 .;
+b10001100 $V
+b01101101 #`
+b00001101 8/
+b00010001 0)
+b00101101 (#
+b10110101 -q
+b11100101 32
+b11111001 5\
+b01110000 *2
+b00101111 ,o
+b10010011 $i
+b01010100 3w
+b01001000 *{
+b01000111 8%
+b11111100 "X
+b01101001 *A
+b11111001 0p
+b00000100 0>
+b10100001 63
+b10110100 9S
+b1100 10
+b00010100 0O
+b10011001 )s
+b11110011 "m
+b01110000 ,~
+b11101001 %Y
+b11011100 +k
+b00010011 $F
+b00111011 4J
+b00110100 .%
+b00111010 )R
+b00100010 0b
+b11101000 /d
+b01010111 'I
+b00011110 $t
+b10100100 $W
+b11001000 ,@
+b00001010 +-
+b01001001 2T
+b00100111 3a
+b10110001 *z
+b01110110 #8
+b11100010 5O
+b10111110 3x
+b01000100 .*
+b10100111 (T
+b10100101 23
+b10111101 3@
+b01010001 *<
+b00011101 *[
+b10001111 (_
+b10101000 8$
+b11000001 42
+b10010001 83
+b01110111 *W
+b01110001 &P
+b00100110 5^
+b00011000 -X
+b11101100 -C
+b00111010 $?
+b00000111 "h
+b11011111 =
+b10101110 4w
+b01101100 +{
+1/P
+b01111000 5Z
+b11110011 s
+b11001111 4y
+b00111100 3f
+b11011000 4*
+b10111011 +.
+b11000011 *y
+b11001110 ')
+b10111011 "A
+b11110111 $T
+b01000000 .z
+b01110001 &t
+b01110001 %~
+b11111111 9l
+b11011110 '#
+b10001000 )0
+b01100010 2&
+b10100011 $-
+b11111110 #7
+b00010110 5N
+b11011010 _
+b01101100 +i
+b01111110 B
+b01111111 +L
+b11110111 (w
+b11101100 2s
+b01111001 84
+b10101110 *m
+b00011000 5-
+b10100010 #_
+b00000011 ,)
+b11001010 2P
+b01111100 "/
+b11111110 1=
+b01000010 33
+b10111001 &M
+b11110110 8\
+b00100111 "z
+b00001010 .b
+b11001000 0$
+b00101011 66
+#126
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#131
+b01100001 7h
+b01100001 1:
+b01110000 X
+b01100001 'F
+b01110000 '1
+b01100001 .l
+b01100001 7y
+1/P
+b01110000 &~
+b01100001 *<
+b01110000 y
+b01110000 /,
+b1101 10
+b01100000 9x
+b01110000 'S
+b01110000 2/
+b01100000 .[
+b01110000 8V
+#136
+b10100010 ,Q
+b01000000 %}
+b01100100 4D
+b01011100 )-
+b01001000 6O
+b00000000000000000 .I
+b11011100 j
+b11011011 b
+b00010100 +l
+b10010000 "p
+b00010110 *S
+b10011001 *>
+b01011000 6.
+b01010010 .=
+b11111011 2x
+b01011011 $.
+b01001011 44
+b00110011 +b
+b10011111 )Y
+b01100010 /c
+b01101110 &g
+b10111101 .X
+b10110001 7"
+b11010101 ,y
+b10110011 &5
+b10001010 $s
+b00000000000000000 "b
+b10110010 /H
+b11110001 '-
+b00111001 (t
+b01010110 8c
+b00100001 /|
+b11011111 /g
+b11110110 1)
+b01101010 24
+b11001111 $o
+b01100110 4,
+b11000010 5V
+b11100010 $~
+b00000101 $L
+b01001001 )h
+b10010000 +V
+b00010011 ,7
+b01100101 "o
+b10100101 .-
+b11001000 4T
+b11101110 #g
+b00001110 4"
+b10111010 'h
+b00111000 %#
+b01001111 #a
+b10101110 /<
+b10100111 +5
+b01111011 2=
+b01000010 90
+b00100000 8:
+b00000000000000000 1*
+b00000000000000001 6x
+b11000001 Y
+b11000001 6]
+b11000000 .W
+b01000010 '2
+b01011101 6+
+b11110100 *3
+b10000011 9u
+b00100010 5a
+b00001011 ->
+b00111101 7d
+b10110000 #
+b00000000000000000 5[
+b00101111 (u
+b11011111 $Q
+b11010010 ,%
+b10100111 9\
+b00001000 3L
+b00001111 4-
+b11101100 'T
+b11111100 $!
+b00100100 )g
+b11110111 $M
+b00000011 "Y
+b00000000000000000 8w
+b01011000 54
+b11100110 64
+b10101001 8q
+b11111110 5j
+b11110010 +j
+b10111100 w
+b00001011 7i
+b00101011 *n
+b11010010 1D
+0/P
+b01011000 ,?
+b00111001 ,$
+b10000010 0t
+b01111001 (n
+b01011111 1U
+b00011110 &z
+b00011110 4A
+b11010110 0Y
+b00110101 3Z
+b01010110 .H
+b11111000 i
+b01101101 $c
+b01011100 2^
+b10101101 )w
+b01010011 2I
+b01111001 &Y
+b10110010 *X
+b01000101 7z
+b10101101 0U
+b01011010 7H
+b11000001 'f
+b01101101 /W
+b00011100 6v
+b11011011 7%
+b00111101 1I
+b11000110 -W
+b10100111 #]
+b11111011 +N
+b00110011 "|
+b01001101 %h
+b01100011 .:
+b00000000000000000 $U
+b10111100 !
+b00100100 0y
+b11000100 1Z
+b00000000000000000 (^
+b00011010 6:
+b10100111 'u
+b10001000 .h
+b11110101 3H
+b01110010 (m
+b11100100 8*
+b10100111 7I
+b11010101 3~
+#141
+b00100010 )|
+b01011000 9V
+b01100110 (i
+b00001110 /\
+b01111011 -`
+b01010011 2J
+b11000001 #4
+b01111001 2v
+b11111011 -\
+b11011011 2[
+b00010110 *U
+b11100110 (~
+b11110001 '/
+b01011011 2)
+b11000001 5G
+b11101110 05
+b00001011 (F
+b11111000 6A
+b01010110 3l
+b10000010 -(
+b01011000 1'
+b11000100 1[
+b11000000 *6
+b00111000 9Y
+b00011110 "E
+b11101100 #&
+b01011100 -k
+b11011011 2K
+b01101101 +&
+b01000010 &F
+b10011111 %3
+b10100111 *d
+b10100111 #?
+b01011111 1W
+b11001000 4X
+b01000010 5$
+b11110010 9t
+b00011010 )}
+b01010110 *,
+b00001000 .+
+b01111001 #P
+b01011100 -~
+b11111100 7)
+b11100100 2u
+b01001101 F
+b01000101 3V
+b10111010 #5
+b1110 10
+b01001001 )*
+b00111101 ,g
+b01011000 04
+b00110011 %n
+b10110001 2V
+b10000011 4c
+b01101101 %M
+b11000110 3P
+b10100111 #'
+b10111101 *7
+b00111001 'w
+b10100101 )9
+b00010011 ,:
+b10101110 *c
+b10101101 %I
+b10010000 7`
+b01000000 *e
+b11100010 9s
+b00001011 ##
+b01100100 /y
+b01010010 h
+b10111100 6
+b01101010 +@
+b10110010 *t
+b01011101 1g
+b01100010 7y
+b00110011 0T
+b11010101 (N
+b01001000 2-
+b10110010 7s
+b00010100 97
+b00001111 (J
+b11000001 6b
+b00000011 4Q
+b00011100 6y
+b10111100 2]
+b10110011 .
+b11110101 &e
+b01001011 46
+b11111011 #A
+b01110010 "`
+1/P
+b10110000 &i
+b11011111 9v
+b10101001 4G
+b10101101 *b
+b01100011 "*
+b11010010 'x
+b11110100 $5
+b00110101 2M
+b10011001 #"
+b11110111 8_
+b01100010 1:
+b00000101 9#
+b00111101 2y
+b00100100 5m
+b10010000 &%
+b00100001 +$
+b11001111 0j
+b11000010 2,
+b11011111 /l
+b10100010 (G
+b01100101 7@
+b00101011 &S
+b00111001 -1
+b11111110 6a
+b11010101 4m
+b00011110 (K
+b11110110 ,J
+b01100010 3o
+b01101110 -
+b01011010 "e
+b01001111 0.
+b10100111 %S
+b11010010 -'
+b10001010 9`
+b00100100 )i
+b10100111 #%
+b11010110 *J
+b00101111 8
+b00100000 7Q
+b10001000 .j
+b11011100 5U
+#146
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000000010000 .I
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 44
+b00000000 +b
+b00000000 )Y
+b00000000 /c
+b00000000 &g
+b00000000 .X
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000000010000 "b
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 8c
+b00000000 /|
+b00000000 /g
+b00000000 1)
+b00000000 24
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 +V
+b00000000 ,7
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 %#
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000000010000 1*
+b00000000000010000 6x
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 9u
+b00000000 5a
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000000010000 5[
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 3L
+b00000000 4-
+b00000000 'T
+b00000000 $!
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000000010000 8w
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 0t
+b00000000 (n
+b00000000 1U
+b00000000 &z
+b00000000 4A
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 )w
+b00000000 2I
+b00000000 &Y
+b00000000 *X
+b00000000 7z
+b00000000 0U
+b00000000 7H
+b00000000 'f
+b00000000 /W
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 #]
+b00000000 +N
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000000010000 $U
+b00000000 !
+b00000000 0y
+b00000000 1Z
+b00000000000010000 (^
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 3H
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
+#151
+b01110001 7h
+b01110010 1:
+b10000000 X
+b01110001 'F
+b10000000 '1
+b01110001 .l
+b01110010 7y
+1/P
+b10000000 &~
+b01110001 *<
+b10000000 y
+b10000000 /,
+b1111 10
+b01110000 9x
+b10000000 'S
+b10000000 2/
+b01110000 .[
+b10000000 8V
+#156
+b11101001 ,Q
+b10000010 %}
+b00010110 4D
+b00010011 )-
+b01010010 6O
+b00000000000000000 .I
+b11010100 j
+b01101011 b
+b10101011 +l
+b11110011 "p
+b11011101 *S
+b10000010 *>
+b11111000 6.
+b10001101 .=
+b10100010 2x
+b00001001 $.
+b10011100 44
+b11111101 +b
+b10110100 )Y
+b10101100 /c
+b11010011 &g
+b01000100 .X
+b11001111 7"
+b11011111 ,y
+b00110010 &5
+b11011100 $s
+b00000000000000000 "b
+b01110110 /H
+b11000100 '-
+b01000111 (t
+b00101100 8c
+b01011110 /|
+b11010101 /g
+b10010010 1)
+b10111001 24
+b11100001 $o
+b01011100 4,
+b10110000 5V
+b10111100 $~
+b01011001 $L
+b01101010 )h
+b10110011 +V
+b10100010 ,7
+b01111011 "o
+b11111100 .-
+b10111011 4T
+b00101110 #g
+b10101110 4"
+b11100111 'h
+b10100110 #a
+b01110000 /<
+b11010000 +5
+b11111101 2=
+b01001001 90
+b11110000 8:
+b00000000000000000 1*
+b00000000000000001 6x
+b00001111 Y
+b10010101 6]
+b11011100 .W
+b10100111 '2
+b10100000 6+
+b01100111 *3
+b10000110 9u
+b11010010 5a
+b11001111 ->
+b10010001 7d
+b10000110 #
+b00000000000000000 5[
+b10000010 (u
+b01011110 $Q
+b00000101 ,%
+b01010010 9\
+b00010000 3L
+b10100001 4-
+b01101111 'T
+b00010101 $!
+b10000101 )g
+b11011100 $M
+b11111101 "Y
+b00000000000000001 8w
+b10110100 54
+b11000011 64
+b00000101 8q
+b11101001 5j
+b01000001 &T
+b01110110 +j
+b11110011 w
+b01010100 7i
+b10100110 *n
+b00101001 1D
+0/P
+b01010010 ,?
+b11001110 ,$
+b00010100 0t
+b11100001 (n
+b11001110 1U
+b00111011 &z
+b00010101 4A
+b00001111 0Y
+b00011110 3Z
+b11100110 .H
+b01001100 i
+b11100011 $c
+b00000110 2^
+b10110111 )w
+b11100101 2I
+b10001110 &Y
+b01100111 *X
+b10001010 7z
+b01000000 0U
+b00000010 7H
+b10100000 'f
+b00001000 /W
+b11111100 6v
+b10000010 7%
+b00011011 1I
+b00100101 -W
+b01001011 #]
+b10111100 +N
+b00100101 "|
+b10011011 %h
+b11011110 .:
+b00000000000000000 $U
+b11111110 !
+b01000100 0y
+b10100110 1Z
+b00000000000000000 (^
+b00011110 6:
+b01001000 'u
+b10000110 .h
+b10001100 (m
+b10101111 8*
+b00110110 7I
+b00101001 3~
+#161
+b00000000 7h
+b01000001 f
+b10110100 /b
+b00011110 .d
+b00001001 '?
+b11111000 21
+b00101001 ,>
+b01111011 7E
+b01010100 .,
+b10000110 4>
+b11110011 6{
+b11100110 )c
+b01000100 *'
+b10000010 6,
+b00000000 y
+b00000000 2/
+b01001001 50
+b01100111 $C
+b11100111 "l
+b10001010 2F
+b01011110 *@
+b11110011 ":
+b10011011 "O
+b00000000 X
+b10000010 ,C
+b01110110 *O
+b00110010 "4
+b01011001 9H
+b00000101 (>
+b10100110 &a
+b11111101 .R
+b01011100 7m
+b11010000 .~
+b01001100 5q
+b0110 +E
+b10111001 5s
+b00010000 .c
+b10010001 28
+b10111011 /'
+b10010101 67
+b10000010 3E
+b11101001 1n
+b10101100 5
+b10100111 &v
+b11111100 8'
+b01001011 "Z
+b10100010 .t
+b10010010 ,k
+b10001110 $H
+b00001000 +P
+b11110000 2C
+b0000 10
+b0100 ,H
+b00000000 'S
+b00000000 .[
+b11000100 %t
+b11011100 8l
+b11100001 'b
+b10110111 $x
+b00110110 6)
+b11111110 $p
+b10100110 2"
+b00010011 53
+b11011111 'd
+b01010010 +c
+b00100101 %>
+b01010010 0E
+b00100101 &`
+b01100111 .<
+b11101001 ("
+b00000110 .Q
+b10000110 ,r
+b00010100 ,]
+b10110100 $l
+b0100 $%
+b01101010 )V
+b00000000 /,
+b00011110 3|
+b11010010 4@
+b00111011 :
+b10100001 7.
+b01000111 3[
+b00000000 7y
+b11010100 6f
+b10100110 &Z
+b00000000 *<
+b10000010 .w
+b00010101 87
+b10101011 /&
+b10001101 0e
+b00000000 8V
+b01011110 9N
+b10100000 0|
+b00010110 /L
+b10111100 -u
+b10101110 /7
+b00000000 'F
+b00000000 '1
+b10000101 $*
+b01000100 $"
+b11100001 #,
+1/P
+b10011100 3d
+b0101 "w
+b00000000 &~
+b01101011 $m
+b00011011 +}
+b00101100 3{
+b00000000 9x
+b10110000 1@
+b11010101 0B
+b10101111 3C
+b00000000 1:
+b11001111 (!
+b10100010 '@
+b0101 4Z
+b11111101 ':
+b11011100 9n
+b0111 '%
+b11001110 1.
+b00010101 8)
+b10110011 &p
+b01110110 /%
+b0111 -c
+b11000011 8j
+b00000101 3u
+b11100011 %+
+b00001111 +R
+b10100000 "k
+b11001110 'K
+b01001000 "V
+b11011110 ,_
+b10001100 #c
+b11100101 2q
+b10000110 .8
+b00000000 .l
+b01010010 1`
+b11111100 *;
+b11001111 3"
+b11010011 p
+b01000000 +H
+b11011100 )q
+b10111100 8M
+b00001111 6Y
+b01101111 "[
+b00101001 /}
+b0110 7{
+b00101110 &y
+b01110000 *N
+b11011101 '=
+b11111101 '(
+b00000010 .0
+#166
+0/P
+17:
+#171
+b10111100 8s
+b01001100 7}
+b11011111 )3
+b00000010 6j
+b00101001 .{
+b01000100 0=
+b10001110 /"
+b11110011 9P
+b01001011 8=
+b11010101 *v
+b10100001 )x
+b01110000 +:
+b00001111 5K
+b00000101 )1
+b10100000 3B
+b00100101 1c
+b11001110 ,4
+b00111011 #G
+b01010100 1_
+b00000010 1B
+b11111000 1-
+b01101011 -Z
+b11111100 9B
+b10110011 't
+b10110111 &L
+b00000110 0@
+b10111100 9p
+b00011110 -V
+b11011100 *E
+b11101001 (Q
+b10000010 8+
+b10011100 6i
+b10001100 75
+b01000000 '!
+b10000010 4C
+b11010011 #V
+b10000010 30
+b00101001 22
+b10011011 L
+b11100101 4q
+b11100001 %[
+b11110011 2}
+b11011100 47
+b11111101 /Y
+b10111011 0:
+b10100111 ]
+b01100111 8W
+b10100010 (`
+b00100101 'M
+b11010100 7<
+b11100111 $[
+b01111011 9{
+b10000110 *P
+b11111100 )=
+b01001011 8K
+b00110110 &}
+b00110110 (*
+b00001111 7M
+b01001001 6l
+b00111011 6B
+b01000100 ',
+b10100110 &6
+b11001110 2o
+b00001001 -8
+b11011111 (o
+b01001000 %,
+b01110110 "B
+b10101111 .G
+b11010100 1;
+b10010010 -I
+b10110000 ,6
+b11001111 3r
+b11111101 )/
+b11110011 7G
+b01100111 %y
+b10101111 4r
+b01101111 $I
+b11111110 .Z
+b11100110 )@
+b01001000 7X
+b10110000 2p
+b11011101 &k
+b11011100 3p
+b11100101 .k
+b00011011 .V
+b11010011 Z
+b00011110 +d
+b00010101 8i
+b00010101 )>
+b11110000 2n
+b10100111 #X
+b10101011 k
+b11000011 +C
+b00000110 )l
+b11001110 *0
+b01101010 $g
+b00000101 3`
+b00100101 20
+b10100110 /)
+b11100001 ,T
+b01111011 7x
+b01101111 6z
+b11100111 "R
+b10000110 0M
+b11000100 z
+b01010010 -F
+b01110110 ,P
+b00010011 88
+b11010000 7B
+b00000101 5c
+b10000101 &8
+b11001111 ),
+b10111100 6r
+b00110010 5_
+b01011110 &I
+b01000111 6@
+b01000001 6#
+b01000100 %6
+b10001100 $@
+b11001111 3N
+b10011011 #-
+b11111100 31
+b11101001 1(
+b10100110 -r
+b01000000 ,B
+b10010101 6p
+b10110100 9(
+b10000010 6S
+b10010001 4_
+b11111110 0X
+b01101010 *]
+b00001111 ,p
+b11111101 %w
+b10110111 $O
+b11100011 9i
+b10100000 %V
+b00101110 1e
+b00000101 "d
+b00110010 #0
+b10100000 1H
+b10010001 ."
+b01011110 ,`
+b01011110 &
+b01000100 +0
+b11101001 (x
+b11010000 93
+b00101001 'z
+b00010100 'H
+b00001000 &J
+b00010110 0x
+b01010010 2:
+b11011100 %T
+b10001110 4M
+b11000011 %"
+b00011110 /e
+b01011001 "
+b10000110 )j
+b10111001 (l
+b10000010 9/
+b10100110 (B
+b10100010 )M
+b00010101 (:
+b00001111 ''
+b00010110 0W
+b10000101 $=
+b10001101 "^
+b00010000 0%
+b01110000 -3
+b00101100 5P
+b01101011 /U
+b00101001 06
+b01110110 *w
+b01011001 3m
+b10001010 5/
+b11100001 3;
+b01011100 #/
+b10010101 1\
+b11111101 1G
+b10000110 9y
+b00001000 ,a
+b01011100 )&
+b11110000 4i
+b01001100 1X
+b11011110 #|
+b10101110 1C
+b10000110 00
+b00101100 /2
+b01100111 8b
+b01010010 9C
+b11011110 6n
+b11100001 80
+b01011110 5)
+b10100000 #p
+b11101001 2~
+b11111101 (&
+b10100001 "r
+b10110100 1s
+b01010010 +x
+b10110011 <
+b11000100 (5
+b11110011 5l
+b10000110 6M
+b10001101 60
+b00001001 2z
+b01010010 "'
+b10110100 07
+b11111101 /V
+b11010101 ,l
+b11111100 *j
+b10101100 )W
+b11011100 `
+b10000010 8;
+b01100111 6q
+b01010100 5I
+b01000001 #I
+b10100110 2%
+b10111011 0c
+1/P
+b10110100 &/
+b00010000 ./
+b11100011 3
+b10100110 +y
+b00010011 'U
+b11010010 $N
+b11111000 2f
+b00010101 8>
+b10100010 )(
+b11001111 'Q
+b01000111 %z
+b01010010 7+
+b00011110 %]
+b10101011 4V
+b10111001 &!
+b11001110 #~
+b10100010 /Q
+b10010010 ,|
+b11100110 *k
+b00100101 *V
+b10000010 9O
+b10001010 3T
+b10000010 $>
+b10011100 /0
+b00010100 -Y
+b11011100 >
+b10101110 ++
+b11011101 (s
+b01110110 4F
+b00011011 (A
+b01001001 4)
+b11010010 %l
+b00101110 /.
+b10101100 -l
+b10111100 n
+#176
+0/P
+#181
+1/P
+#186
+0/P
+#191
+1/P
+#196
+0/P
+07:
+#201
+b00000001 0X
+b01100010 6j
+b01101010 0=
+b00101001 %w
+b10101011 $O
+b00001110 8=
+b11000011 *v
+b10100111 )x
+b01010100 +:
+b11000001 5K
+b10010000 'R
+b11110010 9i
+b01110011 1c
+b01010011 ,4
+b10001011 1e
+b11110111 "d
+b00000110 1H
+b11011001 ."
+b00110110 93
+b11011000 1-
+b01101000 'z
+b10111110 'H
+b01111001 &J
+b10101010 %T
+b00011101 4M
+b10001101 )j
+b10100101 (l
+b00100110 9/
+b10010100 )M
+b01000110 9p
+b00111011 -V
+b11101101 ''
+b11111110 0W
+b01000010 $=
+b00010100 (Q
+b11111010 "^
+b10101110 75
+b01010000 '!
+b10010111 30
+b00010000 L
+b01110101 /U
+b01110110 06
+b10001101 2}
+b11111111 *w
+b00001001 47
+b0001 10
+b00010101 3m
+b00110101 0:
+b11001000 ]
+b00000001 .[
+b01111101 3;
+b10011000 1\
+b00000010 1G
+b01000111 (`
+b11101101 8W
+b10011110 9y
+b00101001 )&
+b11000010 1X
+b10011110 #|
+b00100100 )=
+b01100111 (*
+b10110100 6B
+b00000011 /2
+b01011001 &6
+b10010100 8b
+b01010101 80
+b01010100 5)
+b10011001 #p
+b00110110 (o
+b10100010 +x
+b10101000 <
+b01011001 5l
+b01001010 "B
+b01100011 .G
+b10000011 1;
+b10111111 2z
+b01110100 ,6
+b01111110 "'
+b00000001 7y
+b11010100 )/
+b00111011 07
+b01111110 )@
+b00100100 7X
+b01000011 &k
+b11101010 3p
+b11111010 8;
+b01011000 .k
+b11110110 5I
+b10111011 Z
+b00101011 +d
+b01001101 2%
+b01010000 )>
+1/P
+b11000101 2n
+b00011110 k
+b00000001 9x
+b11010011 +C
+b11110100 )l
+b00001000 ./
+b00101011 $g
+b01111100 3`
+b01100011 +y
+b10010000 20
+b00000001 1:
+b10000010 'U
+b01100110 7x
+b00001000 8Y
+b10000101 6z
+b11000101 "R
+b00010000 8>
+b11011100 0M
+b11011100 'Q
+b01111100 %z
+b01110111 7+
+b00110001 z
+b10101111 #~
+b11111001 ,|
+b10000101 3T
+b10111001 $>
+b00001110 5_
+b10101111 &I
+b11101100 /0
+b10110000 6#
+b00011111 %6
+b11011110 3N
+b00100011 31
+b10110000 ++
+b01010011 1(
+b00111000 (A
+b00001001 4)
+b10111000 %l
+b11011000 9(
+b01111111 -l
+b10001001 8s
+#206
+0/P
+#211
+b00000001 7h
+b10101111 (R
+b00000000 6j
+b01100111 2c
+b00000000 0=
+b00110110 -K
+b11010010 -6
+b01111011 ,U
+b01001100 +W
+b00000000 8=
+b00000000 *v
+b00000000 )x
+b00000000 +:
+b00001001 4j
+b11011101 3t
+b11011110 %?
+b00000000 5K
+b00000000 'R
+b10101110 $,
+b00000000 1c
+b00000000 ,4
+b10100001 +!
+b11010000 %m
+b11111000 &N
+b10100110 2r
+b10110100 3S
+b01101010 3!
+b11100001 2#
+b11000100 0L
+b00000000 1-
+b11100111 0z
+b01101011 0r
+b11100011 .L
+b01011110 .7
+b00001000 9[
+b00001111 8z
+b00000000 9p
+b01001011 +w
+b00000000 -V
+b00000000 (Q
+b0111 +E
+b00000000 75
+b01010010 %|
+b11001111 5k
+b10100110 4u
+b00000000 '!
+b00000000 30
+b00000000 L
+b00000000 2}
+b00000000 47
+b00011110 "T
+b0010 10
+b00000000 0:
+b00000000 ]
+b0011 ,H
+b00000000 .[
+b00101001 |
+b00000000 8W
+b00000000 (`
+b10100010 6F
+b01010010 %<
+b00000000 )=
+b00000000 (*
+b00000000 6B
+b00000000 &6
+b01110110 #Y
+b10111001 .}
+b11100101 "c
+b0011 $%
+b10111100 .K
+b11010100 *x
+b00000000 (o
+b10110111 3/
+b00000000 "B
+b00000000 .G
+b10010010 }
+b00000000 1;
+b00000000 ,6
+b00010101 +#
+b10001110 5f
+b01110110 8Z
+b00101100 )D
+b11100001 4S
+b11111100 (c
+b00000000 )/
+b00000000 7y
+b10000010 %\
+b10110100 $f
+b00110010 09
+b10101100 8k
+b01010100 '~
+b00000000 )@
+b00000000 7X
+b10001010 'L
+b00000000 &k
+b00000000 3p
+b00000000 .k
+b10100110 o
+b00000000 Z
+b00000000 +d
+b00001111 +G
+b11110011 ,(
+b01001001 )p
+b00000000 )>
+b00000000 2n
+b00011110 ,s
+b11011100 .5
+b00000000 k
+b00000000 9x
+b00000000 +C
+b00000000 )l
+b00000000 $g
+b00000000 3`
+b10000010 %g
+b10100000 0n
+b10011100 %5
+b10111100 "$
+b00000000 20
+b00000000 1:
+b11000011 -5
+b00000000 7x
+b00000000 8Y
+b11111100 8<
+b11100110 7[
+b00000000 6z
+b0110 '%
+b00000000 "R
+b00010110 $e
+b00000000 0M
+b00111011 08
+b11010101 9h
+b0110 -c
+b00000000 z
+b11101001 &j
+b11110000 'j
+b10001100 1,
+b00000000 5_
+b00000000 &I
+b00000000 6#
+b00000000 %6
+b00000000 3N
+b00000000 31
+b00000000 1(
+b00010011 -U
+b01011110 8d
+b0111 7{
+b00100101 8G
+b00000000 9(
+b10010001 'Z
+b11101001 6h
+b10000110 74
+b0100 6!
+b00000000 0X
+b01110000 8X
+b00000000 %w
+b11111101 4p
+b00000000 $O
+b10000101 3]
+b00000001 y
+b00000000 9i
+b00000000 1e
+b00000000 "d
+b00000000 1H
+b00000000 ."
+b00000000 .s
+b01011100 *l
+b00000000 93
+b00000000 'z
+b00000000 'H
+b00000000 &J
+b00000000 %T
+b00000000 4M
+b01000001 0[
+b00000000 )j
+b00000000 (l
+b00000000 9/
+b00000000 )M
+b11011100 7e
+b00000000 ''
+b10011011 /v
+b10100010 #q
+b00000000 $=
+b00000000 0W
+b00000000 "^
+b01001000 0v
+b11110011 +*
+b00000000 /U
+b11111101 #;
+b00000000 06
+b00011011 N
+b00000000 *w
+b00000000 3m
+b00000001 'S
+b10111011 $B
+b00000000 3;
+b00000000 1\
+b00000000 1G
+b00000000 9y
+b00000000 )&
+b11001111 'G
+b00000101 5J
+b00000000 1X
+b00000000 #|
+b00000000 /2
+b00000000 8b
+b00000000 80
+b11011111 5p
+b00000101 )k
+b10010101 '&
+b00000000 5)
+b00000000 #p
+b00000110 #S
+b01100111 "@
+b00000000 +x
+b00010101 ,<
+b00000000 <
+b00000000 5l
+b00000000 2z
+b01101111 0q
+b00000000 "'
+b00000000 07
+b01011001 ..
+b00000001 *<
+b00010100 2
+b10100000 '5
+b10100111 0P
+b0100 .\
+b00000000 8;
+b00000010 'c
+b00000000 5I
+b00010000 #^
+b11111101 38
+b11011100 -o
+b00000000 2%
+1/P
+b10101011 #Z
+b01000111 1r
+b01010010 #=
+b11001110 "G
+b00000000 ./
+b10000010 /a
+b00000000 +y
+b00000000 'U
+b10110000 &W
+b00000000 8>
+b10000010 (2
+b10000110 '<
+b01000100 8!
+b00000000 'Q
+b00000000 %z
+b00000000 7+
+b11111110 6-
+b11001110 57
+b10001101 $_
+b01000100 5L
+b00000000 #~
+b00101110 2w
+b00000000 ,|
+b01000000 92
+b00000000 3T
+b00000000 $>
+b00000000 /0
+b00000000 ++
+b00000000 *5
+b10000110 )?
+b10110011 5'
+b00000000 (A
+b00100101 2g
+b00000000 %l
+b00000000 4)
+b00101001 $<
+b11010011 /K
+b00000000 -l
+b00000000 8s
+#216
+0/P
+#221
+b00000000 7h
+b01000111 'q
+b01011001 6j
+b00011110 /q
+b00111100 0=
+b01011110 +t
+b11001101 8=
+b11001100 *v
+b10000110 5}
+b00010111 )x
+b00101000 +:
+b01011011 5K
+b10110010 'R
+b11001111 4#
+b00101010 1c
+b00000001 2/
+b01110111 ,4
+b10100001 36
+b00010101 2U
+b01000111 1-
+b11111110 9-
+b01011001 "(
+b10100010 /-
+b00011011 9p
+b11010101 -V
+b10000111 (Q
+b0101 +E
+b10011101 75
+b01110110 '!
+b10000010 &+
+b01100101 30
+b10010010 .]
+b00101001 L
+b01001001 55
+b00110001 2}
+b01001011 47
+b00101001 1b
+b00100101 ""
+b0011 10
+b11101000 0:
+b11110011 ]
+b00000001 .[
+b10100101 8W
+b00100101 (`
+b00001000 ,5
+b01101010 &l
+b01100111 '0
+b00010011 %Q
+b01010100 )=
+b01001100 6t
+b11100000 (*
+b01010110 6B
+b11000101 &6
+b11011100 "F
+b01000100 +Y
+b01010010 8{
+b11111011 (o
+b0100 &*
+b01101111 %4
+b01000010 "B
+b01100100 .G
+b11011111 1;
+b01111100 ,6
+b01101011 9m
+b10100010 *-
+b00000001 7y
+b11011100 )/
+b11100001 #h
+b00010000 /X
+b10100111 #6
+b11001000 )@
+b10000110 7X
+b01001010 &k
+b11110011 7&
+b10100000 2>
+b10100000 3p
+b11100101 0-
+b00101111 .k
+b10000000 Z
+b10101010 +d
+b01000001 )>
+b00000001 &~
+b11111101 (+
+b11101001 3O
+b11000000 2n
+b0111 "w
+b00101001 -?
+b11010100 k
+b00000001 9x
+b11111110 +C
+b10000001 )l
+b10001100 $g
+b10011100 3`
+b11010011 "s
+b01111010 20
+b00110010 #s
+b00000001 1:
+b01001001 7x
+b01110101 8Y
+b01100100 6z
+b00000101 6P
+b10101110 1h
+b10110100 %c
+b10010110 "R
+b10111011 1K
+b01110011 0M
+b10110001 z
+b00000101 ){
+b11011111 )^
+b11100001 $v
+b00011110 4P
+b10101111 43
+b01010010 2\
+b11000100 #1
+b11111000 2?
+b00000110 0K
+b00101110 D
+b11001111 )Z
+b10011100 &I
+b10000011 5_
+b01110000 6#
+b10001010 %6
+b00101110 3N
+b01000001 "a
+b10110100 31
+b01110110 1(
+b10000010 )N
+b0101 7{
+b01100001 9(
+b0010 6!
+b11011000 0X
+b01010100 7w
+b01110110 *|
+b11110011 9$
+b00001101 %w
+b11111100 4[
+b01011110 $O
+b10101100 /u
+b01110000 ,d
+b00000000 y
+b01110101 9i
+b10001100 $u
+b10110111 &"
+b10010001 3n
+b10110000 3<
+b10011100 1z
+b01100100 1e
+b01010110 "d
+b00011101 1H
+b10001001 ."
+b11110101 93
+b10110011 ([
+b01101000 'z
+b11000011 4.
+b10010101 2l
+b01111011 'H
+b10101110 &J
+b11111101 %T
+b10100111 4M
+b10110110 )j
+b11010000 )U
+b00000110 (l
+b00100010 9/
+b01111100 )M
+b0100 73
+b00111001 ''
+b10100000 $R
+b01010101 $=
+b00010110 0W
+b01111011 "^
+b00010100 .F
+b10100110 -P
+b10101011 +?
+b01010010 *^
+b10110100 /U
+b00100010 06
+b11001110 -L
+b10100110 c
+b10001101 +m
+b00110011 *w
+b10000110 *o
+b11100110 +;
+b00000010 6~
+b11011101 (I
+b00010101 3m
+b00000000 'S
+b00011110 3;
+b11110011 1\
+b00010110 2(
+b11100111 %B
+b01000100 12
+b11101010 1G
+b10001110 $/
+b11010010 /6
+b10000101 9y
+b01000010 )&
+b00011001 1X
+b00111101 #|
+b00001111 /2
+b00011010 8b
+b01110110 ,+
+b01001101 80
+b11110000 4H
+b00100101 5)
+b11011110 #p
+b10001010 4+
+b01011100 35
+b10011011 "]
+b00111011 #!
+b11010110 +x
+b00011101 <
+b11011100 +F
+b11111100 *H
+b01100111 5l
+b01001000 $b
+b11100110 2z
+b00001001 #:
+b00010101 "'
+b10110100 1J
+b00011000 07
+b00100101 -b
+b11101001 )[
+b00000000 *<
+b11111101 d
+b11011110 ,O
+b00001111 8?
+b00010101 95
+b11010100 6u
+b11001110 )z
+b00101100 6C
+b11100011 "8
+b0010 .\
+b00001111 ,K
+b01100111 )%
+b00000001 'F
+b10000101 %o
+b10110110 5I
+b11111101 /1
+b11010001 2%
+b01011110 ".
+1/P
+b10000010 4d
+b11100101 ./
+b00110110 1#
+b01111011 9U
+b01001011 8t
+b10000010 (h
+b11010101 -;
+b11010010 +y
+b01010111 'U
+b0111 4Z
+b11100010 'Q
+b10011110 %z
+b00000101 7+
+b11000100 #~
+b11101101 ,|
+b00011011 .!
+b10000110 5]
+b10100110 'y
+b10111101 3T
+b01001001 $>
+b00000001 .l
+b10010011 /0
+b01000000 ,F
+b10111100 )
+b10011010 ++
+b10111100 )T
+b11110000 (A
+b11101001 4)
+b00011100 %l
+b10111001 1?
+b11011100 ")
+b10110100 -l
+b10010010 8s
+#226
+0/P
+#231
+b00000001 7h
+b10000010 58
+b00000000 6j
+b00000000 0=
+b01010100 .^
+b00000000 8=
+b00000000 *v
+b11011111 6^
+b00000000 )x
+b00000000 +:
+b00000000 5K
+b00000000 'R
+b00000000 1c
+b00000000 2/
+b10100001 ^
+b10100110 I
+b00000000 ,4
+b01001000 1t
+b10100000 &;
+b00000000 1-
+b01011110 .m
+b01000000 8L
+b11011100 7N
+b10001101 0]
+b11011100 .i
+b00000000 9p
+b00000000 -V
+b11010101 8]
+b00110110 9)
+b00011110 8H
+b00000000 (Q
+b0110 +E
+b00000000 75
+b10001110 (p
+b00000000 '!
+b00000000 30
+b00000000 L
+b10100010 5R
+b01010010 3^
+b00000000 2}
+b00000000 47
+b0100 10
+b00000000 0:
+b00000000 ]
+b0010 ,H
+b00000000 .[
+b00000000 8W
+b00000000 (`
+b01000001 +T
+b11101001 &:
+b11100101 #e
+b01001100 +1
+b01110000 9^
+b01111011 ,c
+b00010011 9I
+b00000000 )=
+b11111110 '^
+b01000100 (?
+b00000000 (*
+b00000000 6B
+b00000000 &6
+b11011110 /^
+b0010 $%
+b00000001 /,
+b00100101 )P
+b00000000 (o
+b0001 &*
+b10111011 $K
+b00000000 "B
+b00000000 .G
+b00000000 1;
+b00000000 ,6
+b11110011 *_
+b11100001 *B
+b00000000 7y
+b00000000 )/
+b10000010 (9
+b11100110 8(
+b11111100 'P
+b00101001 %G
+b00011011 "6
+b11000011 "U
+b01011001 -d
+b00101100 *)
+b00000000 )@
+b00000000 7X
+b00000000 &k
+b11001110 5d
+b01100111 1]
+b00000000 3p
+b00000000 .k
+b00000000 Z
+b00000000 +d
+b00000101 *4
+b00000000 )>
+b10110011 4E
+b00000000 2n
+b00000000 &~
+b00000000 k
+b01001011 -"
+b00000000 9x
+b00000000 +C
+b00000000 )l
+b10111001 8e
+b00001111 9F
+b10001010 (Y
+b00000000 $g
+b01101011 '[
+b00000000 3`
+b00000000 20
+b11000100 /x
+b00000000 1:
+b10011011 /F
+b00000010 .e
+b00000000 7x
+b00000000 8Y
+b00000000 6z
+b11111100 71
+b00001001 %x
+b10000110 1}
+b00000000 "R
+b0101 '%
+b10101100 &'
+b00000000 0M
+b01110110 .a
+b0101 -c
+b00000000 z
+b00000000 9K
+b11110011 ,3
+b00100101 $'
+b11100111 2*
+b00010101 "3
+b10000110 (y
+b00000000 &I
+b00000000 5_
+b11011101 4a
+b00000000 6#
+b00000000 %6
+b00000000 3N
+b01101010 2X
+b11010000 1o
+b00000000 31
+b10100111 /{
+b00111011 /f
+b00000000 1(
+b0110 7{
+b01000111 7f
+b00000000 9(
+b10100110 )m
+b0011 6!
+b00000000 0X
+b00010101 +p
+b00101001 4
+b10010010 S
+b00000000 %w
+b11101001 5Q
+b00000000 $O
+b10110100 $2
+b00000001 y
+b00000000 9i
+b00000000 1e
+b00000000 "d
+b00000000 1H
+b00000000 ."
+b00000001 X
+b00000000 93
+b00000000 'z
+b00000000 'H
+b10010101 &R
+b10110000 %i
+b11100001 1Y
+b00000000 %T
+b00000000 &J
+b00000000 4M
+b10000010 1<
+b11010011 0F
+b11111101 $$
+b00000000 )j
+b00000000 (l
+b11110000 'v
+b00000000 9/
+b00000000 )M
+b11010010 81
+b00010100 6o
+b0001 73
+b00000000 ''
+b00000000 0W
+b00000000 $=
+b0100 #\
+b01100111 3K
+b00000000 "^
+b00001111 +"
+b01110110 9%
+b00000000 /U
+b00000000 06
+b00000000 *w
+b0100 +X
+b00000110 7_
+b00000000 3m
+b00000001 'S
+b00000000 3;
+b10111100 0{
+b11111000 &#
+b00000000 1G
+b00000000 1\
+b00110010 /h
+b00011110 #N
+b00000000 9y
+b00000000 )&
+b10100000 1u
+b00000000 1X
+b10101110 $]
+b00000000 #|
+b00000000 /2
+b10111100 -[
+b00000000 8b
+b11001110 @
+b01000100 7O
+b00000000 80
+b01010010 &E
+b00000000 5)
+b00000000 #p
+b10110100 2L
+b10101011 27
+b00000000 +x
+b00000000 <
+b00000000 5l
+b00000000 2z
+b10100010 "n
+b10110111 2H
+b00000000 "'
+b00000000 07
+b00101110 (z
+b00000001 *<
+b00001000 8T
+b10000110 7^
+b10010001 'g
+b01001001 ))
+b0011 .\
+b00000101 6\
+b10101111 ('
+b00000000 5I
+b10000101 2W
+b00000000 2%
+b01101111 -=
+1/P
+b01010010 /~
+b00000000 ./
+b00000000 +y
+b11001111 (S
+b00000000 'U
+b11001111 5;
+b00000000 'Q
+b00000000 %z
+b00000000 7+
+b10001100 0d
+b00000000 #~
+b00000000 -]
+b00000000 ,|
+b11100011 -@
+b11111101 *$
+b10100110 45
+b00000000 3T
+b00000000 $>
+b00000000 /0
+b01011100 [
+b11010100 *R
+b00000000 ++
+b01011110 4x
+b11011100 )7
+b11111101 3e
+b00000000 (A
+b00000000 4)
+b00000000 %l
+b00010000 #<
+b10011100 $n
+b10000010 /C
+b00000000 -l
+b00000000 8s
+#236
+0/P
+#241
+b01101111 9?
+b01000001 8I
+b10000010 3v
+b11111101 '\
+b01110000 ,n
+b01001010 6j
+b10010001 4v
+b10011100 1P
+b11011111 0=
+b01001100 7\
+b11001011 8=
+b00001110 *v
+b01010011 )x
+b11010001 +:
+b10110110 5K
+b10000110 (P
+b10111110 'R
+b10010101 2D
+b10100111 1c
+b00000001 2/
+b10100110 ,4
+b11110011 9k
+b00010100 )_
+b11001111 5*
+b11000100 "f
+b10100000 $y
+b00010110 0a
+b11010111 1-
+b01011001 \
+b00100101 8a
+b11011101 (U
+b00101100 6m
+b10110011 9p
+b00110111 -V
+b11110011 (Q
+b01001001 75
+b00000101 )Q
+b11101011 '!
+b0100 4&
+b01001100 30
+b10001110 />
+b00010011 /]
+b00111100 L
+b10101011 6e
+b01001001 5g
+b11100111 $z
+b11101011 2}
+b10000011 47
+b0101 10
+b01000111 .x
+b01010000 0:
+b11000100 ]
+b0111 ,H
+b00000001 .[
+b00011011 .)
+b01001000 98
+b01110111 (`
+b11110001 8W
+b01001011 8O
+b10101100 5H
+b10101110 1A
+b11111101 /8
+b01011110 (q
+b10100101 )=
+b00001000 (*
+b11100011 6B
+b10000100 &6
+b0111 $%
+b00000000 /,
+b10111100 O
+b00010011 (o
+b0011 &*
+b10100010 0;
+b10100111 #@
+b00111011 "W
+b01110010 "B
+b01101111 .G
+b10011010 1;
+b10000101 ,6
+b10000010 9X
+b11011110 7(
+b00000001 7y
+b11101001 *%
+b00001001 )/
+b10100000 3#
+b00000001 8V
+b10100101 )@
+b00110011 7X
+b01000101 &k
+b01000111 3p
+b11100001 $E
+b01100011 .k
+b01110011 Z
+b00010100 +d
+b01000100 +2
+b00000101 6$
+b00100011 )>
+b00000001 &~
+b11111100 40
+b01010100 $9
+b10010110 2n
+b0010 "w
+b01010000 k
+b00001000 -7
+b10000010 +u
+b00000001 9x
+b11101011 +C
+b11100101 )l
+b11001110 )O
+b00001011 $g
+b11001111 3`
+b11111101 1O
+b11101011 20
+b00000001 1:
+b01101011 /[
+b00010000 0'
+b10010010 -g
+b11010000 9:
+b00010011 7x
+b01011010 8Y
+b11000111 6z
+b11111111 "R
+b11000011 0M
+b11100001 .v
+b01111010 z
+b11010100 8#
+b10001010 51
+b11010011 #x
+b10001100 $D
+b10110100 0}
+b11010101 ,/
+b01110110 6U
+b11011100 5t
+b01010000 &I
+b01010010 &4
+b01011000 5_
+b01111001 6#
+b01101001 %6
+b10010010 3N
+b10001100 31
+b11100101 0\
+b11010111 1(
+b00001111 9(
+b11110011 82
+b10000101 &\
+b0001 6!
+b10100110 19
+b01110000 0X
+b00000110 +>
+b10000010 8C
+b10010010 %w
+b10110101 $O
+b00000000 y
+b01100111 "!
+b10000000 9i
+b11011111 (|
+b10000110 5M
+b01011100 %A
+b11010111 1e
+b00100001 "d
+b11000010 1H
+b11001010 ."
+b00000000 X
+b01001001 93
+b00101000 'z
+b10100110 ()
+b11111111 'H
+b00101111 &J
+b01101011 %T
+b10111111 4M
+b10000110 *K
+b10101111 )j
+b11101010 (l
+b01000011 9/
+b01011001 )M
+b10111100 9'
+b10111001 'Y
+b0011 73
+b11011001 ''
+b10100001 %P
+b10101111 4^
+b01000001 0W
+b11001000 $=
+b0000 #\
+b00011110 /D
+b10001010 "^
+b00100101 ,=
+b01000100 7D
+b00010101 )`
+b00110110 (M
+b11001111 ).
+b11100110 /U
+b11001110 ._
+b00111010 06
+b01110110 ,N
+b10100001 *w
+b0000 +X
+b10100010 )G
+b00111111 3m
+b10110100 &r
+b00000000 'S
+b11000011 '6
+b00101100 3;
+b00011101 1\
+b00010010 1G
+b00001001 .r
+b11101011 9y
+b01111011 8f
+b11001000 )&
+b01010010 29
+b10100101 #|
+b11101111 1X
+b10100110 .f
+b01100111 /2
+b00110100 8b
+b01100111 9&
+b11011100 +J
+b11100110 +_
+b01110000 80
+b00000011 5)
+b10010000 #p
+b00101110 1k
+b10100011 +x
+b0100 -:
+b10000010 <
+b11100011 5l
+b11001100 2z
+b11111000 3F
+b11101001 2e
+b00000111 "'
+b10111011 15
+b01101011 07
+b11111110 /A
+b10001101 8"
+b11010010 %s
+b01011110 A
+b0001 .\
+b00010101 8m
+b00111000 8;
+b00000000 'F
+b00000001 '1
+b00100100 5I
+b11110000 5,
+b10110011 "}
+b01010010 "K
+b11001110 2%
+1/P
+b11111100 +I
+b00000010 $;
+b10110000 2S
+b10011010 ./
+b11100011 P
+b00101001 .N
+b10110111 +y
+b10110110 'U
+b00011110 %v
+b10110111 &-
+b0010 4Z
+b01001001 8>
+b10011001 'Q
+b10111110 %z
+b10110100 7+
+b01101010 &>
+b10001101 #~
+b10010011 ,|
+b00001111 +~
+b11011100 %
+b00001111 7p
+b11001010 3T
+b00001011 $>
+b00110010 #H
+b00000000 .l
+b11001110 /0
+b01000000 +z
+b10010011 ++
+b01100110 (A
+b11001111 4)
+b00101001 1q
+b10110110 %l
+b10011011 #)
+b11111110 -l
+b11000010 8s
+#246
+0/P
+#251
+b01010100 9T
+b00000000 7h
+b11111100 (=
+b00000000 6j
+b11100001 5W
+b01110110 $8
+b00000000 0=
+b00111011 /?
+b01111011 ,8
+b00000000 8=
+b00000000 *v
+b00000000 )x
+b01000100 7*
+b00000000 +:
+b00000000 5K
+b11111101 48
+b00000000 'R
+b00000000 1c
+b00000000 2/
+b01001000 ,f
+b00000000 ,4
+b10000110 )B
+b11111000 &m
+b11001110 "I
+b00011110 #*
+b00000000 1-
+b00101100 %9
+b10110011 /_
+b00000000 9p
+b00000000 -V
+b00010101 ,X
+b11111100 7|
+b00000000 (Q
+b0010 +E
+b00000000 75
+b00000000 '!
+b00010000 "u
+b00000000 30
+b01100111 #$
+b00011011 ~
+b01101111 ,i
+b10010010 a
+b00000000 L
+b11011111 6H
+b00000000 2}
+b10101110 %)
+b00000000 47
+b0110 10
+b00000000 0:
+b00000000 ]
+b0001 ,H
+b00000010 .[
+b00000000 8W
+b00000000 (`
+b11001111 (.
+b01011110 3q
+b00000000 )=
+b10000110 7U
+b00000000 (*
+b00000000 6B
+b11101001 &K
+b00000000 &6
+b10101011 %8
+b00110010 0?
+b0001 $%
+b00000001 /,
+b11110011 ,W
+b00000000 (o
+b10110100 $h
+b0000 &*
+b11111101 5#
+b00000000 "B
+b00000000 .G
+b00000000 1;
+b00000000 ,6
+b00000000 7y
+b11010000 'm
+b00000000 )/
+b10001100 1L
+b10010101 &(
+b11100001 1/
+b01000100 .E
+b01110110 9L
+b00000000 )@
+b10000110 6w
+b00000000 7X
+b10110111 3Q
+b01010010 '7
+b00000000 &k
+b00000000 3p
+b00000000 .k
+b00000000 Z
+b10101100 ,E
+b00000000 +d
+b00001001 5C
+b00000000 )>
+b00101110 5&
+b11110000 'J
+b00000000 2n
+b0110 "w
+b00000000 &~
+b10100110 "0
+b00000000 k
+b00000010 9x
+b00000000 +C
+b00000000 )l
+b00000000 $g
+b00000000 3`
+b00000000 20
+b00000000 1:
+b00000000 7x
+b00000000 8Y
+b00000000 6z
+b10000101 3?
+b00000000 "R
+b00000000 0M
+b00000000 z
+b10001110 7t
+b00001000 96
+b11100110 7W
+b10000010 (,
+b00010100 6D
+b11001111 6/
+b11100111 1^
+b00000110 76
+b00000000 5_
+b00000000 &I
+b00000000 6#
+b00100101 3k
+b10100010 #t
+b00000000 %6
+b00000000 3N
+b11100101 #B
+b10110000 "L
+b00000000 31
+b00000000 1(
+b11000100 /I
+b11010011 /4
+b0010 7{
+b00000000 9(
+b0111 6!
+b00000000 0X
+b01011001 .2
+b11011100 -Q
+b01000000 8u
+b10101111 'V
+b00000000 %w
+b00000101 62
+b00101001 $d
+b00000000 $O
+b01101010 2|
+b00000001 y
+b11100011 .&
+b00000000 9i
+b00010110 %$
+b00000000 1e
+b10100111 /5
+b00000000 "d
+b00000000 1H
+b00000000 ."
+b00000001 X
+b00000101 )n
+b00000000 93
+b00000000 'z
+b00000000 'H
+b11011110 '3
+b00000000 &J
+b00000000 %T
+b00000000 4M
+b10011100 %7
+b00000000 )j
+b01001001 *.
+b00000000 (l
+b00000000 9/
+b00000000 )M
+b0000 73
+b00000000 ''
+b00000000 0W
+b11111101 "{
+b00000000 $=
+b0011 #\
+b00000000 "^
+b01011100 +q
+b11101001 6c
+b01110000 8v
+b10000010 'l
+b00000000 /U
+b00000000 06
+b00000000 *w
+b0011 +X
+b00000010 8r
+b11011100 8@
+b00000000 3m
+b00000001 'S
+b01101011 2Z
+b00000000 3;
+b00000000 1\
+b00000000 1G
+b00000000 9y
+b01100111 -_
+b11010101 9G
+b00010101 --
+b00000000 )&
+b10001101 &f
+b10100000 %p
+b00000000 1X
+b00000000 #|
+b11010010 .n
+b01011110 -p
+b00000000 /2
+b00000000 8b
+b00000000 80
+b11001110 6Q
+b01000001 *L
+b00000000 5)
+b00000000 #p
+b10100110 5!
+b00010011 &d
+b00000000 +x
+b00000000 <
+b00000000 5l
+b00000000 2z
+b00000000 "'
+b10100000 0i
+b00110110 /s
+b00000000 07
+b00000000 *<
+b10000010 (H
+b11111110 7V
+b01001100 +<
+b00100101 /o
+b0111 .\
+b00001111 +K
+b11000011 -^
+b10100001 -,
+b00000000 8;
+b00000001 'F
+b01010010 6?
+b00000000 5I
+b10000010 &3
+b10111011 %R
+b00000000 2%
+1/P
+b10111100 .o
+b00000000 *h
+b10100010 6&
+b10100110 4\
+b10111100 #o
+b01000111 $P
+b10110100 34
+b00000000 ./
+b01001011 ,;
+b11010100 +Z
+b00001111 8|
+b00000000 +y
+b00000000 'U
+b01010010 %L
+b0110 4Z
+b10111001 0S
+b10011011 /r
+b10001010 'n
+b00000000 8>
+b00000000 'Q
+b00000000 %z
+b00000000 7+
+b00000000 #~
+b11011101 49
+b00011110 .p
+b00101001 "9
+b00000000 ,|
+b11011100 *9
+b00000000 3T
+b00000000 $>
+b10010001 "g
+b00000001 .l
+b00000000 .O
+b00000000 /0
+b11110011 *g
+b00000000 ++
+b00000000 (A
+b00000000 4)
+b00000000 %l
+b00000000 -l
+b00000000 8s
+#256
+b00000000 ,Q
+b00000000 %}
+b00000000 4D
+b00000000 )-
+b00000000 6O
+b00000000 j
+b00000000 b
+b00000000 +l
+b00000000 "p
+b00000000 *S
+b00000000 *>
+b00000000 6.
+b00000000 .=
+b00000000 2x
+b00000000 $.
+b00000000 +b
+b00000000 44
+b00000000 )Y
+b00000000 /c
+b00000000 .X
+b00000000 &g
+b00000000 7"
+b00000000 ,y
+b00000000 &5
+b00000000 $s
+b00000000 /H
+b00000000 '-
+b00000000 (t
+b00000000 24
+b00000000 8c
+b00000000 /g
+b00000000 /|
+b00000000 1)
+b00000000 $o
+b00000000 4,
+b00000000 5V
+b00000000 $~
+b00000000 $L
+b00000000 )h
+b00000000 ,7
+b00000000 +V
+b00000000 "o
+b00000000 .-
+b00000000 4T
+b00000000 #g
+b00000000 4"
+b00000000 'h
+b00000000 #a
+b00000000 /<
+b00000000 +5
+b00000000 2=
+b00000000 90
+b00000000 8:
+b00000000 Y
+b00000000 6]
+b00000000 .W
+b00000000 '2
+b00000000 6+
+b00000000 *3
+b00000000 5a
+b00000000 9u
+b00000000 ->
+b00000000 7d
+b00000000 #
+b00000000 (u
+b00000000 $Q
+b00000000 ,%
+b00000000 9\
+b00000000 4-
+b00000000 3L
+b00000000 $!
+b00000000 'T
+b00000000 )g
+b00000000 $M
+b00000000 "Y
+b00000000 54
+b00000000 64
+b00000000 8q
+b00000000 5j
+b00000000 &T
+b00000000 +j
+b00000000 w
+b00000000 7i
+b00000000 *n
+b00000000 1D
+0/P
+b00000000 ,?
+b00000000 ,$
+b00000000 1U
+b00000000 0t
+b00000000 (n
+b00000000 4A
+b00000000 &z
+b00000000 0Y
+b00000000 3Z
+b00000000 .H
+b00000000 i
+b00000000 $c
+b00000000 2^
+b00000000 2I
+b00000000 *X
+b00000000 )w
+b00000000 &Y
+b00000000 7z
+b00000000 0U
+b00000000 /W
+b00000000 'f
+b00000000 7H
+b00000000 6v
+b00000000 7%
+b00000000 1I
+b00000000 -W
+b00000000 +N
+b00000000 #]
+b00000000 "|
+b00000000 %h
+b00000000 .:
+b00000000 !
+b00000000 1Z
+b00000000 0y
+b00000000 6:
+b00000000 'u
+b00000000 .h
+b00000000 (m
+b00000000 8*
+b00000000 7I
+b00000000 3~
