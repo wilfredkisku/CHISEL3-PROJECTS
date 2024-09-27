@@ -28,6 +28,7 @@ class BufferAMSTesterNewNewNew extends AnyFlatSpec with ChiselScalatestTester {
       for (cycle <- 0 until 16) {
         val frame = if (cycle % 2 == 0) generateFrame(allZeros = true) else generateFrame()
 
+        // val zeroCount = slice.map(v => (v === 0.U).asUInt).fold(0.U)(_ +& _)
         // Use the helper function to poke the generated frame into the adcValues input
         pokeVecInput(frame)
 
